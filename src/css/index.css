@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #2b2c34;
+}
+
+h1,
+h2,
+h3 {
+  color: #2b2c34;
+}
+
+.second-color {
+  background: #d1d1e9;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Party";
+  src: url("./fonts/Party.otf");
+}
+
+body {
+  background: #fffffe;
+  margin: 0;
+  font-family: Party;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
