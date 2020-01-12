@@ -34,6 +34,11 @@
   z-index: -2;
 }
 
+.landing-img {
+  min-width: 375px;
+  min-height: 375px;
+}
+
 .hero-block img {
   width: 375px;
   max-width: 90%;
