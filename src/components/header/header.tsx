@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 
+const logo = require("../../images/logo.png");
 import "./header.css";
 
 function Header() {
@@ -9,6 +10,7 @@ function Header() {
   return (
     <>
       <header className="header">
+        <img src={logo} alt="logo" />
         <div
           onClick={() => {
             setOpen(!open);
