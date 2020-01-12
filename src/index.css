@@ -6,9 +6,12 @@
 body {
   background: #fffffe;
   margin: 0;
+  padding-bottom: 300px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: Party;
   font-weight: bold;
 }
@@ -20,4 +23,5 @@ h1 {
 
 p {
   font-size: 16px;
+  padding: 0 10px;
 }

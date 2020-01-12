@@ -13,6 +13,7 @@ function Header() {
         <img src={logo} alt="logo" />
         <div
           onClick={() => {
+            document.body.style.overflowY = !open ? "hidden" : "scroll";
             setOpen(!open);
           }}
           className={`burger ${open ? "open" : ""}`}
