@@ -34,12 +34,8 @@
   z-index: -2;
 }
 
-.landing-img {
-  min-width: 375px;
-  min-height: 210px;
-}
-
 .hero-block img {
-  width: 375px;
+  width: 300px;
   max-width: 90%;
+  min-height: 210px;
 }

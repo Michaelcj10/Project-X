@@ -52,7 +52,7 @@ class Landing extends React.Component {
             </motion.div>
           </div>
           <div className="six columns centered">
-            <div className="landing-img">
+            <div>
               <img src={devImg} alt="img" />
             </div>
           </div>
