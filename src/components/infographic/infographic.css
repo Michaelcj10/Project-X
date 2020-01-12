@@ -7,4 +7,5 @@
 
 .infographic-block img {
   width: 300px;
+  max-width: 90%;
 }
