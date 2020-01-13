@@ -133,6 +133,7 @@ const OverlayStyle = styled.div`
   background: rgba(255, 255, 255, 0.85);
   z-index: 5;
   top: 0;
+  transition: opacity 0.5s;
 `;
 
 function Header() {
@@ -150,7 +151,6 @@ function Header() {
 
         <div
           onClick={() => {
-            document.body.style.overflowY = !open ? "hidden" : "scroll";
             setOpen(!open);
           }}
           className={`burger ${open ? "open" : ""}`}
@@ -163,11 +163,7 @@ function Header() {
           <span />
         </div>
       </HeaderStyle>
-      {open ? (
-        <motion.div animate={{ opacity: 1 }}>
-          <OverlayStyle />
-        </motion.div>
-      ) : null}
+      {open ? <OverlayStyle /> : null}
     </>
   );
 }
