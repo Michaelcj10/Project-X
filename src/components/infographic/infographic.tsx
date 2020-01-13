@@ -1,11 +1,33 @@
 import * as React from "react";
-import "./infographic.css";
 const mobile = require("../../images/computer.png");
 import { motion } from "framer-motion";
+import ImageLoader from "../atoms/imageLoader";
+import styled from "styled-components";
 
-class Infographic extends React.Component {
-  render() {
-    return (
+const InfographicStyle = styled.div`
+  .infographic-block svg:nth-of-type(1) {
+    transform: rotate(180deg) translateY(2px);
+  }
+  .infographic-block svg:nth-of-type(3) {
+    transform: translateY(-10px);
+  }
+
+  .infographic-block img {
+    width: 300px;
+    max-width: 90%;
+  }
+
+  .infographic-block .columns {
+    position: relative;
+  }
+  .img-block {
+    min-height: 250px;
+  }
+`;
+
+function Infographic() {
+  return (
+    <InfographicStyle>
       <div className="infographic-block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -17,7 +39,15 @@ class Infographic extends React.Component {
 
         <div className="row">
           <div className="six columns centered">
-            <img src={mobile} alt="mobile" />
+            <div className="img-block">
+              <ImageLoader
+                width="250"
+                height="250"
+                imgSrc={mobile}
+                isCircle={true}
+                imgAlt={"Mobile"}
+              />
+            </div>
           </div>
           <div className="six columns centered">
             <motion.div
@@ -55,8 +85,8 @@ class Infographic extends React.Component {
           />
         </svg>
       </div>
-    );
-  }
+    </InfographicStyle>
+  );
 }
 
 export default Infographic;

@@ -3,17 +3,43 @@ import "../css/skeleton.css";
 import Header from "../components/header/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
+import { createGlobalStyle } from "styled-components";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Landing />
-        <Infographic />
-      </div>
-    );
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: #fffffe;
+    margin: 0;
+    padding: 0;
+    color: #2b2c34;
+    padding-bottom: 300px;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+  .centered {
+    text-align: center;
+    margin: auto;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+`;
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Landing />
+      <Infographic />
+      <GlobalStyle />
+    </div>
+  );
 }
 
 export default App;

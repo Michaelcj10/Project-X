@@ -1,12 +1,61 @@
 import * as React from "react";
-import "./landing.css";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
 const devImg = require("../../images/landing-1.png");
+import ImageLoader from "../atoms/imageLoader";
+import styled from "styled-components";
 
-class Landing extends React.Component {
-  render() {
-    return (
+const LandingStyle = styled.div`
+  .hero-block {
+    text-align: center;
+    position: relative;
+    display: table;
+    height: 100vh;
+    width: 100%;
+    margin-top: -75px;
+    background: #eff0f3;
+  }
+
+  .hero-block .row {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .hero-block .columns {
+    position: relative;
+  }
+
+  .hero-block svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero-block svg:nth-child(1) {
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .hero-block svg:nth-child(2) {
+  }
+  .hero-block svg:nth-child(3) {
+  }
+
+  .hero-block img {
+    width: 300px;
+    max-width: 90%;
+    min-height: 210px;
+  }
+
+  button {
+    margin-bottom: 50px;
+  }
+`;
+
+function Landing() {
+  return (
+    <LandingStyle>
       <div className="hero-block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -31,7 +80,7 @@ class Landing extends React.Component {
           />
         </svg>
         <div className="row">
-          <div className="six columns centered">
+          <div className="twelve columns centered">
             <motion.div
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
@@ -42,7 +91,7 @@ class Landing extends React.Component {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <p>Application development</p>
+              <p>Website and application development with a difference.</p>
             </motion.div>
             <motion.div
               animate={{ y: 30 }}
@@ -50,16 +99,17 @@ class Landing extends React.Component {
             >
               <Button text="Learn more" />
             </motion.div>
-          </div>
-          <div className="six columns centered">
-            <div>
-              <img src={devImg} alt="img" />
-            </div>
+            <ImageLoader
+              width="200"
+              height="200"
+              imgSrc={devImg}
+              imgAlt={"Landing image"}
+            />
           </div>
         </div>
       </div>
-    );
-  }
+    </LandingStyle>
+  );
 }
 
 export default Landing;

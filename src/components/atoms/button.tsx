@@ -1,18 +1,26 @@
 import * as React from "react";
-import "./button.css";
+import styled from "styled-components";
+
+const ButtonStyle = styled.button`
+  color: white !important;
+  border-radius: 25px;
+  border: none;
+  min-width: 155px;
+  background-color: #f4661e;
+  transition: all 0.5s;
+
+  &:hover {
+    min-width: 175px;
+    border-radius: 10px;
+  }
+`;
 
 interface Props {
   text: string;
 }
 
-class Button extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
-  render() {
-    return <button>{this.props.text}</button>;
-  }
+function Button(props: Props) {
+  return <ButtonStyle>{props.text}</ButtonStyle>;
 }
 
 export default Button;
