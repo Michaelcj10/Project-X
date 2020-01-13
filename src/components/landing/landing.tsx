@@ -51,6 +51,10 @@ const LandingStyle = styled.div`
   button {
     margin-bottom: 50px;
   }
+
+  .twelve {
+    margin-top: -100px;
+  }
 `;
 
 function Landing() {

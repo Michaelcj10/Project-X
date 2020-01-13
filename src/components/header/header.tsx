@@ -142,12 +142,14 @@ function Header() {
   return (
     <>
       <HeaderStyle>
-        <motion.div
-          animate={{ y: 5 }}
-          transition={{ ease: "easeOut", duration: 0.9 }}
-        >
-          <img src={logo} alt="logo" />
-        </motion.div>
+        {!open ? (
+          <motion.div
+            animate={{ y: 5 }}
+            transition={{ ease: "easeOut", duration: 0.9 }}
+          >
+            <img src={logo} alt="logo" />
+          </motion.div>
+        ) : null}
 
         <div
           onClick={() => {
