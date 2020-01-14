@@ -123,7 +123,7 @@ const HeaderStyle = styled.header`
     position: absolute;
     left: 20px;
     top: 10px;
-    @media (max-width: 768px) {
+    @media (max-width: 560px) {
       width: 60px;
     }
   }

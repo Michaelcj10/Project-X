@@ -3,11 +3,12 @@ import "../css/skeleton.css";
 import Header from "../components/header/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
+import About from "../components/about/aboutInfo";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: #fffffe;
+    background: #eff0f3;
     margin: 0;
     padding: 0;
     color: #2b2c34;
@@ -37,6 +38,7 @@ function App() {
       <Header />
       <Landing />
       <Infographic />
+      <About />
       <GlobalStyle />
     </div>
   );
