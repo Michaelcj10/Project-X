@@ -5,12 +5,11 @@ const logo = require("../../images/logo.png");
 import styled from "styled-components";
 
 const HeaderStyle = styled.header`
-  width: 100%;
-  height: 75px;
   height: 75px;
   position: relative;
   top: 0;
   z-index: 6;
+  background: #eff0f3;
   width: 100%;
   .burger {
     width: 45px;

@@ -12,7 +12,7 @@ const LandingStyle = styled.div`
     display: table;
     height: 100vh;
     width: 100%;
-    margin-top: -75px;
+    margin-top: -60px;
     background: #eff0f3;
   }
 
@@ -37,11 +37,6 @@ const LandingStyle = styled.div`
     z-index: 2;
   }
 
-  .hero-block svg:nth-child(2) {
-  }
-  .hero-block svg:nth-child(3) {
-  }
-
   .hero-block img {
     width: 300px;
     max-width: 90%;
@@ -53,7 +48,13 @@ const LandingStyle = styled.div`
   }
 
   .twelve {
-    margin-top: -100px;
+    margin-top: -70px;
+  }
+  @media (max-width: 560px) {
+    .hero-block img {
+      min-height: 140px;
+      width: 200px;
+    }
   }
 `;
 
@@ -104,8 +105,8 @@ function Landing() {
               <Button text="Learn more" />
             </motion.div>
             <ImageLoader
-              width="200"
-              height="200"
+              width="0"
+              height="0"
               imgSrc={devImg}
               imgAlt={"Landing image"}
             />
