@@ -7,6 +7,7 @@ import styled from "styled-components";
 const InfographicStyle = styled.div`
   .infographic-block {
     background: white;
+    padding-bottom: 50px;
   }
   .infographic-block svg:nth-of-type(1) {
     transform: rotate(180deg) translateY(2px);
