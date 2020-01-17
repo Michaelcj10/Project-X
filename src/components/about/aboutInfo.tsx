@@ -54,7 +54,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
-              <Lock width={65} fill="#ffd248" />
+              <Lock width={65} fill="#fff" />
             </motion.div>
           </div>
           <div className="item centered">
@@ -62,7 +62,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.6 }}
             >
-              <PhoneAndroid width={65} fill="#ffd248" />
+              <PhoneAndroid width={65} fill="#fff" />
             </motion.div>
           </div>
           <div className="item centered">
@@ -70,7 +70,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 2 }}
             >
-              <Flashlight width={65} fill="#ffd248" />
+              <Flashlight width={65} fill="#fff" />
             </motion.div>
           </div>
         </div>

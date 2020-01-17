@@ -6,7 +6,7 @@ const ButtonStyle = styled.button`
   border-radius: 25px;
   border: none;
   min-width: 155px;
-  background-color: #f4661e;
+  background-color: #2b2c34;
   transition: all 0.5s;
 
   &:hover {
