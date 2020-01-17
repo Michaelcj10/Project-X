@@ -132,7 +132,7 @@ const OverlayStyle = styled.div`
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.95);
   z-index: 5;
   top: 0;
   transition: opacity 0.5s;
@@ -144,18 +144,18 @@ function Header() {
   return (
     <>
       <HeaderStyle>
-        {!open ? (
-          <motion.div
-            animate={{ y: 5 }}
-            transition={{ ease: "easeOut", duration: 0.9 }}
-          >
-            <img src={logo} alt="logo" />
-          </motion.div>
-        ) : null}
+        <motion.div
+          animate={{ y: 5 }}
+          transition={{ ease: "easeOut", duration: 0.9 }}
+        >
+          <img style={{ opacity: !open ? 1 : 0.2 }} src={logo} alt="logo" />
+        </motion.div>
 
         <div
           onClick={() => {
             setOpen(!open);
+
+            document.body.style.overflow = !open ? "hidden" : "visible";
           }}
           className={`burger ${open ? "open" : ""}`}
         >
