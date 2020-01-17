@@ -35,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     margin-top: 70px;
     font-size: 2rem;
-    color: #808293;
   }
 `;
 

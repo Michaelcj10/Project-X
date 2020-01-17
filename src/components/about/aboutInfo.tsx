@@ -7,7 +7,7 @@ import { Flashlight } from "styled-icons/remix-fill/Flashlight";
 
 const AboutStyle = styled.div`
   .about-block {
-    background: #2b2c34;
+    background: #ededed;
   }
   .item-row {
     display: flex;
@@ -33,7 +33,7 @@ const AboutStyle = styled.div`
     }
   }
   h3 {
-    color: #fff;
+    color: #2b2c34;
   }
 `;
 
@@ -54,7 +54,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
-              <Lock width={65} fill="#fff" />
+              <Lock width={65} fill="#2b2c34" />
             </motion.div>
           </div>
           <div className="item centered">
@@ -62,7 +62,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.6 }}
             >
-              <PhoneAndroid width={65} fill="#fff" />
+              <PhoneAndroid width={65} fill="#2b2c34" />
             </motion.div>
           </div>
           <div className="item centered">
@@ -70,7 +70,7 @@ function About() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 2 }}
             >
-              <Flashlight width={65} fill="#fff" />
+              <Flashlight width={65} fill="#2b2c34" />
             </motion.div>
           </div>
         </div>
