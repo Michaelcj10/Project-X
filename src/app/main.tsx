@@ -5,6 +5,7 @@ import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import About from "../components/about/aboutInfo";
 import { createGlobalStyle } from "styled-components";
+import TeamInfo from "../components/team/teamInfo";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,6 +31,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     padding: 0 10px;
   }
+  h3 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2rem;
+    color: #808293;
+  }
 `;
 
 function App() {
@@ -39,6 +46,7 @@ function App() {
       <Landing />
       <Infographic />
       <About />
+      <TeamInfo />
       <GlobalStyle />
     </div>
   );
