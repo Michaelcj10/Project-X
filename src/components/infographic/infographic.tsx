@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const InfographicStyle = styled.div`
   .infographic-block {
-    background: white;
+    background: #f3f2f2;
     padding-bottom: 50px;
   }
   .infographic-block svg:nth-of-type(1) {

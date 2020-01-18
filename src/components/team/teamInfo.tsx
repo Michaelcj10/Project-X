@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import ImageLoader from "../atoms/imageLoader";
-const dev = require("../../images/x.png");
+const dev = require("../../images/michael.png");
 import { LinkedinSquare } from "styled-icons/boxicons-logos/LinkedinSquare";
 
 const TeamStyle = styled.div`
