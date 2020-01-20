@@ -15,11 +15,16 @@ const GlobalStyle = createGlobalStyle`
     padding-bottom: 300px;
   }
 
-  h1,
+
   h2,
   h3 {
     color: #2b2c34;
     font-weight: bold;
+  }
+
+  h1{
+    font-weight: bold;
+    color: #eaeaea;
   }
 
   .centered {

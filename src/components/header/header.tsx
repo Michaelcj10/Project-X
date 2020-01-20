@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-const logo = require("../../images/logo.png");
+// const logo = require("../../images/logo.png");
 import styled from "styled-components";
 
 const HeaderStyle = styled.header`
@@ -9,7 +9,7 @@ const HeaderStyle = styled.header`
   position: relative;
   top: 0;
   z-index: 6;
-  background: #fff;
+  background: #1d0744;
   width: 100%;
   .burger {
     width: 45px;
@@ -35,7 +35,7 @@ const HeaderStyle = styled.header`
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #2b2c34;
+    background: #ffd248;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -148,7 +148,7 @@ function Header() {
           animate={{ y: 5 }}
           transition={{ ease: "easeOut", duration: 0.9 }}
         >
-          <img style={{ opacity: !open ? 1 : 0.2 }} src={logo} alt="logo" />
+          {/* <img style={{ opacity: !open ? 1 : 0.2 }} src={logo} alt="logo" /> */}
         </motion.div>
 
         <div
