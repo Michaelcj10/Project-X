@@ -1,7 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
-const devImg = require("../../images/computer.png");
+const devImg = require("../../images/mobile-2.svg");
+const landingImg = require("../../images/landing-1.png");
 import ImageLoader from "../atoms/imageLoader";
 import styled from "styled-components";
 
@@ -12,12 +13,17 @@ const LandingStyle = styled.div`
     display: table;
     height: 100vh;
     width: 100%;
-    margin-top: -75px;
-    background: #1d0744;
+    margin-top: -10px;
+    background: #653f73;
+    background-repeat: no-repeat;
+    background-image: url(${landingImg});
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0;
   }
 
   .hero-block p {
-    color: #eaeaea;
+    color: #000;
   }
 
   .hero-block .row {
@@ -42,9 +48,8 @@ const LandingStyle = styled.div`
   }
 
   .hero-block img {
-    width: 500px;
+    width: 300px;
     max-width: 90%;
-    min-height: 210px;
   }
 
   button {
@@ -53,6 +58,10 @@ const LandingStyle = styled.div`
 
   .twelve {
     margin-top: -70px;
+  }
+
+  .six:nth-of-type(1) {
+    margin-top: -50px;
   }
 `;
 
@@ -70,7 +79,7 @@ function Landing() {
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#ffd248"
+            fill="#fff"
             fillOpacity="1"
             d="M0,160L30,160C60,160,120,160,180,144C240,128,300,96,360,69.3C420,43,480,21,540,48C600,75,660,149,720,170.7C780,192,840,160,900,138.7C960,117,1020,107,1080,117.3C1140,128,1200,160,1260,149.3C1320,139,1380,85,1410,58.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
           />

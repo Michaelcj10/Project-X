@@ -8,9 +8,8 @@ const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   min-width: 155px;
-  background-color: #ffd248;
+  background-color: #62fdfb;
   transition: all 0.5s;
-  background: linear-gradient(to right, rgb(255, 210, 72), rgb(236, 236, 236));
   font-size: 14px;
 
   &:hover {

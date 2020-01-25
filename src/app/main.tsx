@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1{
     font-weight: bold;
-    color: #eaeaea;
+    color: #000;
   }
 
   .centered {
