@@ -11,20 +11,17 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    color: #2b2c34;
+    color: #3f3d56;
     padding-bottom: 300px;
   }
 
-
   h2,
   h3 {
-    color: #2b2c34;
     font-weight: bold;
   }
 
   h1{
     font-weight: bold;
-    color: #000;
   }
 
   .centered {

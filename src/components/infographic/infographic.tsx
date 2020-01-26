@@ -32,10 +32,9 @@ function Infographic() {
           <div className="six columns centered">
             <div className="img-block">
               <ImageLoader
-                width="250"
-                height="250"
+                width="350"
+                count={10}
                 imgSrc={mobile}
-                isCircle={true}
                 imgAlt={"Mobile"}
               />
             </div>

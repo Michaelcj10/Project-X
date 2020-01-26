@@ -14,23 +14,32 @@ interface Props {
   imgSrc: string;
   imgAlt: string;
   width: string;
-  height: string;
-  isCircle?: boolean;
+  count: number;
 }
 
 function ImageLoader(props: Props) {
   const [imgLoaded, setImgLoaded] = useState(false);
+
+  const getItems = () => {
+    const arr: React.ReactNode[] = [];
+
+    for (let x = 0; x < props.count; x++) {
+      arr.push(
+        <React.Fragment key={x}>
+          <Skeleton width={`${props.width}px`} height={`30px`} /> <br />
+        </React.Fragment>
+      );
+    }
+
+    return arr;
+  };
 
   return (
     <>
       {imgLoaded ? null : (
         <LoaderSkeletonStyle>
           <SkeletonTheme color="#d4d2d2" highlightColor="#efefef">
-            <Skeleton
-              circle={props.isCircle}
-              width={`${props.width}px`}
-              height={`${props.height}px`}
-            />
+            {getItems()}
           </SkeletonTheme>
         </LoaderSkeletonStyle>
       )}

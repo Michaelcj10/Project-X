@@ -14,12 +14,11 @@ const LandingStyle = styled.div`
     height: 100vh;
     width: 100%;
     margin-top: -10px;
-    background: #653f73;
+    background: #fff;
     background-repeat: no-repeat;
     background-image: url(${landingImg});
     background-position: center;
     background-size: cover;
-    background-position-y: 0;
   }
 
   .hero-block p {
@@ -63,6 +62,9 @@ const LandingStyle = styled.div`
   .six:nth-of-type(1) {
     margin-top: -50px;
   }
+  .six:nth-of-type(2) {
+    min-height: 300px;
+  }
 `;
 
 function Landing() {
@@ -79,7 +81,7 @@ function Landing() {
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#fff"
+            fill="#f8f8f8"
             fillOpacity="1"
             d="M0,160L30,160C60,160,120,160,180,144C240,128,300,96,360,69.3C420,43,480,21,540,48C600,75,660,149,720,170.7C780,192,840,160,900,138.7C960,117,1020,107,1080,117.3C1140,128,1200,160,1260,149.3C1320,139,1380,85,1410,58.7L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
           />
@@ -90,7 +92,7 @@ function Landing() {
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
-              <h1>Mad Goat Studios</h1>
+              <h1>Púca Studios</h1>
             </motion.div>
             <motion.div
               animate={{ y: 30 }}
@@ -107,8 +109,8 @@ function Landing() {
           </div>
           <div className="six columns centered">
             <ImageLoader
-              width="0"
-              height="0"
+              width="300"
+              count={10}
               imgSrc={devImg}
               imgAlt={"Landing image"}
             />

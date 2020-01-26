@@ -9,7 +9,7 @@ describe("<ImageLoader /> spec", () => {
         width={"200px"}
         imgAlt={"Fake alt"}
         imgSrc={"Fake Src"}
-        height={"200px"}
+        count={1}
       />
     );
     expect(container).toMatchSnapshot();

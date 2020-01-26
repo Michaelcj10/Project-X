@@ -28,6 +28,9 @@ const AboutStyle = styled.div`
   .about-block {
     margin-top: 100px;
   }
+  .one-third {
+    width: 33%;
+  }
 `;
 
 const imgDetails: AboutImgDetails[] = [
@@ -39,19 +42,19 @@ const imgDetails: AboutImgDetails[] = [
   {
     alt: "Mobile",
     src: <Mobile width={50} />,
-    text: "Mobile Responsivness"
+    text: "Responsive"
   },
   {
     alt: "Mobile",
     src: <DocumentText width={50} />,
-    text: "SEO Compliance"
+    text: "SEO"
   }
 ];
 
 function About() {
   return (
     <AboutStyle>
-      <div className="about-block">
+      <div className="about-block ">
         <div className="row">
           <div className="twelve columns centered">
             <motion.div
