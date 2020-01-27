@@ -8,7 +8,7 @@ const HeaderStyle = styled.header`
   height: 75px;
   position: relative;
   top: 0;
-  background: #fff;
+  background: #648cff;
   z-index: 6;
   width: 100%;
   .burger {
@@ -35,7 +35,7 @@ const HeaderStyle = styled.header`
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #000;
+    background: #f2d357;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);

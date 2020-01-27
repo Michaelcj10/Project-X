@@ -22,6 +22,8 @@ const GlobalStyle = createGlobalStyle`
 
   h1{
     font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
   }
 
   .centered {

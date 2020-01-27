@@ -1,5 +1,5 @@
 import * as React from "react";
-const mobile = require("../../images/mobile-1.svg");
+const mobile = require("../../images/illustration-3.svg");
 import { motion } from "framer-motion";
 import ImageLoader from "../atoms/imageLoader";
 import styled from "styled-components";
