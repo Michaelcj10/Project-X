@@ -35,7 +35,7 @@ const HeaderStyle = styled.header`
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #f2d357;
+    background: #fff;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);

@@ -1,9 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
-const devImg = require("../../images/illustration-1.svg");
 const landingImg = require("../../images/landing-1.png");
-import ImageLoader from "../atoms/imageLoader";
 import styled from "styled-components";
 
 const LandingStyle = styled.div`
@@ -11,9 +9,8 @@ const LandingStyle = styled.div`
     text-align: center;
     position: relative;
     display: table;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    margin-top: -10px;
     background: #fff;
     background-repeat: no-repeat;
     background-image: url(${landingImg});
@@ -58,7 +55,6 @@ const LandingStyle = styled.div`
   .twelve {
     margin-top: -70px;
   }
-
   .six:nth-of-type(1) {
     margin-top: -50px;
   }
@@ -79,12 +75,12 @@ function Landing() {
           />
         </svg>
         <div className="row">
-          <div className="six columns centered">
+          <div className="twelve columns centered">
             <motion.div
               animate={{ y: 30 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
-              <h1>Elegant and creative solutions.</h1>
+              <h1>Elegant & creative solutions.</h1>
             </motion.div>
             <motion.div
               animate={{ y: 30 }}
@@ -98,14 +94,6 @@ function Landing() {
             >
               <Button text="Learn more" />
             </motion.div>
-          </div>
-          <div className="six columns centered">
-            <ImageLoader
-              width="300"
-              count={10}
-              imgSrc={devImg}
-              imgAlt={"Landing image"}
-            />
           </div>
         </div>
       </div>

@@ -40,6 +40,11 @@ const GlobalStyle = createGlobalStyle`
     margin-top: 70px;
     font-size: 2rem;
   }
+  
+  .six {
+    padding: 0px 25px;
+  }
+
 `;
 
 function App() {
