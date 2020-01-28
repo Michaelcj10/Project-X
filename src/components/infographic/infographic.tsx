@@ -1,6 +1,9 @@
 import * as React from "react";
-const mobile = require("../../images/illustration-1.svg");
-const mobileSecond = require("../../images/illustration-5.svg");
+// @ts-ignore
+import mobile from "../../images/illustration-1.svg";
+// @ts-ignore
+import mobileSecond from "../../images/illustration-5.svg";
+
 import { motion } from "framer-motion";
 import ImageLoader from "../atoms/imageLoader";
 import styled from "styled-components";

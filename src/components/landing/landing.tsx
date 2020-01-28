@@ -1,7 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
-const landingImg = require("../../images/landing-1.png");
+// @ts-ignore
+import landingImg from "../../images/landing-1.png";
 import styled from "styled-components";
 
 const LandingStyle = styled.div`
