@@ -9,8 +9,10 @@ const LandingStyle = styled.div`
   .hero-block {
     text-align: center;
     position: relative;
-    display: table;
-    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
     width: 100%;
     background: #648cff;
     background-repeat: no-repeat;
@@ -55,6 +57,7 @@ const LandingStyle = styled.div`
   }
 
   .twelve {
+    min-height: 300px;
     margin-top: -70px;
   }
   .six:nth-of-type(1) {
