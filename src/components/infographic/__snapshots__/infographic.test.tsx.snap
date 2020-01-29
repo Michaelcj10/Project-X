@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKD keUmhz"
+            class="sc-AykKC hqAKqo"
         >
             <div
                 class="infographic-block"
@@ -15,40 +15,51 @@ Object {
                     class="row"
                 >
                     <div
-                        class="six columns centered"
+                        class="one-half column centered padded"
+                    >
+                        <div>
+                            <h2>
+                                Creative designs
+                            </h2>
+                        </div>
+                        <div>
+                            <p>
+                                We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="one-half column centered padded"
                     >
                         <div
-                            class="img-block"
+                            class="img-block greyed-on-touch"
                         >
-                            <div
-                                class="sc-AykKC felZke"
-                            >
-                                <div
-                                    class="css-1rcyed2"
-                                >
-                                    <span>
-                                        <span
-                                            class="css-19bon8n react-loading-skeleton"
-                                            style="width: 250px; height: 250px; border-radius: 50%;"
-                                        >
-                                            ‌
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
                             <img
-                                style="visibility: hidden;"
-                                src="mobile-1.svg"
+                                alt="Mobile"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row"
+                >
+                    <div
+                        class="one-half column centered padded"
+                    >
+                        <div
+                            class="img-block greyed-on-touch"
+                        >
+                            <img
                                 alt="Mobile"
                             />
                         </div>
                     </div>
                     <div
-                        class="six columns centered"
+                        class="one-half column centered padded"
                     >
                         <div>
                             <h2>
-                                What we do
+                                Mobile responsive
                             </h2>
                         </div>
                         <div>
@@ -64,7 +75,7 @@ Object {
 </body>,
   "container": <div>
     <div
-        class="sc-AykKD keUmhz"
+        class="sc-AykKC hqAKqo"
     >
         <div
             class="infographic-block"
@@ -73,40 +84,51 @@ Object {
                 class="row"
             >
                 <div
-                    class="six columns centered"
+                    class="one-half column centered padded"
+                >
+                    <div>
+                        <h2>
+                            Creative designs
+                        </h2>
+                    </div>
+                    <div>
+                        <p>
+                            We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="one-half column centered padded"
                 >
                     <div
-                        class="img-block"
+                        class="img-block greyed-on-touch"
                     >
-                        <div
-                            class="sc-AykKC felZke"
-                        >
-                            <div
-                                class="css-1rcyed2"
-                            >
-                                <span>
-                                    <span
-                                        class="css-19bon8n react-loading-skeleton"
-                                        style="width: 250px; height: 250px; border-radius: 50%;"
-                                    >
-                                        ‌
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
                         <img
-                            style="visibility: hidden;"
-                            src="mobile-1.svg"
+                            alt="Mobile"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="row"
+            >
+                <div
+                    class="one-half column centered padded"
+                >
+                    <div
+                        class="img-block greyed-on-touch"
+                    >
+                        <img
                             alt="Mobile"
                         />
                     </div>
                 </div>
                 <div
-                    class="six columns centered"
+                    class="one-half column centered padded"
                 >
                     <div>
                         <h2>
-                            What we do
+                            Mobile responsive
                         </h2>
                     </div>
                     <div>

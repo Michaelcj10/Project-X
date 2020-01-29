@@ -13,7 +13,7 @@ const ButtonStyle = styled.button`
   font-size: 14px;
 
   &:hover {
-    min-width: 175px;
+    min-width: 225px;
     border-radius: 10px;
     color: #fff;
     border: 1px solid #fff;

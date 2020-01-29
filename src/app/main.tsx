@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
   .centered {
     text-align: center;
-    margin: auto;
   }
 
   p {
@@ -41,8 +40,16 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
   }
   
-  .six {
+  .padded {
     padding: 0px 25px;
+  }
+
+  .greyed-on-touch{
+    transition: all 0.5s;
+  }
+  .greyed-on-touch:hover{
+    transition: all 0.5s;
+    filter: grayscale(100%);
   }
 
 `;

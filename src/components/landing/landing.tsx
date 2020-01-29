@@ -12,7 +12,7 @@ const LandingStyle = styled.div`
     display: table;
     height: 90vh;
     width: 100%;
-    background: #fff;
+    background: #648cff;
     background-repeat: no-repeat;
     background-image: url(${landingImg});
     background-position: center;
@@ -37,6 +37,7 @@ const LandingStyle = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    transition: all 0.5s;
   }
 
   .hero-block svg:nth-child(1) {
@@ -78,19 +79,19 @@ function Landing() {
         <div className="row">
           <div className="twelve columns centered">
             <motion.div
-              animate={{ y: 30 }}
+              animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
               <h1>Elegant & creative solutions.</h1>
             </motion.div>
             <motion.div
-              animate={{ y: 30 }}
+              animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <p>Website and application development with a difference.</p>
             </motion.div>
             <motion.div
-              animate={{ y: 30 }}
+              animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             >
               <Button text="Learn more" />

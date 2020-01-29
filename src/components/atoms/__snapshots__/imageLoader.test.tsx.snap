@@ -5,46 +5,14 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-        <div
-            class="sc-AykKC felZke"
-        >
-            <div
-                class="css-1rcyed2"
-            >
-                <span>
-                    <span
-                        class="css-19bon8n react-loading-skeleton"
-                    >
-                        ‌
-                    </span>
-                </span>
-            </div>
-        </div>
         <img
-            style="visibility: hidden;"
             src="Fake Src"
             alt="Fake alt"
         />
     </div>
 </body>,
   "container": <div>
-    <div
-        class="sc-AykKC felZke"
-    >
-        <div
-            class="css-1rcyed2"
-        >
-            <span>
-                <span
-                    class="css-19bon8n react-loading-skeleton"
-                >
-                    ‌
-                </span>
-            </span>
-        </div>
-    </div>
     <img
-        style="visibility: hidden;"
         src="Fake Src"
         alt="Fake alt"
     />
