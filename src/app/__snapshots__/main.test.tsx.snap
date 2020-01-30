@@ -7,9 +7,9 @@ Object {
     <div>
         <div>
             <header
-                class="sc-AykKC keMdK"
+                style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
+                class="sc-AykKC bkrpxO"
             >
-                <div />
                 <div
                     class="burger "
                 >
@@ -22,7 +22,7 @@ Object {
                 </div>
             </header>
             <div
-                class="sc-AykKF fpZKlX"
+                class="sc-AykKF iJHzxK"
             >
                 <div
                     class="hero-block"
@@ -230,9 +230,9 @@ Object {
   "container": <div>
     <div>
         <header
-            class="sc-AykKC keMdK"
+            style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
+            class="sc-AykKC bkrpxO"
         >
-            <div />
             <div
                 class="burger "
             >
@@ -245,7 +245,7 @@ Object {
             </div>
         </header>
         <div
-            class="sc-AykKF fpZKlX"
+            class="sc-AykKF iJHzxK"
         >
             <div
                 class="hero-block"

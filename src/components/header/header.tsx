@@ -1,15 +1,13 @@
 import * as React from "react";
-import { useState } from "react";
-import { motion } from "framer-motion";
-// const logo = require("../../images/logo.png");
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const HeaderStyle = styled.header`
   height: 75px;
-  position: relative;
+  position: fixed;
   top: 0;
-  background: #648cff;
   z-index: 6;
+  transition: all 0.5s;
   width: 100%;
   .burger {
     width: 45px;
@@ -117,15 +115,6 @@ const HeaderStyle = styled.header`
     left: calc(50% - 5px);
     top: 21px;
   }
-
-  img:nth-of-type(1) {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    @media (max-width: 560px) {
-      width: 60px;
-    }
-  }
 `;
 
 const OverlayStyle = styled.div`
@@ -139,25 +128,44 @@ const OverlayStyle = styled.div`
 `;
 
 function Header() {
+  const [scrollTop, setScrollTop] = useState(1);
   const [open, setOpen] = useState(false);
+  const [playAnimation, setPlayAnimation] = useState(false);
 
+  useEffect(() => {
+    const onScroll = () => {
+      setScrollTop(window.pageYOffset);
+      setPlayAnimation(
+        window.pageYOffset === 0 && window.pageYOffset <= scrollTop
+      );
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
+  const opacity = 1 - scrollTop / 1000;
   return (
     <>
-      <HeaderStyle>
-        <motion.div
-          animate={{ y: 5 }}
-          transition={{ ease: "easeOut", duration: 0.9 }}
-        >
-          {/* <img style={{ opacity: !open ? 1 : 0.2 }} src={logo} alt="logo" /> */}
-        </motion.div>
-
+      <HeaderStyle
+        style={{
+          visibility: scrollTop > 500 ? "hidden" : "visible",
+          opacity: opacity,
+          background: open ? "rgba(255, 255, 255, 0.95)" : "#648cff"
+        }}
+      >
         <div
           onClick={() => {
             setOpen(!open);
-
-            document.body.style.overflow = !open ? "hidden" : "visible";
           }}
           className={`burger ${open ? "open" : ""}`}
+          onAnimationEnd={() => {
+            setPlayAnimation(false);
+          }}
+          style={{
+            transform: playAnimation ? "scale(1.05)" : "scale(1)"
+          }}
         >
           <span />
           <span />

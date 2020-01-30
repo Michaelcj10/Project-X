@@ -12,7 +12,8 @@ const LandingStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
+    min-height: 700px;
+    height: 90vh;
     width: 100%;
     background: #648cff;
     background-repeat: no-repeat;
@@ -44,7 +45,6 @@ const LandingStyle = styled.div`
 
   .hero-block svg:nth-child(1) {
     bottom: 0;
-    z-index: 2;
   }
 
   .hero-block img {

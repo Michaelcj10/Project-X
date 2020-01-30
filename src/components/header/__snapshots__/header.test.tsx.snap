@@ -6,9 +6,9 @@ Object {
   "baseElement": <body>
     <div>
         <header
-            class="sc-AykKC keMdK"
+            style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
+            class="sc-AykKC bkrpxO"
         >
-            <div />
             <div
                 class="burger "
             >
@@ -24,9 +24,9 @@ Object {
 </body>,
   "container": <div>
     <header
-        class="sc-AykKC keMdK"
+        style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
+        class="sc-AykKC bkrpxO"
     >
-        <div />
         <div
             class="burger "
         >
