@@ -11,9 +11,6 @@ import styled from "styled-components";
 const InfographicStyle = styled.div`
   .infographic-block {
     background: #fff;
-    width: 90%;
-    max-width: 1167px;
-    margin: auto;
   }
   .infographic-block svg:nth-of-type(1) {
     transform: rotate(180deg) translateY(2px);
@@ -38,7 +35,7 @@ const InfographicStyle = styled.div`
 function Infographic() {
   return (
     <InfographicStyle>
-      <div className="infographic-block">
+      <div className="infographic-block container">
         <div className="row">
           <div className="one-half column centered padded">
             <motion.div
@@ -66,6 +63,7 @@ function Infographic() {
                 width="350"
                 imgSrc={mobileSecond}
                 imgAlt={"Mobile"}
+                height="300"
               />
             </div>
           </div>
@@ -77,6 +75,7 @@ function Infographic() {
                 width="350"
                 imgSrc={mobile}
                 imgAlt={"Mobile"}
+                height="480"
               />
             </div>
           </div>

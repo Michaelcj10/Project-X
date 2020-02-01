@@ -24,24 +24,35 @@ const TeamStyle = styled.div`
   p:nth-of-type(2) {
     margin-top: 50px;
   }
+  .blurb-break {
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: #e6e6e6;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+  }
+  .blurb-break:hover {
+    width: 100%;
+  }
 `;
 
 const items = [
   {
     text: "Speed",
-    icon: <Clock width={75} color="#f2d357" />,
+    icon: <Clock width={75} height={75} color="#f2d357" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "Security",
-    icon: <LockAlt width={75} color="#f2d357" />,
+    icon: <LockAlt width={75} height={75} color="#f2d357" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "SEO",
-    icon: <SearchDollar width={75} color="#f2d357" />,
+    icon: <SearchDollar width={75} height={75} color="#f2d357" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo
@@ -50,7 +61,7 @@ const items = [
 function TeamInfo() {
   return (
     <TeamStyle>
-      <div className="row">
+      <div className="row container">
         {items.map(i => {
           return (
             <div className="four columns centered padded" key={i.text}>
@@ -67,6 +78,7 @@ function TeamInfo() {
               </motion.div>
               <p>{i.text}</p>
               <p>{i.blurb}</p>
+              <div className="blurb-break" />
             </div>
           );
         })}

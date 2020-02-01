@@ -8,6 +8,12 @@ import { createGlobalStyle } from "styled-components";
 import TeamInfo from "../components/team/teamInfo";
 
 const GlobalStyle = createGlobalStyle`
+
+  .container{
+    max-width: 1167px;
+    margin: auto;
+  }
+
   body {
     margin: 0;
     padding: 0;
