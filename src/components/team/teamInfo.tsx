@@ -29,6 +29,15 @@ const TeamStyle = styled.div`
     width: 100px;
     margin-bottom: 25px;
   }
+  .four {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  p {
+    color: #3f3d56;
+  }
 `;
 
 const items = [

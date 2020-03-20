@@ -1,5 +1,4 @@
 import * as React from "react";
-// @ts-ignore
 import mobile from "../../images/illustration-1.svg";
 import mobileSecond from "../../images/illustration-2.svg";
 import mobileThird from "../../images/illustration-3.svg";

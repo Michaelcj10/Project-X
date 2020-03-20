@@ -90,7 +90,7 @@ function Landing() {
           <div className="twelve columns centered">
             <motion.div
               animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 1.2 }}
+              transition={{ ease: "easeOut", duration: 1.5 }}
             >
               <h1>
                 Elegant & <br /> creative solutions.
