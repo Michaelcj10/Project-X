@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKC dgFmpk"
+            class="sc-AykKC hhMQei"
         >
             <div
                 class="row"
@@ -37,6 +37,9 @@ Object {
                         <p>
                             Test
                         </p>
+                        <div
+                            class="dn-break"
+                        />
                     </div>
                 </div>
             </div>
@@ -45,7 +48,7 @@ Object {
 </body>,
   "container": <div>
     <div
-        class="sc-AykKC dgFmpk"
+        class="sc-AykKC hhMQei"
     >
         <div
             class="row"
@@ -76,6 +79,9 @@ Object {
                     <p>
                         Test
                     </p>
+                    <div
+                        class="dn-break"
+                    />
                 </div>
             </div>
         </div>

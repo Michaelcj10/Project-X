@@ -1,7 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
-// @ts-ignore
 import landingImg from "../../images/landing-2.png";
 import dotsImg from "../../images/landing-4.png";
 import styled from "styled-components";
@@ -24,7 +23,7 @@ const LandingStyle = styled.div`
   }
 
   .hero-block p {
-    color: #3ef8f4;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
   }
