@@ -8,6 +8,12 @@ const InfoBlockStyle = styled.div`
   p {
     margin-top: 50px;
   }
+  .dn-break {
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: #3ef8f4;
+  }
 `;
 
 interface Props {
@@ -31,6 +37,7 @@ function InfographicBlock(props: Props) {
         transition={{ ease: "easeOut", duration: 1.6 }}
       >
         <p>{props.text}</p>
+        <div className="dn-break" />
       </motion.div>
     </div>
   );

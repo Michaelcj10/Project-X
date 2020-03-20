@@ -24,7 +24,7 @@ const LandingStyle = styled.div`
   }
 
   .hero-block p {
-    color: #fff;
+    color: #3ef8f4;
     text-transform: uppercase;
     font-weight: bold;
   }

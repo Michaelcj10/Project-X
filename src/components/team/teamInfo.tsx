@@ -30,8 +30,7 @@ const TeamStyle = styled.div`
     margin-bottom: 25px;
   }
   .four {
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
     padding-top: 50px;
     margin-top: 50px;
   }
