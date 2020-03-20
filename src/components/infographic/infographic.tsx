@@ -5,7 +5,6 @@ import mobileThird from "../../images/illustration-3.svg";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
 import phone from "../../images/landing-1.png";
-import { Parallax } from "react-scroll-parallax";
 
 const InfographicStyle = styled.div`
   margin-top: 25px;
@@ -41,12 +40,8 @@ function Infographic() {
       <div className="infographic-block container">
         <div className="row">
           <div className="twelve columns centered">
-            <Parallax className="custom-class" x={[-15, 0]} tagOuter="figure">
-              <h2>Puca Labs</h2>
-
-              <img src={phone} />
-            </Parallax>
-
+            <h2>Puca Labs</h2>
+            <img src={phone} />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue
               quam, egestas vitae elementum eu, blandit vitae felis. Maecenas
@@ -55,36 +50,30 @@ function Infographic() {
           </div>
         </div>
 
-        <Parallax className="custom-class" x={[-20, 0]} tagOuter="figure">
-          <InfographicBlock
-            imgSrc={mobile}
-            heading={"Creative designs"}
-            text={
-              "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
-            }
-          />
-        </Parallax>
+        <InfographicBlock
+          imgSrc={mobile}
+          heading={"Creative designs"}
+          text={
+            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+          }
+        />
 
-        <Parallax className="custom-class" x={[-20, 0]} tagOuter="figure">
-          <InfographicBlock
-            reverse
-            imgSrc={mobileSecond}
-            heading={"Mobile responsive"}
-            text={
-              "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
-            }
-          />
-        </Parallax>
+        <InfographicBlock
+          reverse
+          imgSrc={mobileSecond}
+          heading={"Mobile responsive"}
+          text={
+            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+          }
+        />
 
-        <Parallax className="custom-class" x={[-20, 0]} tagOuter="figure">
-          <InfographicBlock
-            imgSrc={mobileThird}
-            heading={"Social integration"}
-            text={
-              "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
-            }
-          />
-        </Parallax>
+        <InfographicBlock
+          imgSrc={mobileThird}
+          heading={"Social integration"}
+          text={
+            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+          }
+        />
       </div>
     </InfographicStyle>
   );

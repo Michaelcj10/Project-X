@@ -6,7 +6,6 @@ import Infographic from "../components/infographic/infographic";
 import About from "../components/about/aboutInfo";
 import { createGlobalStyle } from "styled-components";
 import TeamInfo from "../components/team/teamInfo";
-import { ParallaxProvider } from "react-scroll-parallax";
 const GlobalStyle = createGlobalStyle`
 
   .container{
@@ -67,16 +66,14 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <ParallaxProvider>
-      <div>
-        <Header />
-        <Landing />
-        <Infographic />
-        <About />
-        <TeamInfo />
-        <GlobalStyle />
-      </div>
-    </ParallaxProvider>
+    <div>
+      <Header />
+      <Landing />
+      <Infographic />
+      <About />
+      <TeamInfo />
+      <GlobalStyle />
+    </div>
   );
 }
 
