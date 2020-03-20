@@ -4,6 +4,7 @@ import { Clock } from "styled-icons/fa-regular/Clock";
 import { LockAlt } from "styled-icons/boxicons-solid/LockAlt";
 import { SearchDollar } from "styled-icons/fa-solid/SearchDollar";
 import { motion } from "framer-motion";
+import dotsImg from "../../images/landing-4.png";
 
 interface ItemInfo {
   text: string;
@@ -13,10 +14,10 @@ interface ItemInfo {
 
 const TeamStyle = styled.div`
   margin-top: 50px;
-  padding: 50px 0px;
   .row {
-    width: 100%;
+    width: 90%;
   }
+
   p:nth-of-type(1) {
     font-weight: bold;
     margin-bottom: 0px;
@@ -24,35 +25,28 @@ const TeamStyle = styled.div`
   p:nth-of-type(2) {
     margin-top: 50px;
   }
-  .blurb-break {
-    width: 60%;
-    margin: auto;
-    height: 2px;
-    background: #e6e6e6;
-    transition: all 0.5s;
+  #dots {
+    width: 100px;
     margin-bottom: 25px;
-  }
-  .blurb-break:hover {
-    width: 100%;
   }
 `;
 
 const items = [
   {
     text: "Speed",
-    icon: <Clock width={75} height={75} color="#f2d357" />,
+    icon: <Clock width={75} height={75} color="#3f3d56" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "Security",
-    icon: <LockAlt width={75} height={75} color="#f2d357" />,
+    icon: <LockAlt width={75} height={75} color="#3f3d56" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "SEO",
-    icon: <SearchDollar width={75} height={75} color="#f2d357" />,
+    icon: <SearchDollar width={75} height={75} color="#3f3d56" />,
     blurb:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo
@@ -78,7 +72,7 @@ function TeamInfo() {
               </motion.div>
               <p>{i.text}</p>
               <p>{i.blurb}</p>
-              <div className="blurb-break" />
+              <img id="dots" src={dotsImg} />
             </div>
           );
         })}

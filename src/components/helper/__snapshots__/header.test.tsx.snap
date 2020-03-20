@@ -6,38 +6,14 @@ Object {
   "baseElement": <body>
     <div>
         <header
-            style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
-            class="sc-AykKC bkrpxO"
-        >
-            <div
-                class="burger "
-            >
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-            </div>
-        </header>
+            class="sc-AykKC fmcvyS"
+        />
     </div>
 </body>,
   "container": <div>
     <header
-        style="visibility: visible; opacity: 0.999; background: rgb(100, 140, 255);"
-        class="sc-AykKC bkrpxO"
-    >
-        <div
-            class="burger "
-        >
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-        </div>
-    </header>
+        class="sc-AykKC fmcvyS"
+    />
 </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

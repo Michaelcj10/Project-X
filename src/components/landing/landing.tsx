@@ -2,10 +2,12 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/button";
 // @ts-ignore
-import landingImg from "../../images/landing-1.png";
+import landingImg from "../../images/landing-2.png";
+import dotsImg from "../../images/landing-4.png";
 import styled from "styled-components";
 
 const LandingStyle = styled.div`
+  background: #41228e;
   .hero-block {
     text-align: center;
     position: relative;
@@ -15,15 +17,16 @@ const LandingStyle = styled.div`
     min-height: 700px;
     height: 90vh;
     width: 100%;
-    background: #648cff;
-    background-repeat: no-repeat;
     background-image: url(${landingImg});
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .hero-block p {
     color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   .hero-block .row {
@@ -44,7 +47,7 @@ const LandingStyle = styled.div`
   }
 
   .hero-block svg:nth-child(1) {
-    bottom: 0;
+    bottom: -15px;
   }
 
   .hero-block img {
@@ -66,6 +69,10 @@ const LandingStyle = styled.div`
   .six:nth-of-type(2) {
     min-height: 300px;
   }
+  #dots {
+    width: 100px;
+    margin-bottom: 25px;
+  }
 `;
 
 function Landing() {
@@ -85,7 +92,10 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1.2 }}
             >
-              <h1>Elegant & creative solutions.</h1>
+              <h1>
+                Elegant & <br /> creative solutions.
+              </h1>
+              <img id="dots" src={dotsImg} />
             </motion.div>
             <motion.div
               animate={{ y: 80 }}
@@ -97,7 +107,7 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             >
-              <Button text="Learn more" />
+              <Button text="Contact Us" />
             </motion.div>
           </div>
         </div>

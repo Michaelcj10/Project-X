@@ -2,21 +2,21 @@ import * as React from "react";
 import styled from "styled-components";
 
 const ButtonStyle = styled.button`
-  color: #fff;
+  color: #3f3d56;
   border-radius: 6px;
   min-width: 150px;
   height: 50px;
   border: none;
   min-width: 155px;
-  border: 1px solid #fff;
+  border: 1px solid #3ef8f4;
+  background: #3ef8f4;
   transition: all 0.5s;
   font-size: 14px;
 
   &:hover {
-    min-width: 225px;
+    min-width: 175px;
     border-radius: 10px;
-    color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #3ef8f4;
   }
 `;
 

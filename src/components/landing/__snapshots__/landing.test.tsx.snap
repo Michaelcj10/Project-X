@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKD doOork"
+            class="sc-AykKD STPUM"
         >
             <div
                 class="hero-block"
@@ -29,8 +29,13 @@ Object {
                     >
                         <div>
                             <h1>
-                                Elegant & creative solutions.
+                                Elegant & 
+                                <br />
+                                creative solutions.
                             </h1>
+                            <img
+                                id="dots"
+                            />
                         </div>
                         <div>
                             <p>
@@ -39,9 +44,9 @@ Object {
                         </div>
                         <div>
                             <button
-                                class="sc-AykKC iXAcuL"
+                                class="sc-AykKC gcClxH"
                             >
-                                Learn more
+                                Contact Us
                             </button>
                         </div>
                     </div>
@@ -52,7 +57,7 @@ Object {
 </body>,
   "container": <div>
     <div
-        class="sc-AykKD doOork"
+        class="sc-AykKD STPUM"
     >
         <div
             class="hero-block"
@@ -75,8 +80,13 @@ Object {
                 >
                     <div>
                         <h1>
-                            Elegant & creative solutions.
+                            Elegant & 
+                            <br />
+                            creative solutions.
                         </h1>
+                        <img
+                            id="dots"
+                        />
                     </div>
                     <div>
                         <p>
@@ -85,9 +95,9 @@ Object {
                     </div>
                     <div>
                         <button
-                            class="sc-AykKC iXAcuL"
+                            class="sc-AykKC gcClxH"
                         >
-                            Learn more
+                            Contact Us
                         </button>
                     </div>
                 </div>

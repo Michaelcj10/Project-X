@@ -6,14 +6,176 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKC hqAKqo"
+            class="sc-AykKD eIaJoJ"
         >
             <div
-                class="infographic-block"
+                class="infographic-block container"
             >
                 <div
                     class="row"
                 >
+                    <div
+                        class="twelve columns centered"
+                    >
+                        <h2>
+                            Puca Labs
+                        </h2>
+                        <img />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="sc-AykKC dgFmpk"
+                >
+                    <div
+                        class="row"
+                    >
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div
+                                class="img-block greyed-on-touch"
+                            >
+                                <div>
+                                    <img
+                                        alt="Mobile"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div>
+                                <h2>
+                                    Creative designs
+                                </h2>
+                            </div>
+                            <div>
+                                <p>
+                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="sc-AykKC dgFmpk"
+                >
+                    <div
+                        class="row"
+                    >
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div>
+                                <h2>
+                                    Mobile responsive
+                                </h2>
+                            </div>
+                            <div>
+                                <p>
+                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div
+                                class="img-block greyed-on-touch"
+                            >
+                                <div>
+                                    <img
+                                        alt="Mobile"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="sc-AykKC dgFmpk"
+                >
+                    <div
+                        class="row"
+                    >
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div
+                                class="img-block greyed-on-touch"
+                            >
+                                <div>
+                                    <img
+                                        alt="Mobile"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="one-half column centered padded"
+                        >
+                            <div>
+                                <h2>
+                                    Social integration
+                                </h2>
+                            </div>
+                            <div>
+                                <p>
+                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>,
+  "container": <div>
+    <div
+        class="sc-AykKD eIaJoJ"
+    >
+        <div
+            class="infographic-block container"
+        >
+            <div
+                class="row"
+            >
+                <div
+                    class="twelve columns centered"
+                >
+                    <h2>
+                        Puca Labs
+                    </h2>
+                    <img />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="sc-AykKC dgFmpk"
+            >
+                <div
+                    class="row"
+                >
+                    <div
+                        class="one-half column centered padded"
+                    >
+                        <div
+                            class="img-block greyed-on-touch"
+                        >
+                            <div>
+                                <img
+                                    alt="Mobile"
+                                />
+                            </div>
+                        </div>
+                    </div>
                     <div
                         class="one-half column centered padded"
                     >
@@ -28,32 +190,14 @@ Object {
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="one-half column centered padded"
-                    >
-                        <div
-                            class="img-block greyed-on-touch"
-                        >
-                            <img
-                                alt="Mobile"
-                            />
-                        </div>
-                    </div>
                 </div>
+            </div>
+            <div
+                class="sc-AykKC dgFmpk"
+            >
                 <div
                     class="row"
                 >
-                    <div
-                        class="one-half column centered padded"
-                    >
-                        <div
-                            class="img-block greyed-on-touch"
-                        >
-                            <img
-                                alt="Mobile"
-                            />
-                        </div>
-                    </div>
                     <div
                         class="one-half column centered padded"
                     >
@@ -68,73 +212,53 @@ Object {
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>,
-  "container": <div>
-    <div
-        class="sc-AykKC hqAKqo"
-    >
-        <div
-            class="infographic-block"
-        >
-            <div
-                class="row"
-            >
-                <div
-                    class="one-half column centered padded"
-                >
-                    <div>
-                        <h2>
-                            Creative designs
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
-                        </p>
-                    </div>
-                </div>
-                <div
-                    class="one-half column centered padded"
-                >
                     <div
-                        class="img-block greyed-on-touch"
+                        class="one-half column centered padded"
                     >
-                        <img
-                            alt="Mobile"
-                        />
+                        <div
+                            class="img-block greyed-on-touch"
+                        >
+                            <div>
+                                <img
+                                    alt="Mobile"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div
-                class="row"
+                class="sc-AykKC dgFmpk"
             >
                 <div
-                    class="one-half column centered padded"
+                    class="row"
                 >
                     <div
-                        class="img-block greyed-on-touch"
+                        class="one-half column centered padded"
                     >
-                        <img
-                            alt="Mobile"
-                        />
+                        <div
+                            class="img-block greyed-on-touch"
+                        >
+                            <div>
+                                <img
+                                    alt="Mobile"
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="one-half column centered padded"
-                >
-                    <div>
-                        <h2>
-                            Mobile responsive
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
-                        </p>
+                    <div
+                        class="one-half column centered padded"
+                    >
+                        <div>
+                            <h2>
+                                Social integration
+                            </h2>
+                        </div>
+                        <div>
+                            <p>
+                                We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

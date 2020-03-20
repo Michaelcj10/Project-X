@@ -5,17 +5,21 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+        <div>
+            <img
+                src="Fake Src"
+                alt="Fake alt"
+            />
+        </div>
+    </div>
+</body>,
+  "container": <div>
+    <div>
         <img
             src="Fake Src"
             alt="Fake alt"
         />
     </div>
-</body>,
-  "container": <div>
-    <img
-        src="Fake Src"
-        alt="Fake alt"
-    />
 </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -1,6 +1,6 @@
 import * as React from "react";
 import "../css/skeleton.css";
-import Header from "../components/header/header";
+import Header from "../components/helper/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import About from "../components/about/aboutInfo";
@@ -29,7 +29,12 @@ const GlobalStyle = createGlobalStyle`
   h1{
     font-weight: bold;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 7rem;
+  }
+
+  ::selection {
+    background-color: #3ef8f4;
+    color: #fff;
   }
 
   .centered {
