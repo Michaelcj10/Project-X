@@ -1,12 +1,12 @@
 import * as React from "react";
 // @ts-ignore
 import mobile from "../../images/illustration-1.svg";
-// @ts-ignore
 import mobileSecond from "../../images/illustration-2.svg";
 import mobileThird from "../../images/illustration-3.svg";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
 import phone from "../../images/landing-1.png";
+import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`
   .infographic-block {
@@ -28,7 +28,7 @@ const InfographicStyle = styled.div`
     min-height: 250px;
   }
   .twelve {
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .twelve img {
     max-width: 90%;
@@ -41,13 +41,18 @@ function Infographic() {
       <div className="infographic-block container">
         <div className="row">
           <div className="twelve columns centered">
-            <h2>Puca Labs</h2>
-            <img src={phone} />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue
-              quam, egestas vitae elementum eu, blandit vitae felis. Maecenas
-              lobortis vehicula risus sit amet elementum.
-            </p>
+            <motion.div
+              animate={{ y: 30 }}
+              transition={{ ease: "easeOut", duration: 1.2 }}
+            >
+              <h2>Puca Labs</h2>
+              <img src={phone} />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                augue quam, egestas vitae elementum eu, blandit vitae felis.
+                Maecenas lobortis vehicula risus sit amet elementum.
+              </p>
+            </motion.div>
           </div>
         </div>
         <InfographicBlock
