@@ -1,4 +1,5 @@
 import * as React from "react";
+// import { useState } from "react";
 import styled from "styled-components";
 import landingImg from "../../images/landing-6.png";
 import ButtonSecondary from "../atoms/buttonSecondary";
@@ -29,10 +30,15 @@ const BannerStyle = styled.div`
     font-weight: normal;
     font-size: 1.5rem;
     text-transform: capitalize;
+    width: 90%;
+    color: #3ef8f4;
+    margin: auto;
   }
 `;
 
 function Banner() {
+  //  const [showModal, setModalShowing] = useState(false);
+
   return (
     <BannerStyle>
       <div className="banner">
@@ -41,7 +47,12 @@ function Banner() {
           We can call you! Make it quick and easy to get your site up and
           running.
         </div>
-        <ButtonSecondary text="Request call" />
+        <ButtonSecondary
+          text="Request call"
+          onClick={() => {
+            //      setModalShowing(true);
+          }}
+        />
       </div>
     </BannerStyle>
   );

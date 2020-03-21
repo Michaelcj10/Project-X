@@ -24,10 +24,11 @@ const ButtonStyle = styled.button`
 
 interface Props {
   text: string;
+  onClick: () => void;
 }
 
 function ButtonSecondary(props: Props) {
-  return <ButtonStyle>{props.text}</ButtonStyle>;
+  return <ButtonStyle onClick={props.onClick}>{props.text}</ButtonStyle>;
 }
 
 export default ButtonSecondary;

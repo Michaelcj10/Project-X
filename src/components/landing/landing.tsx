@@ -98,7 +98,7 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <p> Elegant and creative solutions.</p>
+              <p>Elegant and creative solutions to your software needs</p>
             </motion.div>
             <motion.div
               animate={{ y: 80 }}

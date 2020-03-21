@@ -5,6 +5,7 @@ import mobileThird from "../../images/illustration-3.svg";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
 import phone from "../../images/landing-1.png";
+import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`
   margin-top: 25px;
@@ -40,13 +41,29 @@ function Infographic() {
       <div className="infographic-block container">
         <div className="row">
           <div className="twelve columns centered">
-            <h2>What we do</h2>
-            <img src={phone} />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue
-              quam, egestas vitae elementum eu, blandit vitae felis. Maecenas
-              lobortis vehicula risus sit amet elementum.
-            </p>
+            <motion.div
+              animate={{ y: 80 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+            >
+              <h2>What we do</h2>
+            </motion.div>
+            <motion.div
+              animate={{ y: 80 }}
+              transition={{ ease: "easeOut", duration: 1.5 }}
+            >
+              <img src={phone} className="img-block greyed-on-touch" />
+            </motion.div>
+            <motion.div
+              animate={{ y: 80 }}
+              transition={{ ease: "easeOut", duration: 2 }}
+            >
+              <p>
+                <a href="">Test link</a>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                augue quam, egestas vitae elementum eu, blandit vitae felis.
+                Maecenas lobortis vehicula risus sit amet elementum.
+              </p>
+            </motion.div>
           </div>
         </div>
 
@@ -54,7 +71,7 @@ function Infographic() {
           imgSrc={mobile}
           heading={"Creative designs"}
           text={
-            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+            "We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!."
           }
         />
 
@@ -63,7 +80,7 @@ function Infographic() {
           imgSrc={mobileSecond}
           heading={"Mobile responsive"}
           text={
-            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+            "Over 80% of the web is not mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!"
           }
         />
 
@@ -71,7 +88,7 @@ function Infographic() {
           imgSrc={mobileThird}
           heading={"Social integration"}
           text={
-            "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!"
+            "50% of people have a social media count and that rises to 75% of business. We aim to make your website reach as much of the populous as we can by making your site integrate with social media seamlessly."
           }
         />
       </div>

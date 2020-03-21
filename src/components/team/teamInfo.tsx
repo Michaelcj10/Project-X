@@ -44,19 +44,19 @@ const items = [
     text: "Speed",
     icon: <Clock width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam,egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. We gaurentee 90% + web score on Googles own speed measurment tool."
   } as ItemInfo,
   {
     text: "Security",
     icon: <LockAlt width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "Web security is one of our primary goals. Our websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. We pride ourselves on it."
   } as ItemInfo,
   {
     text: "SEO",
     icon: <SearchDollar width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on us!"
   } as ItemInfo
 ];
 

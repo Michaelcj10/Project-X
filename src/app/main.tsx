@@ -4,7 +4,6 @@ import Header from "../components/helper/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import Banner from "../components/banner/banner";
-import About from "../components/about/aboutInfo";
 import { createGlobalStyle } from "styled-components";
 import TeamInfo from "../components/team/teamInfo";
 const GlobalStyle = createGlobalStyle`
@@ -62,6 +61,11 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.5s;
     filter: grayscale(100%);
   }
+  a{
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+  }
 
 `;
 
@@ -71,7 +75,6 @@ function App() {
       <Header />
       <Landing />
       <Infographic />
-      <About />
       <TeamInfo />
       <Banner />
       <GlobalStyle />
