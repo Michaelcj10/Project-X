@@ -30,7 +30,7 @@ const TeamStyle = styled.div`
     margin-bottom: 25px;
   }
   .four {
-    box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+    box-shadow: 0px 18px 39.1px 6.9px rgba(223, 223, 223, 0.34);
     padding-top: 50px;
     margin-top: 50px;
   }
@@ -44,19 +44,19 @@ const items = [
     text: "Speed",
     icon: <Clock width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam,egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "Security",
     icon: <LockAlt width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo,
   {
     text: "SEO",
     icon: <SearchDollar width={75} height={75} color="#3f3d56" />,
     blurb:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum."
   } as ItemInfo
 ];
 

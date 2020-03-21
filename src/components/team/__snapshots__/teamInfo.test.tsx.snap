@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKD kthWIT"
+            class="sc-AykKD hDWZBd"
         >
             <div
                 class="row container"
@@ -37,7 +37,7 @@ Object {
                         Speed
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam,egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                     </p>
                     <img
                         id="dots"
@@ -68,7 +68,7 @@ Object {
                         Security
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                     </p>
                     <img
                         id="dots"
@@ -100,7 +100,7 @@ Object {
                         SEO
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                     </p>
                     <img
                         id="dots"
@@ -112,7 +112,7 @@ Object {
 </body>,
   "container": <div>
     <div
-        class="sc-AykKD kthWIT"
+        class="sc-AykKD hDWZBd"
     >
         <div
             class="row container"
@@ -143,7 +143,7 @@ Object {
                     Speed
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam,egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                 </p>
                 <img
                     id="dots"
@@ -174,7 +174,7 @@ Object {
                     Security
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                 </p>
                 <img
                     id="dots"
@@ -206,7 +206,7 @@ Object {
                     SEO
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
                 </p>
                 <img
                     id="dots"
