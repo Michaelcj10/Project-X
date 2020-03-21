@@ -3,6 +3,7 @@ import "../css/skeleton.css";
 import Header from "../components/helper/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
+import Banner from "../components/banner/banner";
 import About from "../components/about/aboutInfo";
 import { createGlobalStyle } from "styled-components";
 import TeamInfo from "../components/team/teamInfo";
@@ -72,6 +73,7 @@ function App() {
       <Infographic />
       <About />
       <TeamInfo />
+      <Banner />
       <GlobalStyle />
     </div>
   );

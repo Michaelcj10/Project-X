@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
         <div
-            class="sc-AykKD STPUM"
+            class="sc-AykKD lfbKGW"
         >
             <div
                 class="hero-block"
@@ -29,9 +29,7 @@ Object {
                     >
                         <div>
                             <h1>
-                                Elegant & 
-                                <br />
-                                creative solutions.
+                                Púca Labs
                             </h1>
                             <img
                                 id="dots"
@@ -39,7 +37,7 @@ Object {
                         </div>
                         <div>
                             <p>
-                                Website and application development with a difference.
+                                Elegant and creative solutions.
                             </p>
                         </div>
                         <div>
@@ -57,7 +55,7 @@ Object {
 </body>,
   "container": <div>
     <div
-        class="sc-AykKD STPUM"
+        class="sc-AykKD lfbKGW"
     >
         <div
             class="hero-block"
@@ -80,9 +78,7 @@ Object {
                 >
                     <div>
                         <h1>
-                            Elegant & 
-                            <br />
-                            creative solutions.
+                            Púca Labs
                         </h1>
                         <img
                             id="dots"
@@ -90,7 +86,7 @@ Object {
                     </div>
                     <div>
                         <p>
-                            Website and application development with a difference.
+                            Elegant and creative solutions.
                         </p>
                     </div>
                     <div>

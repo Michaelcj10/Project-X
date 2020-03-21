@@ -13,8 +13,8 @@ const LandingStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 700px;
-    height: 90vh;
+    min-height: 500px;
+    height: 85vh;
     width: 100%;
     background-image: url(${landingImg});
     background-repeat: no-repeat;
@@ -91,16 +91,14 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1.5 }}
             >
-              <h1>
-                Elegant & <br /> creative solutions.
-              </h1>
+              <h1>Púca Labs</h1>
               <img id="dots" src={dotsImg} />
             </motion.div>
             <motion.div
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <p>Website and application development with a difference.</p>
+              <p> Elegant and creative solutions.</p>
             </motion.div>
             <motion.div
               animate={{ y: 80 }}

@@ -40,7 +40,7 @@ function Infographic() {
       <div className="infographic-block container">
         <div className="row">
           <div className="twelve columns centered">
-            <h2>Puca Labs</h2>
+            <h2>What we do</h2>
             <img src={phone} />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue
