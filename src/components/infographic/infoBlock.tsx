@@ -1,5 +1,5 @@
 import * as React from "react";
-import ImageLoader from "../atoms/imageLoader";
+import ImageLoader from "../atoms/inputs/imageLoader";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 

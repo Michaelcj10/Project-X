@@ -14,18 +14,19 @@ const ButtonStyle = styled.button`
   font-size: 14px;
 
   &:hover {
-    min-width: 175px;
     border-radius: 10px;
     border: 1px solid #3ef8f4;
+    opacity: 0.7;
   }
 `;
 
 interface Props {
   text: string;
+  type: "button" | "submit" | "reset" | undefined;
 }
 
 function Button(props: Props) {
-  return <ButtonStyle>{props.text}</ButtonStyle>;
+  return <ButtonStyle type={props.type}>{props.text}</ButtonStyle>;
 }
 
 export default Button;

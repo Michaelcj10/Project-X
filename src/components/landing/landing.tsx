@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import Button from "../atoms/button";
+import Button from "../atoms/buttons/button";
 import landingImg from "../../images/landing-2.png";
 import dotsImg from "../../images/landing-4.png";
 import styled from "styled-components";
@@ -104,7 +104,7 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             >
-              <Button text="Contact Us" />
+              <Button type="button" text="Contact Us" />
             </motion.div>
           </div>
         </div>

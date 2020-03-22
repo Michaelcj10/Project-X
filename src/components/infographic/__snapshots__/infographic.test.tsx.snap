@@ -17,13 +17,26 @@ Object {
                     <div
                         class="twelve columns centered"
                     >
-                        <h2>
-                            What we do
-                        </h2>
-                        <img />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
-                        </p>
+                        <div>
+                            <h2>
+                                What we do
+                            </h2>
+                        </div>
+                        <div>
+                            <img
+                                class="img-block greyed-on-touch"
+                            />
+                        </div>
+                        <div>
+                            <p>
+                                <a
+                                    href=""
+                                >
+                                    Test link
+                                </a>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div
@@ -55,7 +68,7 @@ Object {
                             </div>
                             <div>
                                 <p>
-                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                    We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!.
                                 </p>
                                 <div
                                     class="dn-break"
@@ -80,7 +93,7 @@ Object {
                             </div>
                             <div>
                                 <p>
-                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                    Over 80% of the web is not mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!
                                 </p>
                                 <div
                                     class="dn-break"
@@ -131,7 +144,7 @@ Object {
                             </div>
                             <div>
                                 <p>
-                                    We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                    50% of people have a social media count and that rises to 75% of business. We aim to make your website reach as much of the populous as we can by making your site integrate with social media seamlessly.
                                 </p>
                                 <div
                                     class="dn-break"
@@ -157,13 +170,26 @@ Object {
                 <div
                     class="twelve columns centered"
                 >
-                    <h2>
-                        What we do
-                    </h2>
-                    <img />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
-                    </p>
+                    <div>
+                        <h2>
+                            What we do
+                        </h2>
+                    </div>
+                    <div>
+                        <img
+                            class="img-block greyed-on-touch"
+                        />
+                    </div>
+                    <div>
+                        <p>
+                            <a
+                                href=""
+                            >
+                                Test link
+                            </a>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue quam, egestas vitae elementum eu, blandit vitae felis. Maecenas lobortis vehicula risus sit amet elementum.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div
@@ -195,7 +221,7 @@ Object {
                         </div>
                         <div>
                             <p>
-                                We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!.
                             </p>
                             <div
                                 class="dn-break"
@@ -220,7 +246,7 @@ Object {
                         </div>
                         <div>
                             <p>
-                                We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                Over 80% of the web is not mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!
                             </p>
                             <div
                                 class="dn-break"
@@ -271,7 +297,7 @@ Object {
                         </div>
                         <div>
                             <p>
-                                We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, or you just want a personal site to show off your holiday snaps, or wedding photos, we've got you covered!
+                                50% of people have a social media count and that rises to 75% of business. We aim to make your website reach as much of the populous as we can by making your site integrate with social media seamlessly.
                             </p>
                             <div
                                 class="dn-break"

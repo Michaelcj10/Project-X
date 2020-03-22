@@ -6,10 +6,10 @@ describe("<ImageLoader /> spec", () => {
   it("renders the component", () => {
     const container = render(
       <ImageLoader
+        height="200px"
         width={"200px"}
         imgAlt={"Fake alt"}
         imgSrc={"Fake Src"}
-        count={1}
       />
     );
     expect(container).toMatchSnapshot();

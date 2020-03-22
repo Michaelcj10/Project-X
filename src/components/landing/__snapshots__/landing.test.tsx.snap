@@ -37,12 +37,13 @@ Object {
                         </div>
                         <div>
                             <p>
-                                Elegant and creative solutions.
+                                Elegant and creative solutions to your software needs
                             </p>
                         </div>
                         <div>
                             <button
-                                class="sc-AykKC gcClxH"
+                                type="button"
+                                class="sc-AykKC kzCXoT"
                             >
                                 Contact Us
                             </button>
@@ -86,12 +87,13 @@ Object {
                     </div>
                     <div>
                         <p>
-                            Elegant and creative solutions.
+                            Elegant and creative solutions to your software needs
                         </p>
                     </div>
                     <div>
                         <button
-                            class="sc-AykKC gcClxH"
+                            type="button"
+                            class="sc-AykKC kzCXoT"
                         >
                             Contact Us
                         </button>

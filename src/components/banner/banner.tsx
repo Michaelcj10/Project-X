@@ -1,8 +1,12 @@
 import * as React from "react";
-// import { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import landingImg from "../../images/landing-6.png";
-import ButtonSecondary from "../atoms/buttonSecondary";
+import mobile from "../../images/illustration-4.svg";
+import ButtonSecondary from "../atoms/buttons/buttonSecondary";
+import HyperModal from "react-hyper-modal";
+import Input from "../atoms/inputs/input";
+import Button from "../atoms/buttons/button";
 
 const BannerStyle = styled.div`
   margin-top: 100px;
@@ -27,7 +31,6 @@ const BannerStyle = styled.div`
     text-transform: uppercase;
   }
   div:nth-of-type(2) {
-    font-weight: normal;
     font-size: 1.5rem;
     text-transform: capitalize;
     width: 90%;
@@ -35,26 +38,81 @@ const BannerStyle = styled.div`
     margin: auto;
   }
 `;
+const ModalStyle = styled.div`
+  .fullscreen {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 540px;
+    margin: auto;
+    margin-top: 20vh;
+  }
+  .content > * {
+    flex-grow: 1;
+    min-width: 100%;
+    margin-bottom: 25px;
+  }
+  button {
+    width: 100%;
+  }
+  img {
+    min-width: 200px;
+    width: 100%;
+  }
+`;
 
 function Banner() {
-  //  const [showModal, setModalShowing] = useState(false);
+  const [showModal, setModalShowing] = useState(false);
 
   return (
-    <BannerStyle>
-      <div className="banner">
-        <div>Request a call?</div>
-        <div>
-          We can call you! Make it quick and easy to get your site up and
-          running.
+    <div>
+      <BannerStyle>
+        <div className="banner">
+          <div>Request a call?</div>
+          <div>
+            We can call you! Make it quick and easy to get your site up and
+            running.
+          </div>
+          <ButtonSecondary
+            text="Request call"
+            onClick={() => {
+              setModalShowing(true);
+            }}
+          />
         </div>
-        <ButtonSecondary
-          text="Request call"
-          onClick={() => {
-            //      setModalShowing(true);
+      </BannerStyle>
+      <ModalStyle>
+        <HyperModal
+          isFullscreen
+          isOpen={showModal}
+          requestClose={() => {
+            setModalShowing(false);
           }}
-        />
-      </div>
-    </BannerStyle>
+        >
+          <div className="content">
+            <h2>Let's get you online!</h2>
+            <form
+              onSubmit={(e: React.FormEvent) => {
+                e.preventDefault();
+              }}
+            >
+              <Input label="Enter email or phone number" />
+              <br />
+              <Button type="submit" text="Submit" />
+            </form>
+            <img className="greyed-on-touch" src={mobile} />
+          </div>
+        </HyperModal>
+      </ModalStyle>
+    </div>
   );
 }
 

@@ -1,10 +1,10 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
-import Button from "./button";
+import Input from "./input";
 
-describe("<Button /> spec", () => {
+describe("<Input /> spec", () => {
   it("renders the component", () => {
-    const container = render(<Button text="Test" />);
+    const container = render(<Input label="Test" />);
     expect(container).toMatchSnapshot();
   });
 });
