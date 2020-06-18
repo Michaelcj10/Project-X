@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-//TODO remove important and figure why hover styles not workign
+// TODO remove important and figure why hover styles not workign
 const ButtonStyle = styled.button`
   border-radius: 6px;
   min-width: 150px;
@@ -9,16 +9,15 @@ const ButtonStyle = styled.button`
   border: none;
   min-width: 155px;
   background: transparent;
-  border: 1px solid white;
-  color: #fff;
+  border: 1px solid #3f3d56;
+  color: #3f3d56;
   transition: all 0.5s;
   font-size: 14px;
 
   &:hover {
     min-width: 205px;
     border-radius: 10px;
-    color: #3ef8f4;
-    border: 1px solid #3ef8f4;
+    opacity:0.8;
   }
 `;
 

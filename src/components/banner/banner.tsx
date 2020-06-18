@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import landingImg from "../../images/landing-6.png";
 import mobile from "../../images/illustration-4.svg";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
 import HyperModal from "react-hyper-modal";
@@ -12,7 +11,6 @@ const BannerStyle = styled.div`
   margin-top: 100px;
   width: 100%;
   display: table;
-  background-image: url(${landingImg});
   background-position: left;
   height: 250px;
   text-align: center;
@@ -20,10 +18,10 @@ const BannerStyle = styled.div`
   > div {
     display: table-cell;
     vertical-align: middle;
-    color: #fff;
+    color: #3f3d56;
   }
   .banner {
-    background: rgba(65, 34, 142, 0.9);
+    background: #f8f23e;
   }
   div:nth-of-type(1) {
     font-weight: bold;
@@ -34,7 +32,6 @@ const BannerStyle = styled.div`
     font-size: 1.5rem;
     text-transform: capitalize;
     width: 90%;
-    color: #3ef8f4;
     margin: auto;
   }
 `;
@@ -63,10 +60,7 @@ const ModalStyle = styled.div`
   button {
     width: 100%;
   }
-  img {
-    min-width: 200px;
-    width: 100%;
-  }
+
 `;
 
 function Banner() {
@@ -91,7 +85,7 @@ function Banner() {
       </BannerStyle>
       <ModalStyle>
         <HyperModal
-          isFullscreen
+          isFullscreen={true}
           isOpen={showModal}
           requestClose={() => {
             setModalShowing(false);
@@ -101,6 +95,7 @@ function Banner() {
             <h2>Let's get you online!</h2>
             <form
               onSubmit={(e: React.FormEvent) => {
+        
                 e.preventDefault();
               }}
             >

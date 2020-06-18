@@ -2,7 +2,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/buttons/button";
 import landingImg from "../../images/landing-2.png";
-import dotsImg from "../../images/landing-4.png";
+import dotsImg from "../../images/logo.png";
 import styled from "styled-components";
 
 const LandingStyle = styled.div`
@@ -72,6 +72,9 @@ const LandingStyle = styled.div`
     width: 100px;
     margin-bottom: 25px;
   }
+  h1{
+    font-family: cursive;
+  }
 `;
 
 function Landing() {
@@ -91,8 +94,9 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1.5 }}
             >
-              <h1>Púca Labs</h1>
+              <h1>Púca Labs
               <img id="dots" src={dotsImg} />
+              </h1>
             </motion.div>
             <motion.div
               animate={{ y: 80 }}

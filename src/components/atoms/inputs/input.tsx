@@ -123,9 +123,9 @@ function Input(props: Props) {
   return (
     <InputStyle>
       <div className="group">
-        <input type="text" required />
-        <span className="highlight"></span>
-        <span className="bar"></span>
+        <input type="text" required={true} />
+        <span className="highlight" />
+        <span className="bar" />
         <label>{props.label}</label>
       </div>
     </InputStyle>

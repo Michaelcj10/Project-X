@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: #3ef8f4;
+    background-color: #f8f23e;
     color: #fff;
   }
 

@@ -4,7 +4,6 @@ import { Clock } from "styled-icons/fa-regular/Clock";
 import { LockAlt } from "styled-icons/boxicons-solid/LockAlt";
 import { SearchDollar } from "styled-icons/fa-solid/SearchDollar";
 import { motion } from "framer-motion";
-import dotsImg from "../../images/landing-4.png";
 
 interface ItemInfo {
   text: string;
@@ -80,7 +79,6 @@ function TeamInfo() {
               </motion.div>
               <p>{i.text}</p>
               <p>{i.blurb}</p>
-              <img id="dots" src={dotsImg} />
             </div>
           );
         })}

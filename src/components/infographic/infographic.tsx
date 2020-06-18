@@ -1,10 +1,10 @@
 import * as React from "react";
-import mobile from "../../images/illustration-1.svg";
-import mobileSecond from "../../images/illustration-2.svg";
-import mobileThird from "../../images/illustration-3.svg";
+import mobile from "../../images/design-1.png";
+import mobileSecond from "../../images/mobile.png";
+import mobileThird from "../../images/social.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
-import phone from "../../images/landing-1.png";
+import bucket from "../../images/bucket.png";
 import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`
@@ -16,7 +16,9 @@ const InfographicStyle = styled.div`
     transform: rotate(180deg) translateY(2px);
   }
   .infographic-block img {
-    width: 450px;
+    max-width: 270px;
+  }
+  #bucket {
     max-width: 270px;
   }
 
@@ -51,7 +53,7 @@ function Infographic() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1.5 }}
             >
-              <img src={phone} className="img-block greyed-on-touch" />
+              <img src={bucket} id="bucket" className="img-block greyed-on-touch" />
             </motion.div>
             <motion.div
               animate={{ y: 80 }}
@@ -76,7 +78,7 @@ function Infographic() {
         />
 
         <InfographicBlock
-          reverse
+          reverse={true}
           imgSrc={mobileSecond}
           heading={"Mobile responsive"}
           text={
