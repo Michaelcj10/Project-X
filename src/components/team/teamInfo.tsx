@@ -41,19 +41,19 @@ const TeamStyle = styled.div`
 const items = [
   {
     text: "Speed",
-    icon: <Clock width={75} height={75} color="#3f3d56" />,
+    icon: <Clock width={75} height={75} color="#efefef" />,
     blurb:
       "Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. We gaurentee 90% + web score on Googles own speed measurment tool."
   } as ItemInfo,
   {
     text: "Security",
-    icon: <LockAlt width={75} height={75} color="#3f3d56" />,
+    icon: <LockAlt width={75} height={75} color="#efefef" />,
     blurb:
       "Web security is one of our primary goals. Our websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. We pride ourselves on it."
   } as ItemInfo,
   {
     text: "SEO",
-    icon: <SearchDollar width={75} height={75} color="#3f3d56" />,
+    icon: <SearchDollar width={75} height={75} color="#efefef" />,
     blurb:
       "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on us!"
   } as ItemInfo

@@ -8,7 +8,7 @@ import bucket from "../../images/bucket.png";
 import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`
-  margin-top: 25px;
+
   .infographic-block {
     background: #fff;
   }
@@ -47,7 +47,7 @@ function Infographic() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <h2>What we do</h2>
+              <h2>What we do </h2>
             </motion.div>
             <motion.div
               animate={{ y: 80 }}

@@ -23,10 +23,11 @@ const ButtonStyle = styled.button`
 interface Props {
   text: string;
   type: "button" | "submit" | "reset" | undefined;
+  onClick?: () => void;
 }
 
 function Button(props: Props) {
-  return <ButtonStyle type={props.type}>{props.text}</ButtonStyle>;
+  return <ButtonStyle onClick={props.onClick} type={props.type}>{props.text}</ButtonStyle>;
 }
 
 export default Button;

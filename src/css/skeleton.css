@@ -515,7 +515,11 @@ there.
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
+  .four.columns {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 /* Larger than Desktop HD */

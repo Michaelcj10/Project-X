@@ -11,7 +11,7 @@ const InfoBlockStyle = styled.div`
   .dn-break {
     width: 60%;
     margin: auto;
-    height: 2px;
+    height: 4px;
     background: #f8f23e;
   }
 `;

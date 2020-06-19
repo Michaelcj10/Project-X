@@ -2,8 +2,10 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/buttons/button";
 import landingImg from "../../images/landing-2.png";
-import dotsImg from "../../images/logo.png";
+import logo from "../../images/logo.png";
 import styled from "styled-components";
+import { useState } from "react";
+import Modal from "../atoms/modal/modal";
 
 const LandingStyle = styled.div`
   background: #41228e;
@@ -68,18 +70,31 @@ const LandingStyle = styled.div`
   .six:nth-of-type(2) {
     min-height: 300px;
   }
-  #dots {
+  #logo {
     width: 100px;
     margin-bottom: 25px;
+    position: fixed;
+    top: 25px;
+    z-index: 99;
+    border-radius: 50%;
+    left: 25px;
+    box-shadow: 0 6px 10px 0 rgba(21,25,68,.12), 0 8px 16px -12px rgba(21,25,68,.05), 0 4px 8px -3px rgba(21,25,68,.02);
+    background: #e1e1e199;
+    padding: 5px;
+    cursor:pointer;
+    transition: all 0.5s;
   }
-  h1{
-    font-family: cursive;
+  #logo:hover{
+    transform:scale(1.1);
   }
+
 `;
 
 function Landing() {
+  const [showModal, setModalShowing] = useState(false);
   return (
     <LandingStyle>
+              <img id="logo" src={logo} />
       <div className="hero-block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -95,7 +110,6 @@ function Landing() {
               transition={{ ease: "easeOut", duration: 1.5 }}
             >
               <h1>Púca Labs
-              <img id="dots" src={dotsImg} />
               </h1>
             </motion.div>
             <motion.div
@@ -108,11 +122,23 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             >
-              <Button type="button" text="Contact Us" />
+              <Button 
+                  type="button" 
+                  text="Contact Us"
+                  onClick={() => {
+                    setModalShowing(true);
+                  }}
+              />
             </motion.div>
           </div>
         </div>
       </div>
+      <Modal
+            showModal={showModal} 
+            setModalShowing={() => {
+                 setModalShowing(!showModal);
+            }}
+      />
     </LandingStyle>
   );
 }

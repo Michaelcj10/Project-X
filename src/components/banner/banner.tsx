@@ -1,11 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import mobile from "../../images/illustration-4.svg";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
-import HyperModal from "react-hyper-modal";
-import Input from "../atoms/inputs/input";
-import Button from "../atoms/buttons/button";
+import Modal from "../atoms/modal/modal";
 
 const BannerStyle = styled.div`
   margin-top: 100px;
@@ -21,7 +18,7 @@ const BannerStyle = styled.div`
     color: #3f3d56;
   }
   .banner {
-    background: #f8f23e;
+    background: #fbfbfb;
   }
   div:nth-of-type(1) {
     font-weight: bold;
@@ -35,33 +32,6 @@ const BannerStyle = styled.div`
     margin: auto;
   }
 `;
-const ModalStyle = styled.div`
-  .fullscreen {
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-width: 540px;
-    margin: auto;
-    margin-top: 20vh;
-  }
-  .content > * {
-    flex-grow: 1;
-    min-width: 100%;
-    margin-bottom: 25px;
-  }
-  button {
-    width: 100%;
-  }
-
-`;
 
 function Banner() {
   const [showModal, setModalShowing] = useState(false);
@@ -69,6 +39,13 @@ function Banner() {
   return (
     <div>
       <BannerStyle>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fillOpacity="1"
+            d="M0,64L34.3,74.7C68.6,85,137,107,206,112C274.3,117,343,107,411,117.3C480,128,549,160,617,192C685.7,224,754,256,823,245.3C891.4,235,960,181,1029,170.7C1097.1,160,1166,192,1234,197.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          />
+        </svg>
         <div className="banner">
           <div>Request a call?</div>
           <div>
@@ -83,30 +60,13 @@ function Banner() {
           />
         </div>
       </BannerStyle>
-      <ModalStyle>
-        <HyperModal
-          isFullscreen={true}
-          isOpen={showModal}
-          requestClose={() => {
-            setModalShowing(false);
-          }}
-        >
-          <div className="content">
-            <h2>Let's get you online!</h2>
-            <form
-              onSubmit={(e: React.FormEvent) => {
-        
-                e.preventDefault();
-              }}
-            >
-              <Input label="Enter email or phone number" />
-              <br />
-              <Button type="submit" text="Submit" />
-            </form>
-            <img className="greyed-on-touch" src={mobile} />
-          </div>
-        </HyperModal>
-      </ModalStyle>
+            <Modal
+                  showModal={showModal} 
+                  setModalShowing={() => {
+                    setModalShowing(!showModal);
+                  }}
+            />
+
     </div>
   );
 }
