@@ -1,23 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ButtonSecondary /> spec renders the component 1`] = `
+exports[`<Input /> spec renders the component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-        <button
-            class="sc-AykKC jOIRbN"
+        <div
+            class="sc-AykKC bBTZNS"
         >
-            Test
-        </button>
+            <div
+                class="group"
+            >
+                <input
+                    type="text"
+                    required=""
+                />
+                <span
+                    class="highlight"
+                />
+                <span
+                    class="bar"
+                />
+                <label>
+                    Test
+                </label>
+            </div>
+        </div>
     </div>
 </body>,
   "container": <div>
-    <button
-        class="sc-AykKC jOIRbN"
+    <div
+        class="sc-AykKC bBTZNS"
     >
-        Test
-    </button>
+        <div
+            class="group"
+        >
+            <input
+                type="text"
+                required=""
+            />
+            <span
+                class="highlight"
+            />
+            <span
+                class="bar"
+            />
+            <label>
+                Test
+            </label>
+        </div>
+    </div>
 </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

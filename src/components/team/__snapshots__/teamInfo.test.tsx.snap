@@ -23,7 +23,7 @@ Object {
                             focusable="false"
                             fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg"
-                            color="#3f3d56"
+                            color="#efefef"
                             class="sc-AykKC gOjhcY"
                         >
                             <path
@@ -39,9 +39,6 @@ Object {
                     <p>
                         Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. We gaurentee 90% + web score on Googles own speed measurment tool.
                     </p>
-                    <img
-                        id="dots"
-                    />
                 </div>
                 <div
                     class="four columns centered padded"
@@ -55,7 +52,7 @@ Object {
                             focusable="false"
                             fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg"
-                            color="#3f3d56"
+                            color="#efefef"
                             class="sc-AykKC eYrmsm"
                         >
                             <path
@@ -70,9 +67,6 @@ Object {
                     <p>
                         Web security is one of our primary goals. Our websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. We pride ourselves on it.
                     </p>
-                    <img
-                        id="dots"
-                    />
                 </div>
                 <div
                     class="four columns centered padded"
@@ -86,7 +80,7 @@ Object {
                             focusable="false"
                             fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg"
-                            color="#3f3d56"
+                            color="#efefef"
                             class="sc-AykKC gOjhcY"
                         >
                             <path
@@ -102,9 +96,6 @@ Object {
                     <p>
                         We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on us!
                     </p>
-                    <img
-                        id="dots"
-                    />
                 </div>
             </div>
         </div>
@@ -129,7 +120,7 @@ Object {
                         focusable="false"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        color="#3f3d56"
+                        color="#efefef"
                         class="sc-AykKC gOjhcY"
                     >
                         <path
@@ -145,9 +136,6 @@ Object {
                 <p>
                     Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. We gaurentee 90% + web score on Googles own speed measurment tool.
                 </p>
-                <img
-                    id="dots"
-                />
             </div>
             <div
                 class="four columns centered padded"
@@ -161,7 +149,7 @@ Object {
                         focusable="false"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        color="#3f3d56"
+                        color="#efefef"
                         class="sc-AykKC eYrmsm"
                     >
                         <path
@@ -176,9 +164,6 @@ Object {
                 <p>
                     Web security is one of our primary goals. Our websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. We pride ourselves on it.
                 </p>
-                <img
-                    id="dots"
-                />
             </div>
             <div
                 class="four columns centered padded"
@@ -192,7 +177,7 @@ Object {
                         focusable="false"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        color="#3f3d56"
+                        color="#efefef"
                         class="sc-AykKC gOjhcY"
                     >
                         <path
@@ -208,9 +193,6 @@ Object {
                 <p>
                     We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on us!
                 </p>
-                <img
-                    id="dots"
-                />
             </div>
         </div>
     </div>
