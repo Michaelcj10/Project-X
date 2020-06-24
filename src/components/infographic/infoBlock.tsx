@@ -12,7 +12,7 @@ const InfoBlockStyle = styled.div`
     width: 60%;
     margin: auto;
     height: 4px;
-    background: #f8f23e;
+    background: #fff200;
   }
 `;
 

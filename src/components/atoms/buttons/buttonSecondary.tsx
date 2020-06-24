@@ -9,8 +9,8 @@ const ButtonStyle = styled.button`
   border: none;
   min-width: 155px;
   background: transparent;
-  border: 1px solid #3f3d56;
-  color: #3f3d56;
+  border: 1px solid #dde2f4;
+  color: #dde2f4;
   transition: all 0.5s;
   font-size: 14px;
 
@@ -18,6 +18,8 @@ const ButtonStyle = styled.button`
     min-width: 205px;
     border-radius: 10px;
     opacity:0.8;
+    border: 1px solid #fff200;
+    color:#fff200;
   }
 `;
 

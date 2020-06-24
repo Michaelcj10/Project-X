@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HyperModal from "react-hyper-modal";
 import Input from "../../atoms/inputs/input";
 import Button from "../../atoms/buttons/button";
+import close from "../../../images/close.png";
 
 const ModalStyle = styled.div`
 >div{
@@ -12,6 +13,7 @@ const ModalStyle = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background: #23293a;
   }
 
   .content {
@@ -33,6 +35,12 @@ const ModalStyle = styled.div`
     width: 100%;
   }
 
+  h2{
+    color: white;
+  }
+  i{
+    background-image:url(${close})
+  }
 `;
 
 interface Props {
@@ -46,6 +54,7 @@ function Modal(props: Props) {
     <div>
        <ModalStyle>
         <HyperModal
+          
           disableScroll={true}
           closeOnEscClick={true}
           unmountOnClose={true}

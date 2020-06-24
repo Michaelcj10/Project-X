@@ -5,7 +5,7 @@ import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import Banner from "../components/banner/banner";
 import { createGlobalStyle } from "styled-components";
-import TeamInfo from "../components/team/teamInfo";
+import Boxes from "../components/boxes/boxesBlock";
 const GlobalStyle = createGlobalStyle`
 
   .container{
@@ -16,23 +16,24 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    color: #3f3d56;
+    color: #DDE2F4;
     padding-bottom: 300px;
+    background:#23293a;
   }
 
   h2,
   h3 {
     font-weight: bold;
+    color: #fff200;
   }
 
   h1{
     font-weight: bold;
-    color: #fff;
     font-size: 7rem;
   }
 
   ::selection {
-    background-color: #f8f23e;
+    background-color: #fff200;
     color: #fff;
   }
 
@@ -75,7 +76,7 @@ function App() {
       <Header />
       <Landing />
       <Infographic />
-      <TeamInfo />
+      <Boxes />
       <Banner />
       <GlobalStyle />
     </div>

@@ -15,21 +15,23 @@ const BannerStyle = styled.div`
   > div {
     display: table-cell;
     vertical-align: middle;
-    color: #3f3d56;
+
   }
   .banner {
-    background: #fbfbfb;
+    background: #20242f;
   }
   div:nth-of-type(1) {
     font-weight: bold;
     font-size: 3.5rem;
     text-transform: uppercase;
+    color: #fff200;
   }
   div:nth-of-type(2) {
     font-size: 1.5rem;
     text-transform: capitalize;
     width: 90%;
     margin: auto;
+    color: #DDE2F4;
   }
 `;
 

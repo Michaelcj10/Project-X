@@ -19,13 +19,14 @@ const InputStyle = styled.div`
     border-left: none !important;
     border-right: none !important;
     border-bottom: 1px solid #757575;
+    background: transparent;
   }
   input:focus {
     outline: none;
   }
 
   label {
-    color: #3f3d56;
+    color: #fff;
     font-size: 16px;
     font-weight: normal;
     position: absolute;
@@ -41,7 +42,7 @@ const InputStyle = styled.div`
   input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #5264ae;
+    color: #fff200;
   }
 
   .bar {
@@ -57,7 +58,7 @@ const InputStyle = styled.div`
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #5264ae;
+    background: #fff200;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
