@@ -91,7 +91,7 @@ background: #20242f;
   .splat{
     position: absolute;
     right: 0px;
-    top: 0;
+    top: -20;
     opacity: 0.35;
   }
   h1{
@@ -105,8 +105,8 @@ function Landing() {
   return (
     <LandingStyle>
         <motion.div
-              animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 3 }}
+              animate={{ y: 100 }}
+              transition={{ ease: "easeOut", duration: 2.5 }}
         >
             <img src={splat} className="splat" />
         </motion.div>
