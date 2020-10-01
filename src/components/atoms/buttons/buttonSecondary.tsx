@@ -8,18 +8,17 @@ const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   min-width: 155px;
-  background: transparent;
-  border: 1px solid #dde2f4;
-  color: #dde2f4;
+  background: #c33bd9;
+  border: 1px solid #c33bd9;
+
+  color: #fff;
   transition: all 0.5s;
   font-size: 14px;
 
   &:hover {
-    min-width: 205px;
     border-radius: 10px;
-    opacity:0.8;
-    border: 1px solid #fff200;
-    color:#fff200;
+    opacity: 0.8;
+    color: #ffffff;
   }
 `;
 

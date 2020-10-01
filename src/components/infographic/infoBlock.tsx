@@ -21,6 +21,7 @@ interface Props {
   text: string;
   heading: string;
   reverse?: boolean;
+  breakColor: string;
 }
 
 function InfographicBlock(props: Props) {
@@ -37,7 +38,7 @@ function InfographicBlock(props: Props) {
         transition={{ ease: "easeOut", duration: 1.6 }}
       >
         <p>{props.text}</p>
-        <div className="dn-break" />
+        <div className="dn-break" style={{ background: props.breakColor }} />
       </motion.div>
     </div>
   );

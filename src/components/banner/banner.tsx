@@ -5,7 +5,6 @@ import ButtonSecondary from "../atoms/buttons/buttonSecondary";
 import Modal from "../atoms/modal/modal";
 
 const BannerStyle = styled.div`
-  margin-top: 100px;
   width: 100%;
   display: table;
   background-position: left;
@@ -15,23 +14,20 @@ const BannerStyle = styled.div`
   > div {
     display: table-cell;
     vertical-align: middle;
-
   }
   .banner {
-    background: #20242f;
+    background: #fff;
   }
   div:nth-of-type(1) {
     font-weight: bold;
     font-size: 3.5rem;
-    text-transform: uppercase;
-    color: #fff200;
   }
   div:nth-of-type(2) {
     font-size: 1.5rem;
     text-transform: capitalize;
+    font-weight: normal;
     width: 90%;
     margin: auto;
-    color: #DDE2F4;
   }
 `;
 
@@ -41,7 +37,7 @@ function Banner() {
   return (
     <div>
       <BannerStyle>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff"
             fillOpacity="1"
@@ -62,13 +58,12 @@ function Banner() {
           />
         </div>
       </BannerStyle>
-            <Modal
-                  showModal={showModal} 
-                  setModalShowing={() => {
-                    setModalShowing(!showModal);
-                  }}
-            />
-
+      <Modal
+        showModal={showModal}
+        setModalShowing={() => {
+          setModalShowing(!showModal);
+        }}
+      />
     </div>
   );
 }
