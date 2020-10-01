@@ -8,8 +8,9 @@ const ButtonStyle = styled.button`
   border: none;
   min-width: 155px;
   transition: all 0.5s;
-  background: rgb(40 44 52);
-  font-size: 14px;
+
+  background: rgb(195 59 217);
+  font-size: 16px;
   color: #fff;
 
   @media only screen and (max-width: 660px) {
