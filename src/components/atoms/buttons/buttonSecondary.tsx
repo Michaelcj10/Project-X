@@ -8,17 +8,16 @@ const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   min-width: 155px;
-  background: #c33bd9;
-  border: 1px solid #c33bd9;
-
-  color: #fff;
+  background: #9ffb68;
   transition: all 0.5s;
   font-size: 14px;
 
   &:hover {
-    border-radius: 10px;
     opacity: 0.8;
-    color: #ffffff;
+  }
+
+  @media only screen and (max-width: 660px) {
+    width: 90%;
   }
 `;
 

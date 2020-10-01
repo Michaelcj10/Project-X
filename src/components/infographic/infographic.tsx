@@ -60,7 +60,7 @@ function Infographic() {
           transition={{ ease: "easeOut", duration: 2 }}
         >
           <InfographicBlock
-            breakColor="#fff100"
+            breakColor="rgb(255 0 127);"
             imgSrc={mobile}
             heading={"Creative designs"}
             text={
@@ -74,7 +74,7 @@ function Infographic() {
           transition={{ ease: "easeOut", duration: 2 }}
         >
           <InfographicBlock
-            breakColor="#5f86ff"
+            breakColor="rgb(195 59 217)"
             reverse={true}
             imgSrc={mobileSecond}
             heading={"Mobile responsive"}
