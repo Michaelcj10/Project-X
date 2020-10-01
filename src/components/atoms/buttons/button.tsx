@@ -7,15 +7,17 @@ const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   min-width: 155px;
-  background: rgb(255 241 0);
   transition: all 0.5s;
+  background: rgb(40 44 52);
   font-size: 14px;
+  color: #fff;
 
   @media only screen and (max-width: 660px) {
     width: 90%;
   }
 
   &:hover {
+    color: #fff;
     opacity: 0.8;
   }
 `;

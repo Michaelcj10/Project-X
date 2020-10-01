@@ -1,5 +1,5 @@
 import * as React from "react";
-import mobile from "../../images/design-1.png";
+import mobile from "../../images/spl2.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
 import blob from "../../images/shapes-pink-2.png";

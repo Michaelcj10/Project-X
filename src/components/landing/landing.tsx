@@ -23,6 +23,7 @@ const LandingStyle = styled.div`
     background-image: url(${landingImg});
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
   }
 
   .hero-block p {
