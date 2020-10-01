@@ -7,8 +7,7 @@ const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   min-width: 155px;
-  background: rgb(255 0 127);
-  color: #fff;
+  background: rgb(255 241 0);
   transition: all 0.5s;
   font-size: 14px;
 
@@ -17,7 +16,6 @@ const ButtonStyle = styled.button`
   }
 
   &:hover {
-    color: #fff;
     opacity: 0.8;
   }
 `;
