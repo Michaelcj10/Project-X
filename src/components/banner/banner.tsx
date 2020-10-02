@@ -25,9 +25,9 @@ const BannerStyle = styled.div`
   div:nth-of-type(2) {
     font-size: 1.5rem;
     text-transform: capitalize;
-    font-weight: normal;
     width: 90%;
     margin: auto;
+    font-weight: bold;
   }
 `;
 
