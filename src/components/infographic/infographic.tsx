@@ -13,7 +13,8 @@ const InfographicStyle = styled.div`
   background: #fff;
 
   .infographic-block {
-    background: rgba(255, 255, 255, 0.7);
+    padding-top: 40px;
+    background: #fff;
   }
   .infographic-block svg:nth-of-type(1) {
     transform: rotate(180deg) translateY(2px);
@@ -55,6 +56,7 @@ function Infographic() {
     <InfographicStyle>
       <div className="infographic-block container">
         <img className="blob" src={blob} alt="blob" />
+
         <motion.div
           animate={{ y: 80 }}
           transition={{ ease: "easeOut", duration: 2 }}

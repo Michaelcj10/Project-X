@@ -4,6 +4,8 @@ import Header from "../components/helper/header";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import Banner from "../components/banner/banner";
+import About from "../components/about/about";
+import Bottom from "../components/bottom/section";
 import { createGlobalStyle } from "styled-components";
 import Boxes from "../components/boxes/boxesBlock";
 const GlobalStyle = createGlobalStyle`
@@ -60,10 +62,7 @@ const GlobalStyle = createGlobalStyle`
   .greyed-on-touch{
     transition: all 0.5s;
   }
-  .greyed-on-touch:hover{
-    transition: all 0.5s;
-    filter: grayscale(100%);
-  }
+
   a{
     font-weight: bold;
     margin-right: 10px;
@@ -80,6 +79,8 @@ function App() {
       <Infographic />
       <Boxes />
       <Banner />
+      <About />
+      <Bottom />
       <GlobalStyle />
     </div>
   );

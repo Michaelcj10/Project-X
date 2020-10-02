@@ -16,7 +16,7 @@ const BannerStyle = styled.div`
     vertical-align: middle;
   }
   .banner {
-    background: #fff;
+    background: ghostwhite;
   }
   div:nth-of-type(1) {
     font-weight: bold;
