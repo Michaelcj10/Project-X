@@ -17,6 +17,7 @@ const BannerStyle = styled.div`
   }
   .banner {
     background: ghostwhite;
+    border: 1px solid #eaeaea;
   }
   div:nth-of-type(1) {
     font-weight: bold;

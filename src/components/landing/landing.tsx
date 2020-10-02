@@ -66,7 +66,6 @@ const LandingStyle = styled.div`
     box-shadow: 0 6px 10px 0 rgba(21, 25, 68, 0.12),
       0 8px 16px -12px rgba(21, 25, 68, 0.05),
       0 4px 8px -3px rgba(21, 25, 68, 0.02);
-    background: #e1e1e199;
     padding: 5px;
     cursor: pointer;
     transition: all 0.5s;

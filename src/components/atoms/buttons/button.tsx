@@ -2,7 +2,6 @@ import * as React from "react";
 import styled from "styled-components";
 
 const ButtonStyle = styled.button`
-  border-radius: 6px;
   min-width: 150px;
   height: 50px;
   border: none;

@@ -69,6 +69,9 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  button{
+    border-radius: 40px 31px 48px 51px;
+  }
 `;
 
 function App() {

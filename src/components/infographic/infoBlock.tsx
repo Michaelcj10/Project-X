@@ -1,6 +1,5 @@
 import * as React from "react";
 import ImageLoader from "../atoms/inputs/imageLoader";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const InfoBlockStyle = styled.div`
@@ -27,19 +26,9 @@ interface Props {
 function InfographicBlock(props: Props) {
   const textContent = (
     <div className="one-half column centered padded">
-      <motion.div
-        animate={{ y: 50 }}
-        transition={{ ease: "easeOut", duration: 1.4 }}
-      >
-        <h2>{props.heading}</h2>
-      </motion.div>
-      <motion.div
-        animate={{ y: 30 }}
-        transition={{ ease: "easeOut", duration: 1.6 }}
-      >
-        <p>{props.text}</p>
-        <div className="dn-break" style={{ background: props.breakColor }} />
-      </motion.div>
+      <h2>{props.heading}</h2>
+      <p>{props.text}</p>
+      <div className="dn-break" style={{ background: props.breakColor }} />
     </div>
   );
   const imgContent = (

@@ -14,7 +14,7 @@ interface ItemInfo {
 const BoxesStyle = styled.div`
   .row {
     text-align: center;
-    padding: 25px;
+    padding: 100px 25px;
     background: #fff;
   }
 
@@ -33,6 +33,7 @@ const BoxesStyle = styled.div`
   }
   img {
     width: 55px;
+    height: 65px;
     padding: 0px;
   }
 `;
