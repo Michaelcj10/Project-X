@@ -1,29 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
-import landingImg from "../../images/blue.png";
+import landingImg from "../../images/splash.png";
 
 const InfographicStyle = styled.div`
   background: #fff;
-  padding-top: 50px;
+  padding-top: 100px;
 `;
 
 const Block = styled.div`
-  padding: 50px 0px 100px 0px;
-  background: #fff;
+  padding: 50px 0px 0px 0px;
+
   background-image: url(${landingImg});
   background-repeat: no-repeat;
 
   .twelve {
     text-align: center;
-    border-radius: 40px 31px 48px 51px;
-    background: #ffffffeb;
-    padding-top: 50px;
-  }
-  .dn-break {
-    width: 35%;
-    margin: auto;
-    height: 4px;
-    background: rgb(255 0 127);
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
 `;
 
@@ -53,7 +46,6 @@ function About() {
               applications and we only ever use up to date technologies and
               design patterns.
             </SubTitle>
-            <div className="dn-break" />
           </div>
         </div>
       </Block>

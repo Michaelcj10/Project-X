@@ -8,16 +8,13 @@ const InfographicStyle = styled.div`
   background: #fffcfc;
   padding: 100px 30px;
 
-  .infographic-block {
-    margin-top: -100px;
-  }
-
   .twelve {
     text-align: center;
   }
 
   img {
     max-width: 100%;
+    position: absolute;
   }
 
   input {
