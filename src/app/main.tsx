@@ -5,13 +5,18 @@ import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
 import Banner from "../components/banner/banner";
 import About from "../components/about/about";
-import Bottom from "../components/bottom/section";
+import Form from "../components/contact/form";
 import { createGlobalStyle } from "styled-components";
 import Boxes from "../components/boxes/boxesBlock";
 const GlobalStyle = createGlobalStyle`
 
   .container{
     max-width: 1167px;
+    margin: auto;
+  }
+
+  .container-half{
+    max-width: 600px;
     margin: auto;
   }
 
@@ -58,20 +63,6 @@ const GlobalStyle = createGlobalStyle`
   .padded {
     padding: 0px 25px;
   }
-
-  .greyed-on-touch{
-    transition: all 0.5s;
-  }
-
-  a{
-    font-weight: bold;
-    margin-right: 10px;
-    text-decoration: none;
-  }
-
-  button{
-    border-radius: 40px 31px 48px 51px;
-  }
 `;
 
 function App() {
@@ -83,7 +74,7 @@ function App() {
       <Boxes />
       <Banner />
       <About />
-      <Bottom />
+      <Form />
       <GlobalStyle />
     </div>
   );

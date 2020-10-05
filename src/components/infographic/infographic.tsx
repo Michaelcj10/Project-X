@@ -22,43 +22,31 @@ const InfographicStyle = styled.div`
     width: 350px;
     max-width: 90%;
   }
-  #bucket {
-    max-width: 270px;
-  }
-
   .infographic-block .columns {
     position: relative;
   }
-  .img-block {
-    margin-top: 50px;
-  }
-  .twelve {
-    margin-bottom: 50px;
-  }
-  .twelve img {
-    max-width: 90%;
-  }
-  .blob {
-    position: absolute;
-    top: -20px;
-    z-index: 999;
-  }
-  .green {
-    height: 300px;
-    margin-top: -165px;
-    max-width: 90%;
-  }
-
   @media only screen and (max-width: 660px) {
     margin-top: 0px;
   }
+`;
+
+const ShapeImg = styled.img`
+  position: absolute;
+  top: -20px;
+  z-index: 999;
+`;
+
+const BlobImg = styled.img`
+  height: 300px;
+  margin-top: -165px;
+  max-width: 90%;
 `;
 
 function Infographic() {
   return (
     <InfographicStyle>
       <div className="infographic-block container">
-        <img className="blob" src={blob} alt="blob" />
+        <ShapeImg src={blob} alt="blob" />
 
         <InfographicBlock
           breakColor="rgb(255 0 127)"
@@ -88,7 +76,7 @@ function Infographic() {
           }
         />
       </div>
-      <img className="green" src={green} />
+      <BlobImg src={green} />
     </InfographicStyle>
   );
 }

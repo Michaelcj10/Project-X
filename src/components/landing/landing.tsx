@@ -11,37 +11,38 @@ import Modal from "../atoms/modal/modal";
 const LandingStyle = styled.div`
   background: #fff;
   border-radius: 4px;
-  .hero-block {
-    text-align: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 500px;
-    height: 100vh;
-    width: 100%;
-    background-image: url(${landingImg});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  }
+`;
 
-  .hero-block p {
+const Hero = styled.div`
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(${landingImg});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  p {
     font-weight: bold;
     font-size: 2rem;
     color: #282c34;
   }
 
-  .hero-block .row {
+  .row {
     display: table-cell;
     vertical-align: middle;
   }
 
-  .hero-block .columns {
+  .columns {
     position: relative;
   }
 
-  .hero-block img {
+  img {
     width: 300px;
     max-width: 90%;
   }
@@ -49,39 +50,36 @@ const LandingStyle = styled.div`
     min-height: 300px;
     margin-top: -70px;
   }
-  .six:nth-of-type(1) {
-    margin-top: -50px;
-  }
-  .six:nth-of-type(2) {
-    min-height: 300px;
-  }
-  #logo {
-    width: 100px;
-    margin-bottom: 25px;
-    position: fixed;
-    top: 25px;
-    z-index: 99;
-    border-radius: 50%;
-    left: 25px;
-    box-shadow: 0 6px 10px 0 rgba(21, 25, 68, 0.12),
-      0 8px 16px -12px rgba(21, 25, 68, 0.05),
-      0 4px 8px -3px rgba(21, 25, 68, 0.02);
-    padding: 5px;
-    cursor: pointer;
-    transition: all 0.5s;
-  }
-  #logo:hover {
-    transform: scale(1.1);
-  }
-  .splat {
-    position: absolute;
-    right: 0px;
-    top: -20;
-    opacity: 0.35;
-  }
+
   h1 {
     font-size: 9rem;
     color: #282c34;
+  }
+`;
+
+const Splat = styled.img`
+  position: absolute;
+  right: 0px;
+  top: -20;
+  opacity: 0.35;
+`;
+
+const Logo = styled.img`
+  width: 100px;
+  margin-bottom: 25px;
+  position: fixed;
+  top: 25px;
+  z-index: 99;
+  border-radius: 50%;
+  left: 25px;
+  box-shadow: 0 6px 10px 0 rgba(21, 25, 68, 0.12),
+    0 8px 16px -12px rgba(21, 25, 68, 0.05),
+    0 4px 8px -3px rgba(21, 25, 68, 0.02);
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
   }
 `;
 
@@ -93,16 +91,15 @@ function Landing() {
         animate={{ y: 100 }}
         transition={{ ease: "easeOut", duration: 2.5 }}
       >
-        <img src={splat} className="splat" />
+        <Splat src={splat} />
       </motion.div>
-      <img
-        id="logo"
+      <Logo
         src={logo}
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       />
-      <div className="hero-block">
+      <Hero>
         <div className="row">
           <div className="twelve columns centered">
             <motion.div
@@ -131,7 +128,7 @@ function Landing() {
             </motion.div>
           </div>
         </div>
-      </div>
+      </Hero>
       <Modal
         showModal={showModal}
         setModalShowing={() => {

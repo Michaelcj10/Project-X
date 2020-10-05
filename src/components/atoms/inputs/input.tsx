@@ -18,7 +18,7 @@ const InputStyle = styled.div`
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #41465a;
     background: transparent;
   }
   input:focus {
@@ -26,7 +26,6 @@ const InputStyle = styled.div`
   }
 
   label {
-    color: #fff;
     font-size: 16px;
     font-weight: normal;
     position: absolute;
@@ -42,7 +41,7 @@ const InputStyle = styled.div`
   input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #fff200;
+    color: #222;
   }
 
   .bar {
@@ -58,7 +57,7 @@ const InputStyle = styled.div`
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #fff200;
+    background: #222;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;

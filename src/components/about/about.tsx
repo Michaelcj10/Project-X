@@ -5,13 +5,13 @@ import landingImg from "../../images/blue.png";
 const InfographicStyle = styled.div`
   background: #fff;
   padding-top: 50px;
+`;
 
-  .infographic-block {
-    padding: 50px 0px 100px 0px;
-    background: #fff;
-    background-image: url(${landingImg});
-    background-repeat: no-repeat;
-  }
+const Block = styled.div`
+  padding: 50px 0px 100px 0px;
+  background: #fff;
+  background-image: url(${landingImg});
+  background-repeat: no-repeat;
 
   .twelve {
     text-align: center;
@@ -23,7 +23,7 @@ const InfographicStyle = styled.div`
     width: 35%;
     margin: auto;
     height: 4px;
-    background: rgb(0 127 255);
+    background: rgb(255 0 127);
   }
 `;
 
@@ -38,7 +38,7 @@ const SubTitle = styled.p`
 function About() {
   return (
     <InfographicStyle>
-      <div className="infographic-block container">
+      <Block className="container">
         <div className="row">
           <div className="twelve">
             <h2>About us</h2>
@@ -56,7 +56,7 @@ function About() {
             <div className="dn-break" />
           </div>
         </div>
-      </div>
+      </Block>
     </InfographicStyle>
   );
 }

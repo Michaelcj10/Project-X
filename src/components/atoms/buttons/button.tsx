@@ -7,7 +7,7 @@ const ButtonStyle = styled.button`
   border: none;
   min-width: 155px;
   transition: all 0.5s;
-
+  border-radius: 40px 31px 48px 51px;
   background: rgb(195 59 217);
   font-size: 16px;
   color: #fff;
