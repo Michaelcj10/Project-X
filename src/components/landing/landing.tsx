@@ -5,8 +5,6 @@ import landingImg from "../../images/shapes-green.png";
 import splat from "../../images/splat.svg";
 import logo from "../../images/logo.png";
 import styled from "styled-components";
-import { useState } from "react";
-import Modal from "../atoms/modal/modal";
 
 const LandingStyle = styled.div`
   background: #fff;
@@ -84,7 +82,6 @@ const Logo = styled.img`
 `;
 
 function Landing() {
-  const [showModal, setModalShowing] = useState(false);
   return (
     <LandingStyle>
       <motion.div
@@ -122,19 +119,13 @@ function Landing() {
                 type="button"
                 text="Contact Us"
                 onClick={() => {
-                  setModalShowing(true);
+                  console.log("sdgfsdfgd");
                 }}
               />
             </motion.div>
           </div>
         </div>
       </Hero>
-      <Modal
-        showModal={showModal}
-        setModalShowing={() => {
-          setModalShowing(!showModal);
-        }}
-      />
     </LandingStyle>
   );
 }

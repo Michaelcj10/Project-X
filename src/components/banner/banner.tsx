@@ -1,8 +1,6 @@
 import * as React from "react";
-import { useState } from "react";
 import styled from "styled-components";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
-import Modal from "../atoms/modal/modal";
 
 const BannerStyle = styled.div`
   width: 100%;
@@ -33,8 +31,6 @@ const BannerStyle = styled.div`
 `;
 
 function Banner() {
-  const [showModal, setModalShowing] = useState(false);
-
   return (
     <div>
       <BannerStyle>
@@ -54,17 +50,11 @@ function Banner() {
           <ButtonSecondary
             text="Request call"
             onClick={() => {
-              setModalShowing(true);
+              console.log("!sdfsdf");
             }}
           />
         </div>
       </BannerStyle>
-      <Modal
-        showModal={showModal}
-        setModalShowing={() => {
-          setModalShowing(!showModal);
-        }}
-      />
     </div>
   );
 }

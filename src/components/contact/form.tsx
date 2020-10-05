@@ -29,6 +29,10 @@ const BlobImg = styled.img`
   height: 300px;
   margin-top: -165px;
   max-width: 90%;
+
+  @media only screen and (max-width: 660px) {
+    opacity: 0.5;
+  }
 `;
 
 function Form() {
