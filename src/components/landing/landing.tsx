@@ -115,13 +115,7 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 0.5 }}
             >
-              <Button
-                type="button"
-                text="Contact Us"
-                onClick={() => {
-                  console.log("sdgfsdfgd");
-                }}
-              />
+              <Button type="button" text="Contact Us" />
             </motion.div>
           </div>
         </div>

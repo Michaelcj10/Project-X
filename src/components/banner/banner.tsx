@@ -47,12 +47,7 @@ function Banner() {
             We can call you! Make it quick and easy to get your site up and
             running.
           </div>
-          <ButtonSecondary
-            text="Request call"
-            onClick={() => {
-              console.log("!sdfsdf");
-            }}
-          />
+          <ButtonSecondary text="Request call" />
         </div>
       </BannerStyle>
     </div>
