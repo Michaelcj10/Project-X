@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const ButtonStyle = styled.button`
   min-width: 150px;
@@ -18,7 +19,11 @@ const ButtonStyle = styled.button`
 
   &:hover {
     color: #fff;
-    opacity: 0.8;
+    border-radius: 24px 13px 22px 36px;
+  }
+  &:active,
+  &:focus {
+    color: #fff;
   }
 `;
 
@@ -30,9 +35,15 @@ interface Props {
 
 function Button(props: Props) {
   return (
-    <ButtonStyle onClick={props.onClick} type={props.type}>
-      {props.text}
-    </ButtonStyle>
+    <motion.div
+      whileTap={{ scale: 0.9 }}
+      animate={{ y: 80 }}
+      transition={{ ease: "easeOut", duration: 0.8 }}
+    >
+      <ButtonStyle onClick={props.onClick} type={props.type}>
+        {props.text}
+      </ButtonStyle>
+    </motion.div>
   );
 }
 

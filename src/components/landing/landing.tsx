@@ -27,7 +27,7 @@ const Hero = styled.div`
 
   p {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1em;
     color: #282c34;
   }
 
@@ -90,6 +90,7 @@ function Landing() {
       >
         <Splat src={splat} />
       </motion.div>
+
       <Logo
         src={logo}
         onClick={() => {
@@ -109,11 +110,16 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <p>Elegant and creative solutions to your software needs</p>
+              <p>
+                We aim to create elegant and creative solutions to your software
+                needs
+              </p>
             </motion.div>
+
             <motion.div
-              animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 0.5 }}
+              whileTap={{ scale: 0.9 }}
+              animate={{ y: 60 }}
+              transition={{ ease: "easeOut", duration: 1 }}
             >
               <Button type="button" text="Contact Us" />
             </motion.div>

@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
+import { motion } from "framer-motion";
 
 const BannerStyle = styled.div`
   width: 100%;
@@ -47,7 +48,12 @@ function Banner() {
             We can call you! Make it quick and easy to get your site up and
             running.
           </div>
-          <ButtonSecondary text="Request call" />
+          <motion.div
+            whileTap={{ scale: 0.9 }}
+            transition={{ ease: "easeOut", duration: 0.8 }}
+          >
+            <ButtonSecondary text="Request call" />
+          </motion.div>
         </div>
       </BannerStyle>
     </div>

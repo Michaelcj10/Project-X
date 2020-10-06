@@ -21,6 +21,7 @@ const InfographicStyle = styled.div`
   .infographic-block img {
     width: 350px;
     max-width: 90%;
+    margin-top: 20px;
   }
   .infographic-block .columns {
     position: relative;
@@ -63,7 +64,7 @@ function Infographic() {
           imgSrc={mobileSecond}
           heading={"Mobile responsive"}
           text={
-            "Over 80% of the web is not mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!"
+            "Over 80% of the web is now mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!"
           }
         />
 

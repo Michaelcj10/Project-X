@@ -6,6 +6,7 @@ import Infographic from "../components/infographic/infographic";
 import Banner from "../components/banner/banner";
 import About from "../components/about/about";
 import Form from "../components/contact/form";
+import SiteFooter from "../components/footer/siteFooter";
 import { createGlobalStyle } from "styled-components";
 import Boxes from "../components/boxes/boxesBlock";
 const GlobalStyle = createGlobalStyle`
@@ -23,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
     width: 90vw;
     margin: auto;
     margin-top: 3vw;
@@ -63,6 +63,10 @@ const GlobalStyle = createGlobalStyle`
   .padded {
     padding: 0px 25px;
   }
+
+  button{
+    outline: none;
+  }
 `;
 
 function App() {
@@ -75,6 +79,7 @@ function App() {
       <Banner />
       <About />
       <Form />
+      <SiteFooter />
       <GlobalStyle />
     </div>
   );

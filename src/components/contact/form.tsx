@@ -3,10 +3,11 @@ import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
 import green from "../../images/green.png";
+import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`
   background: #fffcfc;
-  padding: 100px 30px;
+  padding: 100px 30px 0px;
 
   .twelve {
     text-align: center;
@@ -42,7 +43,13 @@ function Form() {
           <div className="twelve">
             <Input label="Enter email or phone number" />
             <Input label="Your message here" />
-            <ButtonSecondary fullWidth={true} type="submit" text="Submit" />
+
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              transition={{ ease: "easeOut", duration: 0.8 }}
+            >
+              <ButtonSecondary fullWidth={true} type="submit" text="Submit" />
+            </motion.div>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const ButtonStyle = styled.button`
   font-size: 16px;
   border-radius: 40px 31px 48px 51px;
   &:hover {
-    opacity: 0.8;
+    border-radius: 24px 13px 22px 36px;
   }
 
   @media only screen and (max-width: 660px) {
