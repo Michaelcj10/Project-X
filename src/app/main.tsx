@@ -1,15 +1,12 @@
 import * as React from "react";
 import "../css/skeleton.css";
-import Header from "../components/helper/header";
-import Landing from "../components/landing/landing";
-import Infographic from "../components/infographic/infographic";
-import Banner from "../components/banner/banner";
-import About from "../components/about/about";
-import Form from "../components/contact/form";
-import SiteFooter from "../components/footer/siteFooter";
+import Home from "./home";
+import Blog from "./blog";
+import Policy from "./policy";
 import { createGlobalStyle } from "styled-components";
-import Boxes from "../components/boxes/boxesBlock";
-const GlobalStyle = createGlobalStyle`
+import { Switch, Route } from "react-router-dom";
+
+export const GlobalStyle = createGlobalStyle`
 
   .container{
     max-width: 1167px;
@@ -67,15 +64,11 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <div>
-      <Header />
-      <Landing />
-      <Infographic />
-      <Boxes />
-      <Banner />
-      <About />
-      <Form />
-      <SiteFooter />
-      <GlobalStyle />
+      <Switch>
+        <Route exact={true} path="/" component={Home} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/policy" component={Policy} />
+      </Switch>
     </div>
   );
 }

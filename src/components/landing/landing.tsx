@@ -1,10 +1,12 @@
 import * as React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../atoms/buttons/button";
 import landingImg from "../../images/shapes-green.png";
 import splat from "../../images/splat.svg";
 import logo from "../../images/logo.png";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LandingStyle = styled.div`
   background: #fff;
@@ -81,31 +83,49 @@ const Logo = styled.img`
   }
 `;
 
-const Link = styled.div`
+const SharedLink = styled(Link)`
   font-weight: bold;
   cursor: pointer;
-
-  border-radius: 20px;
-  padding: 8px;
-  border-radius: 40px 31px 48px 51px;
   transition: all 0.5s;
+  border-radius: 40px 31px 48px 51px;
+  font-size: 16px;
+  padding: 8px;
+  text-decoration: none;
+
   &:hover {
-    border-radius: 24px 13px 22px 36px;
-    background: #007fff;
+    color: #fff;
   }
 `;
 
 const Blog = styled.div`
   margin-right: 8px;
-  > div {
-    background: rgb(195 59 217);
-    color: #ffffff;
+  border-radius: 24px 13px 22px 36px;
+  background: rgb(195 59 217);
+  color: #fff;
+  color: #fff;
+  transition: all 0.5s;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    background: rgb(255 0 127);
+    color: #fff;
   }
 `;
 const Policy = styled.div`
-  > div {
-    background: #ff007f;
-    color: #ffffff;
+  background: #32eb91;
+  border-radius: 24px 13px 22px 36px;
+  color: #fff;
+  transition: all 0.5s;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    background: #007fff;
+
+    a {
+      color: #fff;
+    }
   }
 `;
 const HeaderLinks = styled.div`
@@ -114,8 +134,16 @@ const HeaderLinks = styled.div`
   top: 15px;
   right: 20px;
   transition: all 0.5s;
+  padding-bottom: 5px;
+  border-radius: 24px 13px 22px 36px;
+
+  &:hover {
+    border-bottom: 2px solid #a0fc69;
+  }
 `;
 function Landing() {
+  const [underline, setUnderline] = useState<string>("#fff100");
+
   return (
     <LandingStyle>
       <motion.div
@@ -132,13 +160,20 @@ function Landing() {
         }}
       />
       <Hero>
-        <HeaderLinks>
+        <HeaderLinks style={{ borderBottom: `2px solid ${underline}` }}>
           <motion.div
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Blog>
-              <Link>Blog</Link>
+            <Blog
+              onMouseEnter={() => {
+                setUnderline("rgb(255 0 127)");
+              }}
+              onMouseLeave={() => {
+                setUnderline("#00ffff");
+              }}
+            >
+              <SharedLink to="/blog">Blog</SharedLink>
             </Blog>
           </motion.div>
 
@@ -146,8 +181,15 @@ function Landing() {
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Policy>
-              <Link>Policy</Link>
+            <Policy
+              onMouseEnter={() => {
+                setUnderline("#007fff");
+              }}
+              onMouseLeave={() => {
+                setUnderline("#00ffff");
+              }}
+            >
+              <SharedLink to="/policy">Policy</SharedLink>
             </Policy>
           </motion.div>
         </HeaderLinks>
