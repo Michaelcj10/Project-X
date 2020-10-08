@@ -41,11 +41,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10rem;
   }
 
-  ::selection {
-    background-color: #0ff;
-    color: #fff;
-  }
-
   .centered {
     text-align: center;
   }

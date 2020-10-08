@@ -2,6 +2,7 @@ import * as React from "react";
 import mobile from "../../images/spl2.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
+import purple from "../../images/purple.png";
 import blob from "../../images/shapes-pink-2.png";
 import green from "../../images/green.png";
 import styled from "styled-components";
@@ -52,17 +53,17 @@ function Infographic() {
         <InfographicBlock
           breakColor="rgb(255 0 127)"
           imgSrc={mobile}
-          heading={"Creative designs"}
+          heading={"What we do"}
           text={
-            "We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!."
+            "We make custom, dynamic websites for a range of customers from a small or personal business to larger enterprises. We aim for a personal and communicative experience where customer satisfaction is key."
           }
         />
 
         <InfographicBlock
-          breakColor="rgb(195 59 217)"
+          breakColor="rgb(95 134 255)"
           reverse={true}
           imgSrc={mobileSecond}
-          heading={"Mobile responsive"}
+          heading={"Mobile first"}
           text={
             "Over 80% of the web is now mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!"
           }
@@ -74,6 +75,16 @@ function Infographic() {
           heading={"Social integration"}
           text={
             "50% of people have a social media count and that rises to 75% of business. We aim to make your website reach as much of the populous as we can by making your site integrate with social media seamlessly."
+          }
+        />
+
+        <InfographicBlock
+          breakColor="rgb(95 0 191)"
+          imgSrc={purple}
+          reverse={true}
+          heading={"Creative designs"}
+          text={
+            "We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!."
           }
         />
       </div>

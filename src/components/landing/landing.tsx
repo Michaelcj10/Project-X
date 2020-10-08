@@ -81,6 +81,40 @@ const Logo = styled.img`
   }
 `;
 
+const Link = styled.div`
+  font-weight: bold;
+  cursor: pointer;
+
+  border-radius: 20px;
+  padding: 8px;
+  border-radius: 40px 31px 48px 51px;
+  transition: all 0.5s;
+  &:hover {
+    border-radius: 24px 13px 22px 36px;
+    background: #007fff;
+  }
+`;
+
+const Blog = styled.div`
+  margin-right: 8px;
+  > div {
+    background: rgb(195 59 217);
+    color: #ffffff;
+  }
+`;
+const Policy = styled.div`
+  > div {
+    background: #ff007f;
+    color: #ffffff;
+  }
+`;
+const HeaderLinks = styled.div`
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  transition: all 0.5s;
+`;
 function Landing() {
   return (
     <LandingStyle>
@@ -98,6 +132,26 @@ function Landing() {
         }}
       />
       <Hero>
+        <HeaderLinks>
+          <motion.div
+            whileTap={{ scale: 0.8 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
+            <Blog>
+              <Link>Blog</Link>
+            </Blog>
+          </motion.div>
+
+          <motion.div
+            whileTap={{ scale: 0.8 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
+            <Policy>
+              <Link>Policy</Link>
+            </Policy>
+          </motion.div>
+        </HeaderLinks>
+
         <div className="row">
           <div className="twelve columns centered">
             <motion.div
