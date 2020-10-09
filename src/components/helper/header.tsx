@@ -41,7 +41,7 @@ const Blog = styled.div`
   color: #fff;
   transition: all 0.5s;
   &:hover {
-    background: rgb(95, 134, 255);
+    background: #e1e1e1;
   }
   a {
     color: #fff;
@@ -54,7 +54,7 @@ const Policy = styled.div`
   transition: all 0.5s;
 
   &:hover {
-    background: rgb(95, 134, 255);
+    background: #e1e1e1;
   }
   a {
     color: #fff;
@@ -70,7 +70,7 @@ const Home = styled.div`
     color: #fff;
   }
   &:hover {
-    background: rgb(95, 134, 255);
+    background: #e1e1e1;
   }
   &:hover {
     a {
