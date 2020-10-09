@@ -41,7 +41,7 @@ const InputStyle = styled.div`
   input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #222;
+    color: #ff007f;
   }
 
   .bar {
@@ -57,7 +57,7 @@ const InputStyle = styled.div`
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #222;
+    background: #ff007f;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;

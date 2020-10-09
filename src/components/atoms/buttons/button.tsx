@@ -9,21 +9,18 @@ const ButtonStyle = styled.button`
   min-width: 155px;
   transition: all 0.5s;
   border-radius: 40px 31px 48px 51px;
-  background: rgb(195 59 217);
+  background: rgb(255 241 0);
   font-size: 16px;
-  color: #fff;
 
   @media only screen and (max-width: 660px) {
     width: 90%;
   }
 
   &:hover {
-    color: #fff;
     border-radius: 24px 13px 22px 36px;
   }
   &:active,
   &:focus {
-    color: #fff;
   }
 `;
 

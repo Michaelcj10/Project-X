@@ -33,7 +33,7 @@ function Policy() {
     <CardStyle>
       <Card>
         <Header defaultUnderlineColor="#32eb91" />
-        <div className="row">
+        <div className="row container">
           <div className="twelve columns centered">
             <motion.div
               animate={{ y: 80 }}
