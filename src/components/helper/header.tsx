@@ -32,10 +32,6 @@ const SharedLink = styled(Link)`
   font-size: 16px;
   padding: 8px;
   text-decoration: none;
-
-  &:hover {
-    color: #fff;
-  }
 `;
 
 const Blog = styled.div`
@@ -43,13 +39,11 @@ const Blog = styled.div`
   border-radius: 24px 13px 22px 36px;
   background: rgb(195 59 217);
   color: #fff;
-  color: #fff;
   transition: all 0.5s;
-  a {
-    color: #fff;
-  }
   &:hover {
-    background: rgb(255 0 127);
+    background: rgb(95, 134, 255);
+  }
+  a {
     color: #fff;
   }
 `;
@@ -58,15 +52,12 @@ const Policy = styled.div`
   border-radius: 24px 13px 22px 36px;
   color: #fff;
   transition: all 0.5s;
+
+  &:hover {
+    background: rgb(95, 134, 255);
+  }
   a {
     color: #fff;
-  }
-  &:hover {
-    background: #007fff;
-
-    a {
-      color: #fff;
-    }
   }
 `;
 const Home = styled.div`
@@ -79,8 +70,9 @@ const Home = styled.div`
     color: #fff;
   }
   &:hover {
-    background: #ff7f00;
-
+    background: rgb(95, 134, 255);
+  }
+  &:hover {
     a {
       color: #fff;
     }
@@ -95,13 +87,16 @@ const HeaderLinks = styled.div`
   padding-bottom: 5px;
   border-radius: 24px 13px 22px 36px;
   z-index: 1;
-  &:hover {
-    border-bottom: 2px solid #a0fc69;
-  }
 `;
 
-function Header() {
-  const [underline, setUnderline] = useState<string>("#fff100");
+interface Props {
+  defaultUnderlineColor: string;
+}
+
+function Header(props: Props) {
+  const [underline, setUnderline] = useState<string>(
+    props.defaultUnderlineColor
+  );
   return (
     <>
       <HeaderStyle>
@@ -113,17 +108,14 @@ function Header() {
           }}
         />
 
-        <HeaderLinks style={{ borderBottom: `2px solid ${underline}` }}>
+        <HeaderLinks style={{ borderBottom: `4px solid ${underline}` }}>
           <motion.div
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <Home
-              onMouseEnter={() => {
-                setUnderline("#ff7f00");
-              }}
               onMouseLeave={() => {
-                setUnderline("#00ffff");
+                setUnderline(props.defaultUnderlineColor);
               }}
             >
               <SharedLink to="/">Home</SharedLink>
@@ -134,11 +126,8 @@ function Header() {
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <Blog
-              onMouseEnter={() => {
-                setUnderline("rgb(255 0 127)");
-              }}
               onMouseLeave={() => {
-                setUnderline("#00ffff");
+                setUnderline(props.defaultUnderlineColor);
               }}
             >
               <SharedLink to="/blog">Blog</SharedLink>
@@ -150,11 +139,8 @@ function Header() {
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <Policy
-              onMouseEnter={() => {
-                setUnderline("#007fff");
-              }}
               onMouseLeave={() => {
-                setUnderline("#00ffff");
+                setUnderline(props.defaultUnderlineColor);
               }}
             >
               <SharedLink to="/policy">Policy</SharedLink>

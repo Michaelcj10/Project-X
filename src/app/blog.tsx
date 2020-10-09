@@ -7,7 +7,7 @@ import { Card } from "../components/helper/mainCard";
 function Blog() {
   return (
     <Card>
-      <Header />
+      <Header defaultUnderlineColor="rgb(195 59 217)" />
       <GlobalStyle />
     </Card>
   );
