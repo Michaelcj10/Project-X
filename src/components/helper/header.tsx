@@ -81,7 +81,7 @@ const Home = styled.div`
 const HeaderLinks = styled.div`
   display: flex;
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 15px;
   transition: all 0.5s;
   padding-bottom: 5px;
