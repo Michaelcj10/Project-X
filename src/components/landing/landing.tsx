@@ -54,6 +54,9 @@ const Hero = styled.div`
     font-size: 9rem;
     color: #282c34;
   }
+  @media only screen and (max-width: 660px) {
+    background: transparent;
+  }
 `;
 
 const Splat = styled.img`

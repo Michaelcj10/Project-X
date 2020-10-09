@@ -44,7 +44,7 @@ function Policy() {
 
             <motion.div
               animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 1.4 }}
+              transition={{ ease: "easeOut", duration: 2.4 }}
             >
               <InfographicBlock
                 breakColor="rgb(91 255 194)"
