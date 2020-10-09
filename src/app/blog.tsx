@@ -2,14 +2,14 @@ import * as React from "react";
 import "../css/skeleton.css";
 import Header from "../components/helper/header";
 import { GlobalStyle } from "./main";
+import { Card } from "../components/helper/mainCard";
 
 function Blog() {
   return (
-    <div>
+    <Card>
       <Header />
-      <h1>blog</h1>
       <GlobalStyle />
-    </div>
+    </Card>
   );
 }
 
