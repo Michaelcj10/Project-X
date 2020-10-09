@@ -8,7 +8,6 @@ const HeaderStyle = styled.header``;
 
 const Logo = styled.img`
   margin-bottom: 25px;
-  width: 100px;
   position: fixed;
   top: 25px;
   z-index: 99;
@@ -22,10 +21,6 @@ const Logo = styled.img`
   transition: all 0.5s;
   &:hover {
     transform: scale(1.1);
-  }
-
-  @media only screen and (max-width: 660px) {
-    width: 60px;
   }
 `;
 
@@ -106,6 +101,7 @@ function Header(props: Props) {
     <>
       <HeaderStyle>
         <Logo
+          style={{ width: "100px" }}
           src={logo}
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
