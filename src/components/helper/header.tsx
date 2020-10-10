@@ -45,7 +45,7 @@ const SharedLink = styled(Link)`
 const Blog = styled.div`
   margin-right: 8px;
   border-radius: 24px 13px 22px 36px;
-  background: #5f86ff;
+  background: #c33bd9;
   color: #fff;
   transition: all 0.5s;
   &:hover {
@@ -56,7 +56,7 @@ const Blog = styled.div`
   }
 `;
 const Policy = styled.div`
-  background: #5f86ff;
+  background: #c33bd9;
   border-radius: 24px 13px 22px 36px;
   color: #fff;
   transition: all 0.5s;
@@ -69,7 +69,7 @@ const Policy = styled.div`
   }
 `;
 const Home = styled.div`
-  background: #5f86ff;
+  background: #c33bd9;
   margin-right: 8px;
   border-radius: 24px 13px 22px 36px;
   color: #fff;
@@ -104,7 +104,7 @@ function Header() {
           }}
         />
 
-        <HeaderLinks style={{ borderBottom: `4px solid #5f86ff` }}>
+        <HeaderLinks style={{ borderBottom: `4px solid #c33bd9` }}>
           <motion.div
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
