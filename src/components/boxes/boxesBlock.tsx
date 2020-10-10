@@ -31,7 +31,6 @@ const BoxesStyle = styled.div`
     padding: 15px;
     transition: all 0.5s;
     background: #fffcfc;
-    font-family: Roboto-Bold;
   }
 
   #dots {
