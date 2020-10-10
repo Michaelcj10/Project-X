@@ -9,24 +9,31 @@ interface ItemInfo {
   icon: React.ReactNode;
   blurb: string;
   border: string;
+  background: string;
 }
 
 const BoxesStyle = styled.div`
   .row {
     text-align: center;
-    padding: 100px 25px;
+    padding: 100px 25px 0px;
     background: #fff;
   }
 
   p:nth-of-type(1) {
-    font-weight: bold;
+    font-family: Roboto-Bold;
     margin-bottom: 0px;
     font-size: 1.6em;
   }
   p:nth-of-type(2) {
     margin-top: 10px;
+    border-radius: 40px 31px 48px 51px;
     font-size: 16px;
+    padding: 15px;
+    transition: all 0.5s;
+    background: #fffcfc;
+    font-family: Roboto-Bold;
   }
+
   #dots {
     width: 100px;
     margin-bottom: 25px;

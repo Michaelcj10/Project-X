@@ -26,16 +26,18 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 3vw;
     box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
     background: #f1f1f161;
+
+    font-family: Roboto;
   }
 
   h2,
   h3 {
-    font-weight: bold;
+    font-family: Roboto-Bold;
   }
 
   h1{
-    font-weight: bold;
-    font-size: 10rem;
+    font-family: Roboto-Bold;
+    font-size: 9rem;
   }
 
   .centered {

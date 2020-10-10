@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import ButtonSecondary from "../atoms/buttons/buttonSecondary";
-import green from "../../images/green.png";
+import green from "../../images/shapes-green.png";
 import { motion } from "framer-motion";
 
 const InfographicStyle = styled.div`

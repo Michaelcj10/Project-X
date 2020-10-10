@@ -11,7 +11,7 @@ const InfoBlockStyle = styled.div`
     width: 60%;
     margin: auto;
     height: 4px;
-    background: #fff200;
+    background: rgb(34 34 34);
   }
 `;
 
@@ -20,7 +20,6 @@ interface Props {
   text: string;
   heading: string;
   reverse?: boolean;
-  breakColor: string;
 }
 
 function InfographicBlock(props: Props) {
@@ -28,7 +27,7 @@ function InfographicBlock(props: Props) {
     <div className="one-half column centered padded">
       <h2>{props.heading}</h2>
       <p>{props.text}</p>
-      <div className="dn-break" style={{ background: props.breakColor }} />
+      <div className="dn-break" />
     </div>
   );
   const imgContent = (

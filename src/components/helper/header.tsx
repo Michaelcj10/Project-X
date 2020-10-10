@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.png";
 import { useState } from "react";
+import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 const HeaderStyle = styled.header``;
 
@@ -13,6 +13,7 @@ const Logo = styled.img`
   z-index: 99;
   border-radius: 50%;
   left: 25px;
+  width: 100px;
   box-shadow: 0 6px 10px 0 rgba(21, 25, 68, 0.12),
     0 8px 16px -12px rgba(21, 25, 68, 0.05),
     0 4px 8px -3px rgba(21, 25, 68, 0.02);
@@ -21,6 +22,10 @@ const Logo = styled.img`
   transition: all 0.5s;
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media only screen and (max-width: 660px) {
+    width: 65px;
   }
 `;
 
@@ -41,7 +46,7 @@ const Blog = styled.div`
   color: #fff;
   transition: all 0.5s;
   &:hover {
-    background: #e1e1e1;
+    opacity: 0.8;
   }
   a {
     color: #fff;
@@ -54,7 +59,7 @@ const Policy = styled.div`
   transition: all 0.5s;
 
   &:hover {
-    background: #e1e1e1;
+    opacity: 0.8;
   }
   a {
     color: #fff;
@@ -70,7 +75,7 @@ const Home = styled.div`
     color: #fff;
   }
   &:hover {
-    background: #e1e1e1;
+    opacity: 0.8;
   }
   &:hover {
     a {
@@ -101,7 +106,6 @@ function Header(props: Props) {
     <>
       <HeaderStyle>
         <Logo
-          style={{ width: "100px" }}
           src={logo}
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
@@ -138,11 +142,7 @@ function Header(props: Props) {
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Policy
-              onMouseLeave={() => {
-                setUnderline(props.defaultUnderlineColor);
-              }}
-            >
+            <Policy>
               <SharedLink to="/policy">Policy</SharedLink>
             </Policy>
           </motion.div>

@@ -2,7 +2,6 @@ import * as React from "react";
 import "../css/skeleton.css";
 import Landing from "../components/landing/landing";
 import Infographic from "../components/infographic/infographic";
-import Banner from "../components/banner/banner";
 import About from "../components/about/about";
 import Form from "../components/contact/form";
 import SiteFooter from "../components/footer/siteFooter";
@@ -15,7 +14,6 @@ function Home() {
       <Landing />
       <Infographic />
       <Boxes />
-      <Banner />
       <About />
       <Form />
       <SiteFooter />

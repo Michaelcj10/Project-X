@@ -27,8 +27,7 @@ const Hero = styled.div`
   background-attachment: fixed;
 
   p {
-    font-weight: bold;
-    font-size: 1em;
+    font-size: 1.4em;
     color: #282c34;
   }
 

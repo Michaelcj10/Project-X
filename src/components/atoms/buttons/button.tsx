@@ -9,7 +9,7 @@ const ButtonStyle = styled.button`
   min-width: 155px;
   transition: all 0.5s;
   border-radius: 40px 31px 48px 51px;
-
+  font-family: Roboto-Bold;
   background: rgb(195 59 217);
   font-size: 16px;
   color: #fff;
@@ -19,9 +19,11 @@ const ButtonStyle = styled.button`
 
   &:hover {
     border-radius: 24px 13px 22px 36px;
+    color: #fff;
   }
   &:active,
   &:focus {
+    color: #fff;
   }
 `;
 

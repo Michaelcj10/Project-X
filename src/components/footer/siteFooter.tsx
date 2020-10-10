@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import fb from "../../images/fb.png";
 import ln from "../../images/ln.png";
+import { Link } from "react-router-dom";
 
 const InfographicStyle = styled.div`
   margin: auto;
@@ -30,6 +31,31 @@ const SocialIcon = styled.img`
     transform: scale(1.1);
   }
 `;
+const Links = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const SiteLink = styled(Link)`
+  font-size: 16px;
+  font-family: Roboto-Bold;
+  color: #222222;
+  text-decoration: none;
+
+  &:hover {
+    color: #222222;
+  }
+`;
+
+const Pipes = styled.div`
+  color: #a0fc69;
+  font-size: 27px;
+`;
+
+const Company = styled.div`
+  font-size: 16px;
+  font-family: Roboto-Bold;
+`;
 
 function SiteFooter() {
   return (
@@ -37,9 +63,15 @@ function SiteFooter() {
       <Middle>
         <div className="row">
           <div className="twelve columns centered">
-            <h2>Follow us</h2>
+            <h2>You found our footer..</h2>
             <SocialIcon style={{ width: "60px" }} src={fb} alt="facebook" />
             <SocialIcon style={{ width: "80px" }} src={ln} alt="linkedin" />
+            <Links>
+              <SiteLink to="/policy">Privacy policy</SiteLink>
+              <Pipes>||</Pipes>
+              <SiteLink to="/blog">Blog</SiteLink>
+            </Links>
+            <Company>&copy; Púca Labs 2020</Company>
           </div>
         </div>
       </Middle>

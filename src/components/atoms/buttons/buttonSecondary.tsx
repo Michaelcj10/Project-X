@@ -10,6 +10,7 @@ const ButtonStyle = styled.button`
   transition: all 0.5s;
   font-size: 16px;
   border-radius: 40px 31px 48px 51px;
+  font-family: Roboto-Bold;
   &:hover {
     border-radius: 24px 13px 22px 36px;
   }

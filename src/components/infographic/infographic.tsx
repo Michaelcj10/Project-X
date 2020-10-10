@@ -2,11 +2,17 @@ import * as React from "react";
 import mobile from "../../images/spl2.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
-import purple from "../../images/purple.png";
+import purple from "../../images/pad.png";
 import blob from "../../images/shapes-pink-2.png";
 import green from "../../images/green.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
+
+const ShapeImg = styled.img`
+  position: absolute;
+  top: -20px;
+  z-index: 999;
+`;
 
 const InfographicStyle = styled.div`
   margin-top: -100px;
@@ -32,12 +38,6 @@ const InfographicStyle = styled.div`
   }
 `;
 
-const ShapeImg = styled.img`
-  position: absolute;
-  top: -20px;
-  z-index: 999;
-`;
-
 const BlobImg = styled.img`
   height: 300px;
   margin-top: -165px;
@@ -48,10 +48,9 @@ function Infographic() {
   return (
     <InfographicStyle>
       <div className="infographic-block container">
-        <ShapeImg src={blob} alt="blob" />
+        <ShapeImg style={{ width: "220px" }} src={blob} alt="blob" />
 
         <InfographicBlock
-          breakColor="rgb(255 0 127)"
           imgSrc={mobile}
           heading={"What we do"}
           text={
@@ -60,7 +59,6 @@ function Infographic() {
         />
 
         <InfographicBlock
-          breakColor="rgb(95 134 255)"
           reverse={true}
           imgSrc={mobileSecond}
           heading={"Mobile first"}
@@ -70,7 +68,6 @@ function Infographic() {
         />
 
         <InfographicBlock
-          breakColor="rgb(159 251 104)"
           imgSrc={mobileThird}
           heading={"Social integration"}
           text={
@@ -79,7 +76,6 @@ function Infographic() {
         />
 
         <InfographicBlock
-          breakColor="rgb(95 0 191)"
           imgSrc={purple}
           reverse={true}
           heading={"Creative designs"}
