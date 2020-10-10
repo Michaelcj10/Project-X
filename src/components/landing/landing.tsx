@@ -68,7 +68,7 @@ const Splat = styled.img`
 function Landing() {
   return (
     <LandingStyle>
-      <Header defaultUnderlineColor="#ff007f" />
+      <Header />
 
       <motion.div
         animate={{ y: 100 }}

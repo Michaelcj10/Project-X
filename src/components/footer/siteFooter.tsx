@@ -8,7 +8,7 @@ const InfographicStyle = styled.div`
   margin: auto;
   text-align: center;
   background: #fffcfc;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 100%;
   position: relative;
 `;

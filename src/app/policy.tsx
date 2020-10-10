@@ -38,7 +38,7 @@ function Policy() {
   return (
     <CardStyle>
       <Card>
-        <Header defaultUnderlineColor="#32eb91" />
+        <Header />
         <div className="row wrap">
           <div className="twelve columns centered">
             <motion.div

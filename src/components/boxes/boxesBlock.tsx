@@ -26,11 +26,9 @@ const BoxesStyle = styled.div`
   }
   p:nth-of-type(2) {
     margin-top: 10px;
-    border-radius: 40px 31px 48px 51px;
     font-size: 16px;
     padding: 15px;
     transition: all 0.5s;
-    background: #fffcfc;
   }
 
   #dots {
@@ -41,6 +39,11 @@ const BoxesStyle = styled.div`
     width: 55px;
     height: 65px;
     padding: 0px;
+  }
+  .four {
+    border-radius: 40px 31px 48px 51px;
+    background: #fffcfc;
+    padding: 15px;
   }
 `;
 

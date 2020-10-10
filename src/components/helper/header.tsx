@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 const HeaderStyle = styled.header``;
@@ -30,19 +29,23 @@ const Logo = styled.img`
 `;
 
 const SharedLink = styled(Link)`
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.5s;
   border-radius: 40px 31px 48px 51px;
   font-size: 16px;
   padding: 8px;
   text-decoration: none;
+  font-family: Roboto-Bold;
+
+  a {
+    color: #fff;
+  }
 `;
 
 const Blog = styled.div`
   margin-right: 8px;
   border-radius: 24px 13px 22px 36px;
-  background: rgb(195 59 217);
+  background: #5f86ff;
   color: #fff;
   transition: all 0.5s;
   &:hover {
@@ -53,7 +56,7 @@ const Blog = styled.div`
   }
 `;
 const Policy = styled.div`
-  background: #32eb91;
+  background: #5f86ff;
   border-radius: 24px 13px 22px 36px;
   color: #fff;
   transition: all 0.5s;
@@ -66,21 +69,17 @@ const Policy = styled.div`
   }
 `;
 const Home = styled.div`
-  background: #ff007f;
+  background: #5f86ff;
   margin-right: 8px;
   border-radius: 24px 13px 22px 36px;
   color: #fff;
   transition: all 0.5s;
-  a {
-    color: #fff;
-  }
+
   &:hover {
     opacity: 0.8;
   }
-  &:hover {
-    a {
-      color: #fff;
-    }
+  a {
+    color: #fff;
   }
 `;
 const HeaderLinks = styled.div`
@@ -94,14 +93,7 @@ const HeaderLinks = styled.div`
   z-index: 1;
 `;
 
-interface Props {
-  defaultUnderlineColor: string;
-}
-
-function Header(props: Props) {
-  const [underline, setUnderline] = useState<string>(
-    props.defaultUnderlineColor
-  );
+function Header() {
   return (
     <>
       <HeaderStyle>
@@ -112,16 +104,12 @@ function Header(props: Props) {
           }}
         />
 
-        <HeaderLinks style={{ borderBottom: `4px solid ${underline}` }}>
+        <HeaderLinks style={{ borderBottom: `4px solid #5f86ff` }}>
           <motion.div
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Home
-              onMouseLeave={() => {
-                setUnderline(props.defaultUnderlineColor);
-              }}
-            >
+            <Home>
               <SharedLink to="/">Home</SharedLink>
             </Home>
           </motion.div>
@@ -129,11 +117,7 @@ function Header(props: Props) {
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Blog
-              onMouseLeave={() => {
-                setUnderline(props.defaultUnderlineColor);
-              }}
-            >
+            <Blog>
               <SharedLink to="/blog">Blog</SharedLink>
             </Blog>
           </motion.div>
