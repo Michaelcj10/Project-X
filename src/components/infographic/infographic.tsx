@@ -1,5 +1,5 @@
 import * as React from "react";
-import blob from "../../images/shapes-pink-2.png";
+import blob from "../../images/g.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
 import purple from "../../images/pad.png";
@@ -48,7 +48,7 @@ function Infographic() {
   return (
     <InfographicStyle>
       <div className="infographic-block container">
-        <ShapeImg style={{ width: "290px" }} src={blob} alt="blob" />
+        <ShapeImg style={{ width: "220px" }} src={blob} alt="blob" />
 
         <InfographicBlock
           imgSrc={mobile}
