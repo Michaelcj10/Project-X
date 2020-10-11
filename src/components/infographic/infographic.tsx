@@ -3,7 +3,7 @@ import blob from "../../images/shapes-pink-2.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
 import purple from "../../images/pad.png";
-import mobile from "../../images/spl.png";
+import mobile from "../../images/purple.png";
 import green from "../../images/green.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
