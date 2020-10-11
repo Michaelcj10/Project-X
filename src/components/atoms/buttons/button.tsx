@@ -12,6 +12,7 @@ const ButtonStyle = styled.button`
   font-family: Roboto-Bold;
   background: #ff007f;
   background: linear-gradient(to right, rgb(248, 87, 166), rgb(255, 88, 88));
+  background: rgb(195 59 217);
   font-size: 16px;
   color: #fff;
   @media only screen and (max-width: 660px) {
