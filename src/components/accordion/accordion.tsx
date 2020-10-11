@@ -64,13 +64,20 @@ const AccordionStyle = styled.div`
   }
 `;
 
-export const Accordion = ({ i, expanded, setExpanded, heading, text }) => {
+export const Accordion = ({
+  i,
+  expanded,
+  setExpanded,
+  heading,
+  text,
+  activeColor,
+}) => {
   const isOpen = i === expanded;
   return (
     <AccordionStyle>
       <motion.header
         initial={false}
-        animate={{ backgroundColor: isOpen ? "#fff100" : "#fff" }}
+        animate={{ backgroundColor: isOpen ? activeColor : "#fff" }}
         onClick={() => setExpanded(isOpen ? false : i)}
       >
         {heading}

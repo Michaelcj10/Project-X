@@ -45,6 +45,11 @@ const CardStyle = styled.div`
     margin-top: 150px;
     padding-bottom: 200px;
   }
+  p {
+    background: #ffffffdb;
+    border-radius: 40px 31px 48px 51px;
+    padding: 15px;
+  }
 `;
 
 function Policy() {
@@ -85,6 +90,7 @@ function Policy() {
                 expanded={expanded}
                 setExpanded={setExpanded}
                 i={1}
+                activeColor="#00ffff"
               />
               <Accordion
                 heading="Stored info"
@@ -97,6 +103,7 @@ function Policy() {
                 expanded={expanded}
                 setExpanded={setExpanded}
                 i={2}
+                activeColor="#a0fc69"
               />
               <Accordion
                 heading="Cookies"
@@ -109,6 +116,7 @@ function Policy() {
                 expanded={expanded}
                 setExpanded={setExpanded}
                 i={3}
+                activeColor="#fff200"
               />
             </div>
           </div>
