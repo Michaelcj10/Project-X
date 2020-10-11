@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Accordion } from "../components/accordion/accordion";
 import { useState } from "react";
-
+import SiteFooter from "../components/footer/siteFooter";
 const CardStyle = styled.div`
   .row {
     padding: 10px 10px;
@@ -16,8 +16,6 @@ const CardStyle = styled.div`
     align-items: baseline;
     height: auto;
     text-align: left;
-    padding-bottom: 200px;
-    margin-bottom: 100px;
   }
 
   .dn-break {
@@ -107,6 +105,7 @@ function Policy() {
         </div>
         <GlobalStyle />
       </Card>
+      <SiteFooter />
     </CardStyle>
   );
 }
