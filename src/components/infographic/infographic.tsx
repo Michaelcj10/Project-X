@@ -1,9 +1,9 @@
 import * as React from "react";
-import mobile from "../../images/black.png";
+import blob from "../../images/shapes-pink-2.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
 import purple from "../../images/pad.png";
-import blob from "../../images/sp.png";
+import mobile from "../../images/spl.png";
 import green from "../../images/green.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
@@ -39,7 +39,7 @@ const InfographicStyle = styled.div`
 `;
 
 const BlobImg = styled.img`
-  height: 300px;
+  height: 220px;
   margin-top: -165px;
   max-width: 90%;
 `;
