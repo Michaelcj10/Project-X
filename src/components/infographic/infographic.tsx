@@ -1,9 +1,9 @@
 import * as React from "react";
-import mobile from "../../images/spl2.png";
+import mobile from "../../images/black.png";
 import mobileSecond from "../../images/mobile.png";
 import mobileThird from "../../images/social.png";
 import purple from "../../images/pad.png";
-import blob from "../../images/shapes-pink-2.png";
+import blob from "../../images/sp.png";
 import green from "../../images/green.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
@@ -48,7 +48,7 @@ function Infographic() {
   return (
     <InfographicStyle>
       <div className="infographic-block container">
-        <ShapeImg style={{ width: "220px" }} src={blob} alt="blob" />
+        <ShapeImg style={{ width: "290px" }} src={blob} alt="blob" />
 
         <InfographicBlock
           imgSrc={mobile}

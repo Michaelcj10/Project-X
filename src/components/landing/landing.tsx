@@ -26,6 +26,10 @@ const Hero = styled.div`
   background-position: center;
   background-attachment: fixed;
 
+  @media only screen and (max-width: 660px) {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
   p {
     font-size: 1.4em;
     color: #282c34;

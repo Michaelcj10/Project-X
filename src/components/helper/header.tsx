@@ -44,22 +44,46 @@ const SharedLink = styled(Link)`
 `;
 
 const Blog = styled.div`
-  margin-right: 8px;
-
   a {
     color: #282c34;
+  }
+  border-bottom: 3px solid #282c34;
+
+  &:hover {
+    border-bottom: 3px solid #fff100;
+
+    a {
+      color: #fff100;
+    }
   }
 `;
 const Policy = styled.div`
   a {
     color: #282c34;
   }
+
+  border-bottom: 3px solid #282c34;
+
+  &:hover {
+    border-bottom: 3px solid #ec008b;
+
+    a {
+      color: #ec008b;
+    }
+  }
 `;
 const Home = styled.div`
-  margin-right: 8px;
-
   a {
     color: #282c34;
+  }
+  border-bottom: 3px solid #282c34;
+
+  &:hover {
+    border-bottom: 3px solid #a0fc69;
+
+    a {
+      color: #a0fc69;
+    }
   }
 `;
 const HeaderLinks = styled.div`
@@ -69,13 +93,7 @@ const HeaderLinks = styled.div`
   right: 15px;
   transition: all 0.5s;
   padding-bottom: 5px;
-  border-radius: 24px 13px 22px 36px;
   z-index: 1;
-  border-bottom: 3px solid #ff007f;
-
-  &:hover {
-    border-bottom: 3px solid #282c34;
-  }
 `;
 
 function Header() {
