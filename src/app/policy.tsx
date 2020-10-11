@@ -75,17 +75,6 @@ function Policy() {
             >
               <h2>Our Policies</h2>
             </motion.div>
-            <motion.div
-              animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 0.8 }}
-            >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                ullamcorper dignissim diam sit amet fermentum. Proin lobortis et
-                quam et fringilla. Nunc semper quis metus eu blandit. Morbi
-                hendrerit non quam non laoreet.
-              </p>
-            </motion.div>
             <div className="terms-container">
               <Accordion
                 heading="Common"
