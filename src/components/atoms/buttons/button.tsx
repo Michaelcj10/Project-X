@@ -10,7 +10,8 @@ const ButtonStyle = styled.button`
   transition: all 0.5s;
   border-radius: 40px 31px 48px 51px;
   font-family: Roboto-Bold;
-  background: rgb(195 59 217);
+  background: #ff007f;
+  background: linear-gradient(to right, rgb(248, 87, 166), rgb(255, 88, 88));
   font-size: 16px;
   color: #fff;
   @media only screen and (max-width: 660px) {
@@ -31,16 +32,17 @@ interface Props {
   text: string;
   type: "button" | "submit" | "reset" | undefined;
   onClick?: () => void;
+  fullWidth?: boolean;
 }
 
 function Button(props: Props) {
   return (
-    <motion.div
-      whileTap={{ scale: 0.9 }}
-      animate={{ y: 80 }}
-      transition={{ ease: "easeOut", duration: 0.8 }}
-    >
-      <ButtonStyle onClick={props.onClick} type={props.type}>
+    <motion.div whileTap={{ scale: 0.9 }}>
+      <ButtonStyle
+        style={{ width: props.fullWidth ? "100%" : "" }}
+        onClick={props.onClick}
+        type={props.type}
+      >
         {props.text}
       </ButtonStyle>
     </motion.div>

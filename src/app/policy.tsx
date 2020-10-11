@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Accordion } from "../components/accordion/accordion";
 import { useState } from "react";
-import landingImg from "../images/green.png";
+import landingImg from "../images/shapes-green.png";
 
 const CardStyle = styled.div`
   .row {

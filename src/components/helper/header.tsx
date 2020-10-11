@@ -71,7 +71,7 @@ const HeaderLinks = styled.div`
   padding-bottom: 5px;
   border-radius: 24px 13px 22px 36px;
   z-index: 1;
-  border-bottom: 3px solid rgb(255 241 0);
+  border-bottom: 3px solid #ff007f;
 
   &:hover {
     border-bottom: 3px solid #282c34;

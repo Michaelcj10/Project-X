@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
-import ButtonSecondary from "../atoms/buttons/buttonSecondary";
+import Button from "../atoms/buttons/button";
 import green from "../../images/shapes-green.png";
 import { motion } from "framer-motion";
 
@@ -44,11 +44,8 @@ function Form() {
             <Input label="Enter email or phone number" />
             <Input label="Your message here" />
 
-            <motion.div
-              whileTap={{ scale: 0.9 }}
-              transition={{ ease: "easeOut", duration: 0.8 }}
-            >
-              <ButtonSecondary fullWidth={true} type="submit" text="Submit" />
+            <motion.div whileTap={{ scale: 0.9 }}>
+              <Button fullWidth={true} type="submit" text="Submit" />
             </motion.div>
           </div>
         </div>

@@ -95,7 +95,7 @@ function Landing() {
 
             <motion.div
               whileTap={{ scale: 0.9 }}
-              animate={{ y: 60 }}
+              animate={{ y: 100 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Button type="button" text="Contact Us" />
