@@ -8,11 +8,13 @@ import styled from "styled-components";
 import { Accordion } from "../components/accordion/accordion";
 import { useState } from "react";
 import landingImg from "../images/shapes-green.png";
+import yellow from "../images/y.png";
+import green from "../images/l.png";
 
 const CardStyle = styled.div`
   .row {
     padding: 10px 10px;
-    background-image: url(${landingImg});
+
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -58,7 +60,14 @@ function Policy() {
     <CardStyle>
       <Card>
         <Header />
-        <div className="row wrap">
+        <div
+          className="row wrap"
+          style={{
+            backgroundImage: `url(${
+              expanded === 0 ? yellow : expanded === 3 ? landingImg : green
+            })`,
+          }}
+        >
           <div className="twelve columns centered">
             <motion.div
               animate={{ y: 80 }}
@@ -86,11 +95,11 @@ function Policy() {
                 remember visitor preferences when interacting with the website.
                 Where registration is required, the visitor's email and a
                 username will be stored on the server."
-                key={1}
+                key={0}
                 expanded={expanded}
                 setExpanded={setExpanded}
-                i={1}
-                activeColor="#00ffff"
+                i={0}
+                activeColor="#fff200"
               />
               <Accordion
                 heading="Stored info"
@@ -116,7 +125,7 @@ function Policy() {
                 expanded={expanded}
                 setExpanded={setExpanded}
                 i={3}
-                activeColor="#fff200"
+                activeColor="#00ffff"
               />
             </div>
           </div>
