@@ -7,17 +7,10 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Accordion } from "../components/accordion/accordion";
 import { useState } from "react";
-import landingImg from "../images/shapes-green.png";
-import yellow from "../images/y.png";
-import green from "../images/l.png";
 
 const CardStyle = styled.div`
   .row {
     padding: 10px 10px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
   }
   > div {
     align-items: baseline;
@@ -60,14 +53,7 @@ function Policy() {
     <CardStyle>
       <Card>
         <Header />
-        <div
-          className="row wrap"
-          style={{
-            backgroundImage: `url(${
-              expanded === 0 ? yellow : expanded === 3 ? landingImg : green
-            })`,
-          }}
-        >
+        <div className="row wrap">
           <div className="twelve columns centered">
             <motion.div
               animate={{ y: 80 }}

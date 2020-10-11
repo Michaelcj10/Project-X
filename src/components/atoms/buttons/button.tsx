@@ -8,10 +8,8 @@ const ButtonStyle = styled.button`
   border: none;
   min-width: 155px;
   transition: all 0.5s;
-  border-radius: 40px 31px 48px 51px;
+  border-radius: 65px 56px 71px 21px;
   font-family: Roboto-Bold;
-  background: #ff007f;
-  background: linear-gradient(to right, rgb(248, 87, 166), rgb(255, 88, 88));
   background: rgb(195 59 217);
   font-size: 16px;
   color: #fff;
