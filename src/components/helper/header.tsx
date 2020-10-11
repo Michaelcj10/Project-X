@@ -38,48 +38,28 @@ const SharedLink = styled(Link)`
   font-family: Roboto-Bold;
 
   a {
-    color: #fff;
+    color: #282c34;
+    transition: all 0.5s;
   }
 `;
 
 const Blog = styled.div`
   margin-right: 8px;
-  border-radius: 24px 13px 22px 36px;
-  background: #c33bd9;
-  color: #fff;
-  transition: all 0.5s;
-  &:hover {
-    opacity: 0.8;
-  }
+
   a {
-    color: #fff;
+    color: #282c34;
   }
 `;
 const Policy = styled.div`
-  background: #c33bd9;
-  border-radius: 24px 13px 22px 36px;
-  color: #fff;
-  transition: all 0.5s;
-
-  &:hover {
-    opacity: 0.8;
-  }
   a {
-    color: #fff;
+    color: #282c34;
   }
 `;
 const Home = styled.div`
-  background: #c33bd9;
   margin-right: 8px;
-  border-radius: 24px 13px 22px 36px;
-  color: #fff;
-  transition: all 0.5s;
 
-  &:hover {
-    opacity: 0.8;
-  }
   a {
-    color: #fff;
+    color: #282c34;
   }
 `;
 const HeaderLinks = styled.div`
@@ -91,6 +71,11 @@ const HeaderLinks = styled.div`
   padding-bottom: 5px;
   border-radius: 24px 13px 22px 36px;
   z-index: 1;
+  border-bottom: 3px solid rgb(255 241 0);
+
+  &:hover {
+    border-bottom: 3px solid #282c34;
+  }
 `;
 
 function Header() {
@@ -104,7 +89,7 @@ function Header() {
           }}
         />
 
-        <HeaderLinks style={{ borderBottom: `4px solid #c33bd9` }}>
+        <HeaderLinks>
           <motion.div
             whileTap={{ scale: 0.8 }}
             transition={{ ease: "easeOut", duration: 1 }}
