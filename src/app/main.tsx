@@ -45,7 +45,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: 16px;
+    font-size: 1.25em;
+    color: #282c34;
     padding: 0 10px;
   }
   h3 {
