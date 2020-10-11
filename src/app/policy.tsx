@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Accordion } from "../components/accordion/accordion";
 import { useState } from "react";
-import landingImg from "../images/yellow.png";
+import landingImg from "../images/green.png";
 
 const CardStyle = styled.div`
   .row {
@@ -40,7 +40,7 @@ const CardStyle = styled.div`
   }
 
   .terms-container {
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-top: 150px;
     padding-bottom: 200px;
