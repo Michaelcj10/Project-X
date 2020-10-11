@@ -29,6 +29,8 @@ const BoxesStyle = styled.div`
     font-size: 16px;
     padding: 15px;
     transition: all 0.5s;
+    font-family: Roboto-Bold;
+    opacity: 0.75;
   }
 
   #dots {
