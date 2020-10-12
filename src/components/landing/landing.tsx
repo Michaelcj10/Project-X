@@ -19,7 +19,7 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 500px;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url(${landingImg});
   background-repeat: no-repeat;

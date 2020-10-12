@@ -24,14 +24,14 @@ interface Props {
 
 function InfographicBlock(props: Props) {
   const textContent = (
-    <div className="one-half column centered padded">
+    <div className="one-half column centered">
       <h2>{props.heading}</h2>
       <p>{props.text}</p>
       <div className="dn-break" />
     </div>
   );
   const imgContent = (
-    <div className="one-half column centered padded">
+    <div className="one-half column centered">
       <div className="img-block greyed-on-touch">
         <ImageLoader
           width="350"

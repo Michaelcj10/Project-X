@@ -1,5 +1,5 @@
 import * as React from "react";
-import mobile from "../../images/t.png";
+import mobile from "../../images/ll.png";
 import styled from "styled-components";
 import InfographicBlock from "../infographic/infoBlock";
 
