@@ -11,6 +11,7 @@ const ButtonStyle = styled.button`
   border-radius: 65px 56px 71px 21px;
   font-family: Roboto-Bold;
   background: rgb(195 59 217);
+  outline: none;
   font-size: 16px;
   color: #fff;
   @media only screen and (max-width: 660px) {
@@ -36,7 +37,7 @@ interface Props {
 
 function Button(props: Props) {
   return (
-    <motion.div whileTap={{ scale: 0.9 }}>
+    <motion.div whileTap={{ scale: 0.95 }}>
       <ButtonStyle
         style={{ width: props.fullWidth ? "100%" : "" }}
         onClick={props.onClick}
