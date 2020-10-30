@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 interface Props {
   label: string;
+  value: string;
+  onChange: (val: string) => void;
 }
 
 const InputStyle = styled.div`
@@ -123,7 +125,13 @@ function Input(props: Props) {
   return (
     <InputStyle>
       <div className="group">
-        <input type="text" required={true} />
+        <input
+          onChange={(e) => {
+            props.onChange(e.currentTarget.value);
+          }}
+          value={props.value}
+          type="text"
+        />
         <span className="highlight" />
         <span className="bar" />
         <label>{props.label}</label>

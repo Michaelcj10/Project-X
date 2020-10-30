@@ -100,12 +100,14 @@ function Header() {
   return (
     <>
       <HeaderStyle>
-        <Logo
-          src={logo}
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        />
+        <SharedLink to="/">
+          <Logo
+            src={logo}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          />
+        </SharedLink>
 
         <HeaderLinks>
           <motion.div

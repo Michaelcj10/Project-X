@@ -1,5 +1,5 @@
 import * as React from "react";
-import mobile from "../../images/ll.png";
+import mobile from "../../images/7.svg";
 import styled from "styled-components";
 import InfographicBlock from "../infographic/infoBlock";
 
@@ -17,6 +17,8 @@ const Block = styled.div`
   }
   img {
     max-width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
   }
 `;
 

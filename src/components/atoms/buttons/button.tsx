@@ -10,21 +10,21 @@ const ButtonStyle = styled.button`
   transition: all 0.5s;
   border-radius: 65px 56px 71px 21px;
   font-family: Roboto-Bold;
-  background: rgb(195 59 217);
+  background: rgb(255 241 0);
   outline: none;
   font-size: 16px;
-  color: #fff;
+  color: #282c34;
   @media only screen and (max-width: 660px) {
     width: 90%;
   }
 
   &:hover {
     border-radius: 24px 13px 22px 36px;
-    color: #fff;
+    color: #282c34;
   }
   &:active,
   &:focus {
-    color: #fff;
+    color: #282c34;
   }
 `;
 
@@ -37,7 +37,7 @@ interface Props {
 
 function Button(props: Props) {
   return (
-    <motion.div whileTap={{ scale: 0.95 }}>
+    <motion.div whileTap={{ scale: 0.98 }}>
       <ButtonStyle
         style={{ width: props.fullWidth ? "100%" : "" }}
         onClick={props.onClick}

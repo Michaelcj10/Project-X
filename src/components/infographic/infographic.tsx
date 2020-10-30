@@ -1,18 +1,11 @@
 import * as React from "react";
-import blob from "../../images/shapes-pink-2.png";
-import mobileSecond from "../../images/mobile.png";
-import mobileThird from "../../images/social.png";
-import purple from "../../images/whiteboard.png";
-import mobile from "../../images/purple.png";
-import green from "../../images/green.png";
+import mobileSecond from "../../images/3.svg";
+import mobileThird from "../../images/4.svg";
+import purple from "../../images/1.svg";
+import mobile from "../../images/2.svg";
+import green from "../../images/shapes-green.png";
 import styled from "styled-components";
 import InfographicBlock from "./infoBlock";
-
-const ShapeImg = styled.img`
-  position: absolute;
-  top: -20px;
-  z-index: 999;
-`;
 
 const InfographicStyle = styled.div`
   margin-top: -100px;
@@ -28,7 +21,7 @@ const InfographicStyle = styled.div`
   .infographic-block img {
     width: 350px;
     max-width: 90%;
-    margin-top: 20px;
+    margin: 20px auto 25px auto;
   }
   .infographic-block .columns {
     position: relative;
@@ -40,7 +33,7 @@ const InfographicStyle = styled.div`
 
 const BlobImg = styled.img`
   height: 220px;
-  margin-top: -165px;
+  margin: -165px auto 0px auto;
   max-width: 90%;
 `;
 
@@ -48,8 +41,6 @@ function Infographic() {
   return (
     <InfographicStyle>
       <div className="infographic-block container">
-        <ShapeImg style={{ width: "220px" }} src={blob} alt="blob" />
-
         <InfographicBlock
           imgSrc={mobile}
           heading={"What we do"}

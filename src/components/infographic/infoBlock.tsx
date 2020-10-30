@@ -3,7 +3,7 @@ import ImageLoader from "../atoms/inputs/imageLoader";
 import styled from "styled-components";
 
 const InfoBlockStyle = styled.div`
-  margin-top: 50px;
+  margin-top: 75px;
   p {
     margin-top: 50px;
   }

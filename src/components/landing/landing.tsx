@@ -98,7 +98,13 @@ function Landing() {
               animate={{ y: 100 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <Button type="button" text="Contact Us" />
+              <Button
+                type="button"
+                onClick={() => {
+                  window.scrollTo({ top: 22200, behavior: "smooth" });
+                }}
+                text="Contact Us"
+              />
             </motion.div>
           </div>
         </div>

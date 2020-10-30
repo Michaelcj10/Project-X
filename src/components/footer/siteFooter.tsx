@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const InfographicStyle = styled.div`
   margin: auto;
   text-align: center;
-  background: #fffcfc;
+  background: #fbfbfb;
   padding-top: 50px;
   width: 100%;
   position: relative;

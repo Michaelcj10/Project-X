@@ -29,7 +29,7 @@ const BoxesStyle = styled.div`
     font-size: 16px;
     padding: 15px;
     transition: all 0.5s;
-    font-family: Roboto-Bold;
+    font-family: Roboto;
     opacity: 0.75;
   }
 
@@ -44,8 +44,14 @@ const BoxesStyle = styled.div`
   }
   .four {
     border-radius: 40px 31px 48px 51px;
-    background: #fffcfc;
+    background: #fbfbfb;
     padding: 15px;
+  }
+
+  @media only screen and (max-width: 660px) {
+    .four {
+      border-radius: 0px;
+    }
   }
 `;
 
