@@ -62,6 +62,14 @@ const Splat = styled.img`
   opacity: 0.35;
 `;
 
+const Note = styled.span`
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Roboto-Bold;
+  text-decoration: overline;
+`;
+
 function Landing() {
   return (
     <LandingStyle>
@@ -81,15 +89,15 @@ function Landing() {
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <h1>Púca Labs</h1>
+              <h1>Michael James</h1>
             </motion.div>
             <motion.div
               animate={{ y: 80 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <p>
-                We aim to create elegant and creative solutions to your software
-                needs
+                <Note>Web developer</Note>. I aim to create elegant and creative
+                solutions to your software needs
               </p>
             </motion.div>
 
@@ -103,7 +111,7 @@ function Landing() {
                 onClick={() => {
                   window.scrollTo({ top: 22200, behavior: "smooth" });
                 }}
-                text="Contact Us"
+                text="Contact Me"
               />
             </motion.div>
           </div>

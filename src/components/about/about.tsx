@@ -1,5 +1,5 @@
 import * as React from "react";
-import mobile from "../../images/7.svg";
+import bio from "../../images/bio.png";
 import styled from "styled-components";
 import InfographicBlock from "../infographic/infoBlock";
 
@@ -19,6 +19,7 @@ const Block = styled.div`
     max-width: 90%;
     margin: auto;
     margin-bottom: 25px;
+    border-radius: 50%;
   }
 `;
 
@@ -29,10 +30,10 @@ function About() {
         <div className="row">
           <div className="twelve">
             <InfographicBlock
-              imgSrc={mobile}
-              heading={"About us"}
+              imgSrc={bio}
+              heading={"About me"}
               text={
-                "Puca Labs a company based in Dublin who work to provide top class software to customers. Priding ourselves on quality and fast delivery we have already worked with numerous happy customers and treat every customer as the unique individual that person or comapany is to provide a user experience that fits perfectly! We can take on small one page project or larger complex applications and we only ever use up to date technologies and design patterns."
+                "I am a front end developer based in Dublin working full time for Ding. I also work to provide top class software to customers. Priding myself on quality and fast delivery I have already worked with numerous happy customers and treat every customer as the unique individual that person or comapany is to provide a user experience that fits perfectly! I can take on small one page project or larger complex applications and I only ever use up to date technologies and design patterns."
               }
             />
           </div>

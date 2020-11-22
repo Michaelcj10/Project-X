@@ -46,6 +46,7 @@ const BoxesStyle = styled.div`
     border-radius: 40px 31px 48px 51px;
     background: #fbfbfb;
     padding: 15px;
+    min-height: 360px;
   }
 
   @media only screen and (max-width: 660px) {
@@ -60,19 +61,19 @@ const items = [
     text: "Speed",
     icon: <img src={tile} />,
     blurb:
-      "Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. We gaurentee 90% + web score on Googles own speed measurment tool.",
+      "Google estimates that after 3.5 seconds, 50% of your users have given up and closed your site. I gaurentee 90% + web score on Googles own speed measurment tool.",
   } as ItemInfo,
   {
     text: "Security",
     icon: <img src={secure} />,
     blurb:
-      "Web security is one of our primary goals. Our websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. We pride ourselves on it.",
+      "Web security is one of my primary goals. My websites are protected with SSL and all sites are gaurenteed to be secure and safe for your users. I pride myself on it.",
   } as ItemInfo,
   {
     text: "SEO",
     icon: <img src={blocks} />,
     blurb:
-      "We make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on us!",
+      "I make high quality , mobile responsive and SEO compliant websites. If you want to get full exposure for your business, count on it!",
   } as ItemInfo,
 ];
 

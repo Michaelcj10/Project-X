@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import fb from "../../images/fb.png";
 import ln from "../../images/ln.png";
+import git from "../../images/git.png";
 import { Link } from "react-router-dom";
 
 const InfographicStyle = styled.div`
@@ -34,6 +35,7 @@ const SocialIcon = styled.img`
 const Links = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 `;
 
 const SiteLink = styled(Link)`
@@ -63,15 +65,22 @@ function SiteFooter() {
       <Middle>
         <div className="row">
           <div className="twelve columns centered">
-            <h2>You found our footer..</h2>
-            <SocialIcon style={{ width: "60px" }} src={fb} alt="facebook" />
-            <SocialIcon style={{ width: "80px" }} src={ln} alt="linkedin" />
+            <h2>You found my footer..</h2>
+            <a href="https://www.facebook.com/michael.james.90475/">
+              <SocialIcon style={{ width: "60px" }} src={fb} alt="facebook" />
+            </a>
+            <a href="https://www.linkedin.com/in/michael-james-12b49968/">
+              <SocialIcon style={{ width: "80px" }} src={ln} alt="linkedin" />
+            </a>
+            <a href="https://github.com/Michaelcj10">
+              <SocialIcon style={{ width: "80px" }} src={git} alt="git hub" />
+            </a>
             <Links>
               <SiteLink to="/policy">Privacy policy</SiteLink>
               <Pipes>||</Pipes>
               <SiteLink to="/blog">Blog</SiteLink>
             </Links>
-            <Company>&copy; Púca Labs 2020</Company>
+            <Company>&copy; Michael James 2020</Company>
           </div>
         </div>
       </Middle>

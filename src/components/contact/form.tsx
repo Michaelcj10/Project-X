@@ -85,7 +85,7 @@ function Form() {
       <BlobImg src={green} />
       <div className="infographic-block container-half centered">
         <div className="row">
-          <h2>Contact</h2>
+          <h2>Contact me</h2>
           <div className="twelve">
             <form onSubmit={submit}>
               <Input

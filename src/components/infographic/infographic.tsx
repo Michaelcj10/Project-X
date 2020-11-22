@@ -43,9 +43,9 @@ function Infographic() {
       <div className="infographic-block container">
         <InfographicBlock
           imgSrc={mobile}
-          heading={"What we do"}
+          heading={"What I do"}
           text={
-            "We make custom, dynamic websites for a range of customers from a small or personal business to larger enterprises. We aim for a personal and communicative experience where customer satisfaction is key."
+            "I make custom, dynamic websites for a range of customers from a small or personal business to larger enterprises. I aim for a personal and communicative experience where customer satisfaction is key."
           }
         />
 
@@ -54,7 +54,7 @@ function Infographic() {
           imgSrc={mobileSecond}
           heading={"Mobile first"}
           text={
-            "Over 80% of the web is now mobile. Optimizing for mobile traffic is so important we make it our company ethos!. We gaurantee a great mobile experience. We aren't 'works on mobile' we're mobile first!"
+            "Over 80% of the web is now mobile. Optimizing for mobile traffic is so important I make it my ethos!. I gaurantee a great mobile experience. I am not 'works on mobile' i'm mobile first!"
           }
         />
 
@@ -62,7 +62,7 @@ function Infographic() {
           imgSrc={mobileThird}
           heading={"Social integration"}
           text={
-            "50% of people have a social media count and that rises to 75% of business. We aim to make your website reach as much of the populous as we can by making your site integrate with social media seamlessly."
+            "50% of people have a social media count and that rises to 75% of business. I aim to make your website reach as much of the populous as I can by making your site integrate with social media seamlessly."
           }
         />
 
@@ -71,7 +71,7 @@ function Infographic() {
           reverse={true}
           heading={"Creative designs"}
           text={
-            "We make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. We understand this and we endevour to make all our sites engaging and vibrant!."
+            "I make custom, dynamic websites. Design is one of the most important factors in a website that converts and enages. I understand this and I endevour to make all our sites engaging and vibrant!."
           }
         />
       </div>
