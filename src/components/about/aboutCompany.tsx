@@ -27,6 +27,10 @@ const Paragraph = styled.p`
 const MobileImg = styled.img`
   max-width: 100%;
   width: 450px;
+
+  @media (max-width: 768px) {
+    margin-right: -44px;
+  }
 `;
 const SubTitle = styled.div`
   font-size: 30px;
