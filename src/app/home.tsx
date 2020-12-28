@@ -1,22 +1,18 @@
 import * as React from "react";
 import "../css/skeleton.css";
 import Landing from "../components/landing/landing";
-import Infographic from "../components/infographic/infographic";
-import About from "../components/about/about";
-import Form from "../components/contact/form";
-import SiteFooter from "../components/footer/siteFooter";
-import Boxes from "../components/boxes/boxesBlock";
+import AboutCompany from "../components/about/aboutCompany";
+import CompanyDetails from "../components/details/companyDetails";
+import Seo from "../components/seoDetails/seo";
 import { GlobalStyle } from "./main";
 
 function Home() {
   return (
     <div>
       <Landing />
-      <Infographic />
-      <Boxes />
-      <About />
-      <Form />
-      <SiteFooter />
+      <AboutCompany />
+      <CompanyDetails />
+      <Seo />
       <GlobalStyle />
     </div>
   );

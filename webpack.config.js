@@ -5,23 +5,28 @@ module.exports = {
 
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
-
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+      minSize: 1000 * 600,
+    },
+  },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".jsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
 
   devServer: {
     contentBase: "./dist",
     publicPath: "/",
-    open: true
+    open: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./index.html",
       filename: "./index.html",
-      favicon: "./favicon.png"
-    })
+      favicon: "./favicon.png",
+    }),
   ],
 
   module: {
@@ -31,37 +36,37 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "ts-loader"
-          }
-        ]
+            loader: "ts-loader",
+          },
+        ],
       },
       {
         test: /\.html$/,
         use: [
           {
             loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
+            options: { minimize: true },
+          },
+        ],
       },
-      { test: /\.(woff|woff2|eot|ttf)$/, loader: 'url-loader?limit=100000' },
+      { test: /\.(woff|woff2|eot|ttf)$/, loader: "url-loader?limit=100000" },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           "file-loader?hash=sha512&digest=hex&name=[hash].[ext]",
-          "image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false"
-        ]
+          "image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false",
+        ],
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       {
         enforce: "pre",
         test: /\.js$/,
-        loader: "source-map-loader"
-      }
-    ]
-  }
+        loader: "source-map-loader",
+      },
+    ],
+  },
 };

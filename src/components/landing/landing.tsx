@@ -1,14 +1,15 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 import Button from "../atoms/buttons/button";
-import landingImg from "../../images/shapes-green.png";
-import splat from "../../images/splat.svg";
 import styled from "styled-components";
 import Header from "../helper/header";
+import TextBreak from "../atoms/break/textBreak";
+import logo from "../../images/logo.png";
+import { Row, Col } from "react-grid";
+import Slide from "react-reveal/Slide";
 
 const LandingStyle = styled.div`
-  background: #fff;
   border-radius: 4px;
+  background: #1c2830;
   position: relative;
 `;
 
@@ -21,14 +22,15 @@ const Hero = styled.div`
   min-height: 500px;
   height: 100vh;
   width: 100%;
-  background-image: url(${landingImg});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+    height: 80vh;
+  }
 
   p {
     font-size: 1.4em;
-    color: #282c34;
+    color: #fff;
   }
 
   .row {
@@ -40,82 +42,66 @@ const Hero = styled.div`
     position: relative;
   }
 
-  img {
-    width: 300px;
-    max-width: 90%;
-  }
   .twelve {
     min-height: 300px;
     margin-top: -70px;
   }
 
   h1 {
-    font-size: 9rem;
-    color: #282c34;
+    font-size: 8rem;
+    color: #19f9c8;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 6.5rem;
+    }
   }
 `;
 
-const Splat = styled.img`
+const Logo = styled.img`
+  width: 125px;
   position: absolute;
-  right: 0px;
-  top: -20;
-  opacity: 0.35;
-`;
-
-const Note = styled.span`
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: Roboto-Bold;
-  text-decoration: overline;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  @media (max-width: 768px) {
+    width: 100px;
+  }
 `;
 
 function Landing() {
   return (
     <LandingStyle>
       <Header />
-
-      <motion.div
-        animate={{ y: 100 }}
-        transition={{ ease: "easeOut", duration: 2.5 }}
-      >
-        <Splat src={splat} />
-      </motion.div>
+      <Logo src={logo} alt="logo" />
 
       <Hero>
-        <div className="row">
-          <div className="twelve columns centered">
-            <motion.div
-              animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-            >
-              <h1>Michael James</h1>
-            </motion.div>
-            <motion.div
-              animate={{ y: 80 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-            >
-              <p>
-                <Note>Web developer</Note>. I aim to create elegant and creative
-                solutions to your software needs
-              </p>
-            </motion.div>
+        <Row>
+          <Col xs={12}>
+            <div>
+              <div className="centered">
+                <Slide bottom={true}>
+                  <h1>Design. Create.</h1>
+                  <TextBreak />
+                </Slide>
 
-            <motion.div
-              whileTap={{ scale: 0.9 }}
-              animate={{ y: 100 }}
-              transition={{ ease: "easeOut", duration: 1 }}
-            >
-              <Button
-                type="button"
-                onClick={() => {
-                  window.scrollTo({ top: 22200, behavior: "smooth" });
-                }}
-                text="Contact Me"
-              />
-            </motion.div>
-          </div>
-        </div>
+                <p>
+                  We create elegant and creative solutions to your software
+                  needs.
+                </p>
+
+                <Button
+                  type="button"
+                  onClick={() => {
+                    window.scrollTo({ top: 22200, behavior: "smooth" });
+                  }}
+                  text="Discover more"
+                />
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Hero>
     </LandingStyle>
   );

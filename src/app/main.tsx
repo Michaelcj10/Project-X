@@ -11,20 +11,15 @@ export const GlobalStyle = createGlobalStyle`
     margin: auto;
   }
 
-  .container-half{
-    max-width: 600px;
-    margin: auto;
-  }
-
   body {
     margin: 0;
     padding: 0;
     width: 90vw;
     margin: auto;
     margin-top: 3vw;
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-    background: #f1f1f161;
+    background: #171f25;
     font-family: Roboto;
+    overflow-x: hidden;
   }
 
   h2,
@@ -59,7 +54,6 @@ export const GlobalStyle = createGlobalStyle`
 
 const Home = React.lazy(() => import("./home"));
 const Blog = React.lazy(() => import("./blog"));
-const Policy = React.lazy(() => import("./policy"));
 
 function App() {
   return (
@@ -68,7 +62,6 @@ function App() {
         <Switch>
           <Route exact={true} path="/" component={Home} />
           <Route path="/blog" component={Blog} />
-          <Route path="/policy" component={Policy} />
         </Switch>
       </Suspense>
     </div>

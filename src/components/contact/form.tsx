@@ -2,7 +2,6 @@ import * as React from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import Button from "../atoms/buttons/button";
-import green from "../../images/y.png";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SendEmail from "../email/sendEmailScreen";
@@ -29,16 +28,6 @@ const InfographicStyle = styled.div`
     text-align: left;
     color: red;
     font-size: 16px;
-  }
-`;
-
-const BlobImg = styled.img`
-  height: 300px;
-  margin-top: -165px;
-  max-width: 90%;
-
-  @media only screen and (max-width: 660px) {
-    opacity: 0.5;
   }
 `;
 
@@ -82,7 +71,6 @@ function Form() {
   return (
     <InfographicStyle>
       {sending && <SendEmail />}
-      <BlobImg src={green} />
       <div className="infographic-block container-half centered">
         <div className="row">
           <h2>Contact me</h2>
