@@ -71,7 +71,7 @@ function Form() {
   return (
     <InfographicStyle>
       {sending && <SendEmail />}
-      <div className="infographic-block container-half centered">
+      <div className="infographic-block centered">
         <div className="row">
           <h2>Contact me</h2>
           <div className="twelve">

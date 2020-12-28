@@ -28,6 +28,11 @@ const Paragraph = styled.p`
 const MobileImg = styled.img`
   max-width: 100%;
   width: 450px;
+  margin: 25px 0px 0px -55px;
+
+  @media (max-width: 768px) {
+    margin: 25px 0px 0px -40px;
+  }
 `;
 const SubTitle = styled.div`
   font-size: 30px;
@@ -59,6 +64,13 @@ const LearnMore = styled.div`
 
 const RightCol = styled(Col)`
   text-align: right;
+`;
+
+const RightColSeo = styled(Col)`
+  text-align: right;
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 const LeftCol = styled(Col)`
@@ -103,7 +115,7 @@ function Seo() {
           </SubTitle>
           <LearnMore>
             <Button
-              secondary={true}
+              background="#fc5c5c"
               type="button"
               onClick={() => {
                 window.scrollTo({ top: 22200, behavior: "smooth" });
@@ -113,9 +125,9 @@ function Seo() {
           </LearnMore>
         </LeftCol>
 
-        <RightCol xs={12} md={6}>
+        <RightColSeo xs={12} md={6}>
           <MobileImg src={stock} alt="mobile" />
-        </RightCol>
+        </RightColSeo>
       </Row>
 
       <SeoIconsRow>

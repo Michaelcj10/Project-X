@@ -29,6 +29,10 @@ const DesignRightImg = styled.img`
   margin: 25px 0px 0px -55px;
   width: 650px;
   max-width: 100%;
+
+  @media (max-width: 768px) {
+    margin: 25px 0px 0px -40px;
+  }
 `;
 const DesignLeftImg = styled.img`
   max-width: 100%;

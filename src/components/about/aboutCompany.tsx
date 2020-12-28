@@ -70,7 +70,7 @@ function AboutCompany() {
       <Row>
         <LeftCol xs={12} md={6}>
           <Slide bottom={true}>
-            <Title>About us</Title>
+            <Title>About us </Title>
           </Slide>
           <StyledBreak />
           <Paragraph>
@@ -84,7 +84,7 @@ function AboutCompany() {
           </SubTitle>
           <LearnMore>
             <Button
-              secondary={true}
+              background="#ffa91a"
               type="button"
               onClick={() => {
                 window.scrollTo({ top: 22200, behavior: "smooth" });

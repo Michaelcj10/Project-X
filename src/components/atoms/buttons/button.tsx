@@ -31,7 +31,7 @@ interface Props {
   type: "button" | "submit" | "reset" | undefined;
   onClick?: () => void;
   fullWidth?: boolean;
-  secondary?: boolean;
+  background: string;
 }
 
 function Button(props: Props) {
@@ -39,7 +39,7 @@ function Button(props: Props) {
     <ButtonStyle
       style={{
         width: props.fullWidth ? "100%" : "",
-        background: props.secondary ? "#fff" : "#ffa91a",
+        background: props.background,
       }}
       onClick={props.onClick}
       type={props.type}

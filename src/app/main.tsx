@@ -6,22 +6,19 @@ import { Switch, Route } from "react-router-dom";
 
 export const GlobalStyle = createGlobalStyle`
 
-  .container{
-    max-width: 1167px;
-    margin: auto;
-  }
-
   body {
     margin: 0;
-    padding: 0;
-    width: 95vw;
+    padding: 0 15px;
     margin: auto;
-    margin-top: 3vw;
-    background: #171f25;
+    background: #0a0a0a;
     font-family: Roboto;
     overflow-x: hidden;
+    box-shadow: rgba(21, 25, 68, 0.13) 0px 2px 20px 0px, rgba(21, 25, 68, 0.06) 0px 3px 12px -8px, rgba(21, 25, 68, 0.03) 0px 1px 6px -2px;
   }
-
+  html{
+    width: 100%;
+      overflow-x: hidden;
+  }
   h2,
   h3 {
     font-family: Roboto-Bold;

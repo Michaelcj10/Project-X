@@ -4,13 +4,20 @@ import styled from "styled-components";
 import Header from "../helper/header";
 import TextBreak from "../atoms/break/textBreak";
 import logo from "../../images/logo.png";
-import { Row, Col } from "react-grid";
+import bg from "../../images/bg-min.png";
 import Slide from "react-reveal/Slide";
 
 const LandingStyle = styled.div`
   border-radius: 4px;
   background: #1c2830;
   position: relative;
+  background: url(${bg});
+  background-position: initial;
+  background-size: cover;
+  background-attachment: fixed;
+  @media (max-width: 768px) {
+    background-position: center;
+  }
 `;
 
 const Hero = styled.div`
@@ -29,20 +36,6 @@ const Hero = styled.div`
     color: #fff;
   }
 
-  .row {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .columns {
-    position: relative;
-  }
-
-  .twelve {
-    min-height: 300px;
-    margin-top: -70px;
-  }
-
   h1 {
     font-size: 8rem;
     color: #19f9c8;
@@ -56,7 +49,7 @@ const Hero = styled.div`
 `;
 
 const Logo = styled.img`
-  width: auto;
+  width: 200px;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -71,33 +64,26 @@ function Landing() {
     <LandingStyle>
       <Header />
       <Logo src={logo} alt="logo" />
-
       <Hero>
-        <Row>
-          <Col xs={12}>
-            <div>
-              <div className="centered">
-                <Slide bottom={true}>
-                  <h1>Design. Create.</h1>
-                  <TextBreak />
-                </Slide>
+        <div className="centered">
+          <Slide bottom={true}>
+            <h1>Design. Create. </h1>
+            <TextBreak />
+          </Slide>
 
-                <p>
-                  We create elegant and creative solutions to your software
-                  needs.
-                </p>
+          <p>
+            We create elegant and creative solutions to your software needs.
+          </p>
 
-                <Button
-                  type="button"
-                  onClick={() => {
-                    window.scrollTo({ top: 22200, behavior: "smooth" });
-                  }}
-                  text="Discover more"
-                />
-              </div>
-            </div>
-          </Col>
-        </Row>
+          <Button
+            background="#ffa91a"
+            type="button"
+            onClick={() => {
+              window.scrollTo({ top: 22200, behavior: "smooth" });
+            }}
+            text="Discover more"
+          />
+        </div>
       </Hero>
     </LandingStyle>
   );
