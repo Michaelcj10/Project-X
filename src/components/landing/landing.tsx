@@ -24,10 +24,6 @@ const Hero = styled.div`
   width: 100%;
   padding-bottom: 50px;
 
-  @media (max-width: 768px) {
-    height: 80vh;
-  }
-
   p {
     font-size: 1.4em;
     color: #fff;
@@ -60,13 +56,13 @@ const Hero = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 125px;
+  width: auto;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 2;
   @media (max-width: 768px) {
-    width: 100px;
+    width: 155px;
   }
 `;
 

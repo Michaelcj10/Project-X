@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    width: 90vw;
+    width: 95vw;
     margin: auto;
     margin-top: 3vw;
     background: #171f25;
