@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import styled from "styled-components";
 import mail from "../../images/mail.svg";
 const SendEmailStyle = styled.div`

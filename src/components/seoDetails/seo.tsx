@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import styled from "styled-components";
 import stock from "../../images/seo.png";
 import pc from "../../images/design-4.png";

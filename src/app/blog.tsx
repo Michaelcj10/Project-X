@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import "../css/skeleton.css";
 import styled from "styled-components";
 const CardStyle = styled.div``;

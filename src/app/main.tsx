@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement, Fragment, lazy } from "react";
 import { Suspense } from "react";
 import "../css/skeleton.css";
 import { createGlobalStyle } from "styled-components";
@@ -8,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    padding: 0 15px;
+    padding: 0px 0px 0px 15px;
     margin: auto;
     background: #0a0a0a;
     font-family: Roboto;
@@ -49,19 +50,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Home = React.lazy(() => import("./home"));
-const Blog = React.lazy(() => import("./blog"));
+const Home = lazy(() => import("./home"));
+const Blog = lazy(() => import("./blog"));
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Suspense fallback={null}>
         <Switch>
           <Route exact={true} path="/" component={Home} />
           <Route path="/blog" component={Blog} />
         </Switch>
       </Suspense>
-    </div>
+    </Fragment>
   );
 }
 

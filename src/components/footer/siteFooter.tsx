@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import styled from "styled-components";
 import fb from "../../images/fb.png";
 import ln from "../../images/ln.png";

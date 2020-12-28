@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import styled from "styled-components";
 import placeholder from "../../images/hand.png";
 import design from "../../images/design-5.png";

@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import Button from "../atoms/buttons/button";
 import styled from "styled-components";
 import Header from "../helper/header";
@@ -15,6 +16,8 @@ const LandingStyle = styled.div`
   background-position: initial;
   background-size: cover;
   background-attachment: fixed;
+  border-radius: 66px 0px 0px 0px;
+
   @media (max-width: 768px) {
     background-position: center;
   }
@@ -53,7 +56,7 @@ const Logo = styled.img`
   position: absolute;
   top: 15px;
   left: 15px;
-  z-index: 2;
+  z-index: 1;
   @media (max-width: 768px) {
     width: 155px;
   }
