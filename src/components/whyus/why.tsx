@@ -18,11 +18,11 @@ const WhyUseUsStyle = styled.div`
 `;
 const Title = styled.h2`
   font-size: 70px;
-  color: #19f9c8;
+  color: #fff;
 `;
 const Paragraph = styled.p`
   padding: 0px;
-  color: #e2dbdb;
+  color: #fff;
   margin-top: 25px;
   text-align: justify;
 `;
@@ -33,7 +33,7 @@ const SubTitle = styled.div`
 `;
 
 const Hightlight = styled.span`
-  color: #19f9c8;
+  color: #fff;
   font-size: 25px;
   margin-top: 25px;
 `;
@@ -49,7 +49,7 @@ const StyledBreak = styled.div`
   display: block;
   height: 2px;
   width: 100%;
-  background: #19f9c8;
+  background: #fff;
   max-width: 600px;
   margin-bottom: 25px;
 `;

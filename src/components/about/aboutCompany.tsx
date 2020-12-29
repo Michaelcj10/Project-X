@@ -21,7 +21,7 @@ const Title = styled.h2`
 `;
 const Paragraph = styled.p`
   padding: 0px;
-  color: #e2dbdb;
+  color: #fff;
   margin-top: 25px;
 `;
 const MobileImg = styled.img`
