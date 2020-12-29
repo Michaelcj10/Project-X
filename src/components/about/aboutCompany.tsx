@@ -8,8 +8,8 @@ import Slide from "react-reveal/Slide";
 const AboutCompanyStyle = styled.div`
   position: relative;
   text-align: left;
-  padding: 170px 0px 170px 55px;
-  background: #151b1f;
+  padding: 150px 0px 150px 55px;
+  background: #0d0e0e;
 
   @media (max-width: 768px) {
     padding: 50px 25px;
@@ -26,7 +26,7 @@ const Paragraph = styled.p`
 `;
 const MobileImg = styled.img`
   max-width: 100%;
-  width: 450px;
+  width: 600px;
 
   @media (max-width: 768px) {
     margin-right: -44px;

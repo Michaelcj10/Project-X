@@ -3,6 +3,7 @@ import { createElement } from "react";
 import styled from "styled-components";
 import placeholder from "../../images/hand.png";
 import design from "../../images/design-5.png";
+import plant from "../../images/plant.png";
 import { Row, Col } from "react-grid";
 import { Fragment } from "react";
 import Slide from "react-reveal/Slide";
@@ -10,7 +11,7 @@ import Slide from "react-reveal/Slide";
 const AboutCompanyStyle = styled.div`
   position: relative;
   text-align: left;
-  padding: 170px 0px 170px 55px;
+  padding: 150px 0px 150px 55px;
   background: #1f262b;
 
   @media (max-width: 768px) {
@@ -37,13 +38,23 @@ const DesignRightImg = styled.img`
 `;
 const DesignLeftImg = styled.img`
   max-width: 100%;
-  width: 450px;
+  width: 500px;
 
   @media (max-width: 768px) {
     margin-right: -44px;
     margin-top: -7px;
   }
 `;
+const DesignLeftImgSm = styled.img`
+  margin-top: 75px;
+  max-width: 250px;
+
+  @media (max-width: 768px) {
+    margin-right: -44px;
+    margin-top: -7px;
+  }
+`;
+
 const SubTitle = styled.div`
   font-size: 30px;
   text-align: left;
@@ -96,11 +107,13 @@ function CompanyDetails() {
             <SubTitle>
               <Hightlight>User</Hightlight> first.
             </SubTitle>
-            <DesignRightImg src={placeholder} alt="mobile" />
+            <DesignRightImg src={placeholder} alt="hands" />
           </LeftCol>
 
           <RightCol xs={12} md={6}>
             <DesignLeftImg src={design} alt="mobile" />
+            <br />
+            <DesignLeftImgSm src={plant} alt="mobile" />
           </RightCol>
         </Row>
       </AboutCompanyStyle>

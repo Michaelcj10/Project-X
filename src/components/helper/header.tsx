@@ -17,7 +17,6 @@ const SharedLink = styled(Link)`
   font-family: Roboto-Bold;
 
   a {
-    color: #fff;
     transition: all 0.5s;
   }
 `;

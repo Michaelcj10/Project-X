@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0px 0px 0px 15px;
     margin: auto;
-    background: #0a0a0a;
+    background: #000000;
     font-family: Roboto;
     overflow-x: hidden;
     box-shadow: rgba(21, 25, 68, 0.13) 0px 2px 20px 0px, rgba(21, 25, 68, 0.06) 0px 3px 12px -8px, rgba(21, 25, 68, 0.03) 0px 1px 6px -2px;
