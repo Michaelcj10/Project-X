@@ -16,7 +16,6 @@ const LandingStyle = styled.div`
   background-position: initial;
   background-size: cover;
   background-attachment: fixed;
-  border-radius: 66px 0px 0px 0px;
 
   @media (max-width: 768px) {
     background-position: center;

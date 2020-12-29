@@ -11,8 +11,8 @@ import Slide from "react-reveal/Slide";
 const AboutCompanyStyle = styled.div`
   position: relative;
   text-align: left;
-  padding: 150px 0px 150px 8%;
-  background: #1f262b;
+  padding: 150px 0px 150px 10%;
+  background: #151b1f;
 
   @media (max-width: 768px) {
     padding: 50px 25px;
@@ -28,7 +28,7 @@ const Paragraph = styled.p`
   margin-top: 25px;
 `;
 const DesignRightImg = styled.img`
-  margin: 25px 0px 0px -55px;
+  margin: 25px 0px 0px 0px;
   width: 650px;
   max-width: 100%;
 

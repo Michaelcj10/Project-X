@@ -1,7 +1,6 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
-import stock from "../../images/seo.png";
 import pc from "../../images/design-4.png";
 import Button from "../atoms/buttons/button";
 import { Row, Col } from "react-grid";
@@ -10,8 +9,8 @@ import Slide from "react-reveal/Slide";
 const SEOCompanyStyle = styled.div`
   position: relative;
   text-align: left;
-  padding: 150px 0px 150px 8%;
-  background: #151b1f;
+  padding: 150px 0px 150px 10%;
+  background: #202133;
 
   @media (max-width: 768px) {
     padding: 50px 25px;
@@ -19,7 +18,7 @@ const SEOCompanyStyle = styled.div`
 `;
 const Title = styled.h2`
   font-size: 70px;
-  color: #fc5c5c;
+  color: #ffa91a;
 `;
 const Paragraph = styled.p`
   padding: 0px;
@@ -35,6 +34,7 @@ const MobileImg = styled.img`
     margin: 25px 0px 0px -40px;
   }
 `;
+
 const SubTitle = styled.div`
   font-size: 30px;
   text-align: left;
@@ -46,25 +46,17 @@ const StyledBreak = styled.div`
   display: block;
   height: 2px;
   width: 100%;
-  background: #fc5c5c;
+  background: #ffa91a;
 `;
 
 const Hightlight = styled.span`
-  color: #fc5c5c;
-  font-size: 35px;
-`;
-const SpeedHightlight = styled.span`
-  color: #ffd304;
+  color: #ffa91a;
   font-size: 35px;
 `;
 
 const LearnMore = styled.div`
   text-align: left;
   margin: 25px 0px;
-`;
-
-const RightCol = styled(Col)`
-  text-align: right;
 `;
 
 const RightColSeo = styled(Col)`
@@ -76,18 +68,6 @@ const RightColSeo = styled(Col)`
 
 const LeftCol = styled(Col)`
   text-align: left;
-`;
-const SeoIconsRow = styled(Row)`
-  text-align: center;
-  margin-top: 50px;
-`;
-const DesignRightImg = styled.img`
-  max-width: 100%;
-
-  @media (max-width: 768px) {
-    margin-right: -44px;
-    margin-top: -7px;
-  }
 `;
 function Seo() {
   return (
@@ -116,7 +96,7 @@ function Seo() {
           </SubTitle>
           <LearnMore>
             <Button
-              background="#fc5c5c"
+              background="#ffa91a"
               type="button"
               onClick={() => {
                 window.scrollTo({ top: 22200, behavior: "smooth" });
@@ -127,26 +107,9 @@ function Seo() {
         </LeftCol>
 
         <RightColSeo xs={12} md={6}>
-          <MobileImg src={stock} alt="mobile" />
+          <MobileImg src={pc} alt="mobile" />
         </RightColSeo>
       </Row>
-
-      <SeoIconsRow>
-        <LeftCol xs={12} md={6}>
-          <SubTitle>
-            <SpeedHightlight>Speed</SpeedHightlight>
-          </SubTitle>
-          <Paragraph>
-            Speed is important to improve SEO. Google estimates that after 3.5
-            seconds, 50% of your users have given up and closed your site. I
-            gaurentee 90% + web score on Googles own speed measurment tool.
-          </Paragraph>
-        </LeftCol>
-
-        <RightCol xs={12} md={6}>
-          <DesignRightImg src={pc} alt="mobile" />
-        </RightCol>
-      </SeoIconsRow>
     </SEOCompanyStyle>
   );
 }
