@@ -15,7 +15,6 @@ const LandingStyle = styled.div`
   background: url(${bg});
   background-position: initial;
   background-size: cover;
-  background-attachment: fixed;
 
   @media (max-width: 768px) {
     background-position: center;
