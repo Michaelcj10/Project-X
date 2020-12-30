@@ -9,8 +9,6 @@ const encode = (data) => {
 };
 
 export const makeGet = async (form: ContactFormRequest) => {
-  console.log("making post");
-
   const state = { name: form.name, email: form.email, message: form.message };
   let fetchData = {
     method: "POST",
@@ -23,8 +21,7 @@ export const makeGet = async (form: ContactFormRequest) => {
 
   return await fetchReq("/", fetchData, {
     method: "POST",
-    /* tslint:disable-next-line */
   })
     .then(() => console.log("done"))
-    .catch((error) => alert(error));
+    .catch((error) => console.log(error));
 };
