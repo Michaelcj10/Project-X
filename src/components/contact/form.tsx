@@ -8,20 +8,17 @@ import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
 import { makeGet } from "../../api/fetchApi";
 import Toast from "../../components/atoms/toast";
+import fb from "../../images/fb.svg";
+import ln from "../../images/ln.svg";
 
 const InfographicStyle = styled.div`
   position: relative;
   text-align: center;
   padding: 150px 10% 150px 10%;
-  background: #202133;
+  background: #15161f;
 
   @media (max-width: 768px) {
     padding: 50px 25px;
-  }
-
-  img {
-    max-width: 100%;
-    position: absolute;
   }
 
   input {
@@ -45,7 +42,6 @@ const StyledBreak = styled.div`
   display: block;
   height: 2px;
   width: 50%;
-  margin-bottom: 50px;
   background: #fff;
   margin: 0px auto 50px auto;
 `;
@@ -58,6 +54,27 @@ const SubTitle = styled.p`
 `;
 const Content = styled(Col)`
   margin: auto;
+`;
+const FormWrap = styled.div`
+  margin: auto;
+  max-width: 600px;
+`;
+const TermsText = styled.p`
+  color: #d6d6d6;
+  text-align: left;
+  padding: 0;
+  font-size: 12px;
+`;
+const Social = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  img {
+    cursor: pointer;
+    width: 30px;
+    margin: 0 10px;
+  }
 `;
 function Form() {
   const [email, setEmail] = useState<string>("");
@@ -111,52 +128,61 @@ function Form() {
 
       <InfographicStyle>
         <Row>
-          <Col xs={12} md={6}>
-            something
-          </Col>
-          <Content xs={12} md={6}>
-            <Slide bottom={true}>
-              <Title>Contact us </Title>
-            </Slide>
-            <SubTitle>
-              Contact us now to get a free quote and begin growing your business
-            </SubTitle>
-            <StyledBreak />
-            <form
-              data-netlify="true"
-              name="contact"
-              method="post"
-              onSubmit={submit}
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <Input
-                value={email}
-                onChange={(val: string) => {
-                  setError(null);
-                  setEmail(val);
-                }}
-                name="email"
-                label="Enter email or phone number"
-              />
-              <Input
-                value={msg}
-                onChange={(val: string) => {
-                  setError(null);
-                  setMsg(val);
-                }}
-                label="Your message here"
-                name="message"
-              />
+          <Content xs={12}>
+            <FormWrap>
+              <Slide bottom={true}>
+                <Title>Contact us </Title>
+              </Slide>
+              <SubTitle>
+                Contact us now to get a free quote and begin growing your
+                business
+              </SubTitle>
+              <Social>
+                <img src={fb} alt="facebook" />
+                <img src={ln} alt="linkedin" />
+              </Social>
+              <StyledBreak />
+              <form
+                data-netlify="true"
+                name="contact"
+                method="post"
+                onSubmit={submit}
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <Input
+                  value={email}
+                  onChange={(val: string) => {
+                    setError(null);
+                    setEmail(val);
+                  }}
+                  name="email"
+                  label="Enter email or phone number"
+                />
+                <Input
+                  value={msg}
+                  onChange={(val: string) => {
+                    setError(null);
+                    setMsg(val);
+                  }}
+                  label="Your message here"
+                  name="message"
+                />
 
-              {formError && <div className="error">{formError} </div>}
+                {formError && <div className="error">{formError} </div>}
 
-              <Button
-                background="#ffa91a"
-                fullWidth={true}
-                type="submit"
-                text="Submit"
-              />
-            </form>
+                <Button
+                  background="#ffa91a"
+                  fullWidth={true}
+                  type="submit"
+                  text="Submit"
+                />
+                <TermsText>
+                  By sending us a note you agree to our terms and conditions. We
+                  will not distribute your name or email with any other service.
+                  Full terms and conditons can be seen here.
+                </TermsText>
+              </form>
+            </FormWrap>
           </Content>
         </Row>
       </InfographicStyle>

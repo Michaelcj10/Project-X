@@ -7,8 +7,8 @@ const ToastStyle = styled.div`
   width: 100%;
   max-width: 300px;
   height: 50px;
-  background: #4c8bf5;
-  color: white;
+  background: #1bd8af;
+  color: #ffffff;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -21,7 +21,6 @@ const ToastStyle = styled.div`
   text-transform: uppercase;
   box-shadow: #3a3a3a 0px 2px 20px 0px, rgba(21, 25, 68, 0.06) 0px 3px 12px -8px,
     rgba(21, 25, 68, 0.03) 0px 1px 6px -2px;
-  border-radius: 0px 0px 19px 19px;
   -webkit-animation: toastAnimate 0.3s ease;
   -moz-animation: toastAnimate 0.3s ease;
   animation: toastAnimate 0.3s ease;

@@ -27,9 +27,12 @@ const Paragraph = styled.p`
 const MobileImg = styled.img`
   max-width: 100%;
   width: 600px;
+  outline: 3px solid #f2cd5a;
+  outline-offset: 3px;
 
   @media (max-width: 768px) {
     margin-right: -44px;
+    outline: none;
   }
 `;
 const SubTitle = styled.div`

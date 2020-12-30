@@ -29,9 +29,12 @@ const MobileImg = styled.img`
   max-width: 100%;
   width: 450px;
   margin: 25px 0px 0px -55px;
+  outline: 3px solid #fdcd01;
+  outline-offset: 3px;
 
   @media (max-width: 768px) {
     margin: 25px 0px 0px -40px;
+    outline: none;
   }
 `;
 

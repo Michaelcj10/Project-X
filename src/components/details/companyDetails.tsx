@@ -31,23 +31,30 @@ const DesignRightImg = styled.img`
   margin: 25px 0px 0px 0px;
   width: 650px;
   max-width: 100%;
+  outline: 3px solid #a9deb2;
+  outline-offset: 3px;
 
   @media (max-width: 768px) {
     margin: 25px 0px 0px -40px;
+    outline: none;
   }
 `;
 const DesignLeftImg = styled.img`
   max-width: 100%;
   width: 500px;
-
+  outline: 3px solid #1ad1e3;
+  outline-offset: 3px;
   @media (max-width: 768px) {
     margin-right: -44px;
     margin-top: -8px;
+    outline: none;
   }
 `;
 const DesignLeftImgSm = styled.img`
   margin-top: 75px;
   max-width: 250px;
+  outline: 3px solid #ffee7c;
+  outline-offset: 3px;
 
   @media (max-width: 768px) {
     display: none;
@@ -110,7 +117,9 @@ function CompanyDetails() {
           </LeftCol>
 
           <RightCol xs={12} md={6}>
-            <DesignLeftImg src={design} alt="mobile" />
+            <div>
+              <DesignLeftImg src={design} alt="mobile" />
+            </div>
             <br />
             <DesignLeftImgSm src={plant} alt="mobile" />
           </RightCol>
