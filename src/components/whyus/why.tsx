@@ -69,9 +69,12 @@ function WhyUseUs() {
         <LeftCol xs={12} md={4}>
           <Icon src={hosting} alt="hosting" />
 
-          <SubTitle>
-            <Hightlight>Free hosting</Hightlight>
-          </SubTitle>
+          <Slide bottom={true}>
+            <SubTitle>
+              <Hightlight>Free hosting</Hightlight>
+            </SubTitle>
+          </Slide>
+
           <Paragraph>
             We make custom, dynamic websites for a range of customers from a
             small or personal business to larger enterprises. We aim for a
@@ -82,9 +85,11 @@ function WhyUseUs() {
         <LeftCol xs={12} md={4}>
           <Icon src={custom} alt="hosting" />
 
-          <SubTitle>
-            <Hightlight>Custom website</Hightlight>
-          </SubTitle>
+          <Slide bottom={true}>
+            <SubTitle>
+              <Hightlight>Custom website</Hightlight>
+            </SubTitle>
+          </Slide>
           <Paragraph>
             We make custom, dynamic websites for a range of customers from a
             small or personal business to larger enterprises. We aim for a
@@ -95,9 +100,11 @@ function WhyUseUs() {
         <LeftCol xs={12} md={4}>
           <Icon src={dollar} alt="hosting" />
 
-          <SubTitle>
-            <Hightlight>Affordable</Hightlight>
-          </SubTitle>
+          <Slide bottom={true}>
+            <SubTitle>
+              <Hightlight>Affordable</Hightlight>
+            </SubTitle>
+          </Slide>
           <Paragraph>
             We make custom, dynamic websites for a range of customers from a
             small or personal business to larger enterprises. We aim for a
