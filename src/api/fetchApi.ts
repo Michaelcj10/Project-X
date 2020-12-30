@@ -10,13 +10,14 @@ const encode = (data) => {
 
 export const makeGet = async (form: ContactFormRequest) => {
   console.log("making post");
+  const x = encode(form);
   let fetchData = {
     method: "POST",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: encode({ "form-name": "contact", form }),
+    body: encode({ "form-name": "contact", x }),
   };
 
   return await fetchReq("/", fetchData, {
