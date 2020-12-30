@@ -22,5 +22,7 @@ export const makeGet = async (form: ContactFormRequest) => {
   return await fetchReq("/", fetchData, {
     method: "POST",
     /* tslint:disable-next-line */
-  }).then((res: { json: () => any }) => res.json());
+  })
+    .then(() => console.log("done"))
+    .catch((error) => alert(error));
 };
