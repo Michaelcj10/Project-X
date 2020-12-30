@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import Button from "../atoms/buttons/button";
 import { useState } from "react";
-import SendEmail from "../email/sendEmailScreen";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
 import { makeGet } from "../../api/fetchApi";
@@ -63,7 +62,6 @@ function Form() {
   const [email, setEmail] = useState<string>("");
   const [msg, setMsg] = useState<string>("");
   const [formError, setError] = useState<string | null>(null);
-  const [sending, setSending] = useState<boolean>(false);
 
   const resetForm = () => {
     setError("");
@@ -86,7 +84,6 @@ function Form() {
       setError("That email doesnt look right......");
       return;
     } else {
-      setSending(true);
       makeGet({
         email: email,
         message: msg,
@@ -102,7 +99,6 @@ function Form() {
           something
         </Col>
         <Content xs={12} md={6}>
-          {sending && <SendEmail />}
           <Slide bottom={true}>
             <Title>Contact us </Title>
           </Slide>
