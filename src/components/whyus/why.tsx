@@ -76,10 +76,8 @@ function WhyUseUs() {
           </Slide>
 
           <Paragraph>
-            We make custom, dynamic websites for a range of customers from a
-            small or personal business to larger enterprises. We aim for a
-            personal and communicative experience where customer satisfaction is
-            key.
+            Take the hassle out of domain hosting! We offer custom domain
+            hosting along with your website package completely free!
           </Paragraph>
         </LeftCol>
         <LeftCol xs={12} md={4}>
@@ -91,10 +89,9 @@ function WhyUseUs() {
             </SubTitle>
           </Slide>
           <Paragraph>
-            We make custom, dynamic websites for a range of customers from a
-            small or personal business to larger enterprises. We aim for a
-            personal and communicative experience where customer satisfaction is
-            key.
+            We gaurantee a custom , branded website exactly to your
+            requirements. No templates or themes. We will bring your brand to
+            life with initial conversations right to the final product.
           </Paragraph>
         </LeftCol>
         <LeftCol xs={12} md={4}>
@@ -106,10 +103,9 @@ function WhyUseUs() {
             </SubTitle>
           </Slide>
           <Paragraph>
-            We make custom, dynamic websites for a range of customers from a
-            small or personal business to larger enterprises. We aim for a
-            personal and communicative experience where customer satisfaction is
-            key.
+            Our aim is to provide affordable websites. We won't be beaten on
+            price and if you receive a lower quote on another Irish site we will
+            beat it!
           </Paragraph>
         </LeftCol>
       </Row>

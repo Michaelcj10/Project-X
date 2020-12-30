@@ -77,13 +77,19 @@ function AboutCompany() {
           </Slide>
           <StyledBreak />
           <Paragraph>
-            We make custom, dynamic websites for a range of customers from a
+            We make custom, dynamic software for a range of customers from a
             small or personal business to larger enterprises. We aim for a
             personal and communicative experience where customer satisfaction is
-            key.
+            key. All of our sites are SEO compliant as well as lightning fast.
+            We aim to make getting your business or personal site online a
+            painless and fast process. The sooner you're business is online the
+            faster it will grow.
           </Paragraph>
           <SubTitle>
             <Hightlight>5</Hightlight> years experience.
+          </SubTitle>
+          <SubTitle>
+            <Hightlight>Prices from</Hightlight> €250.
           </SubTitle>
           <LearnMore>
             <Button
@@ -92,7 +98,7 @@ function AboutCompany() {
               onClick={() => {
                 window.scrollTo({ top: 22200, behavior: "smooth" });
               }}
-              text="Discover more"
+              text="Contact us"
             />
           </LearnMore>
         </LeftCol>

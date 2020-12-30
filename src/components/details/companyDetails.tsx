@@ -99,10 +99,12 @@ function CompanyDetails() {
             </Slide>
             <StyledBreak />
             <Paragraph>
-              We make custom, dynamic websites for a range of customers from a
-              small or personal business to larger enterprises. We aim for a
-              personal and communicative experience where customer satisfaction
-              is key.
+              Website design and branding is critical in attracting new users or
+              growing customer conversion %. All of our sites are customized in
+              design and perfectly blend your brand with the website design and
+              style. You can input as much or as little as you like to the site
+              design, we will do the rest! If you are not happy with the final
+              product we will keep working until you are!
             </Paragraph>
             <SubTitle>
               <Hightlight>Custom</Hightlight> website designs.

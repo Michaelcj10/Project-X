@@ -99,7 +99,7 @@ function Landing() {
             onClick={() => {
               window.scrollTo({ top: 22200, behavior: "smooth" });
             }}
-            text="Get started"
+            text="Get free quote"
           />
         </div>
       </Hero>
