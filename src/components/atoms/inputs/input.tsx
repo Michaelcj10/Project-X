@@ -24,6 +24,7 @@ const InputStyle = styled.div`
     border-right: none !important;
     border-bottom: 1px solid #fff;
     background: transparent;
+    color: #fff;
   }
   input:focus {
     outline: none;
