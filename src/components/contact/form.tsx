@@ -107,7 +107,12 @@ function Form() {
             Contact us now to get a free quote and begin growing your business
           </SubTitle>
           <StyledBreak />
-          <form data-netlify="true" name="contact" onSubmit={submit}>
+          <form
+            data-netlify="true"
+            name="contact"
+            method="post"
+            onSubmit={submit}
+          >
             <input type="hidden" name="form-name" value="contact" />
             <Input
               value={email}
