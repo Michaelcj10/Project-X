@@ -42,7 +42,7 @@ const DesignLeftImg = styled.img`
 
   @media (max-width: 768px) {
     margin-right: -44px;
-    margin-top: -7px;
+    margin-top: -8px;
   }
 `;
 const DesignLeftImgSm = styled.img`

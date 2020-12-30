@@ -21,10 +21,11 @@ const Title = styled.h2`
   color: #fff;
 `;
 const Paragraph = styled.p`
-  padding: 0px;
+  padding: 0px 0px 0px 10px;
   color: #fff;
   margin-top: 25px;
   text-align: justify;
+  border-left: 4px solid #19f9c8;
 `;
 const SubTitle = styled.div`
   font-size: 20px;
