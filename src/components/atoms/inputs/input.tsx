@@ -6,6 +6,7 @@ interface Props {
   label: string;
   value: string;
   onChange: (val: string) => void;
+  name: string;
 }
 
 const InputStyle = styled.div`
@@ -132,6 +133,7 @@ function Input(props: Props) {
           }}
           value={props.value}
           type="text"
+          name={props.name}
         />
         <span className="highlight" />
         <span className="bar" />

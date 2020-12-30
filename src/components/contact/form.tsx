@@ -7,6 +7,8 @@ import { useState } from "react";
 import SendEmail from "../email/sendEmailScreen";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
+import { makeGet } from "../../api/fetchApi";
+
 const InfographicStyle = styled.div`
   position: relative;
   text-align: center;
@@ -85,12 +87,11 @@ function Form() {
       return;
     } else {
       setSending(true);
-
-      setTimeout(() => {
-        resetForm();
-        setSending(false);
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }, 4000);
+      makeGet({
+        email: email,
+        message: msg,
+      });
+      resetForm();
     }
   };
 
@@ -109,13 +110,15 @@ function Form() {
             Contact us now to get a free quote and begin growing your business
           </SubTitle>
           <StyledBreak />
-          <form onSubmit={submit}>
+          <form data-netlify="true" name="contact" onSubmit={submit}>
+            <input type="hidden" name="form-name" value="contact" />
             <Input
               value={email}
               onChange={(val: string) => {
                 setError(null);
                 setEmail(val);
               }}
+              name="email"
               label="Enter email or phone number"
             />
             <Input
@@ -125,6 +128,7 @@ function Form() {
                 setMsg(val);
               }}
               label="Your message here"
+              name="message"
             />
 
             {formError && <div className="error">{formError} </div>}
