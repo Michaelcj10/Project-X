@@ -87,6 +87,7 @@ function Form() {
       makeGet({
         email: email,
         message: msg,
+        name: "test",
       });
       resetForm();
     }
