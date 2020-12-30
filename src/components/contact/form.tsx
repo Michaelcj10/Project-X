@@ -3,16 +3,18 @@ import { createElement } from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import Button from "../atoms/buttons/button";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import SendEmail from "../email/sendEmailScreen";
-
+import { Row, Col } from "react-grid";
+import Slide from "react-reveal/Slide";
 const InfographicStyle = styled.div`
-  background: #fbfbfb;
-  padding: 100px 30px 0px;
+  position: relative;
+  text-align: center;
+  padding: 150px 10% 150px 10%;
+  background: #202133;
 
-  .twelve {
-    text-align: center;
+  @media (max-width: 768px) {
+    padding: 50px 25px;
   }
 
   img {
@@ -31,7 +33,30 @@ const InfographicStyle = styled.div`
     font-size: 16px;
   }
 `;
+const Title = styled.h2`
+  font-size: 40px;
+  color: #fff;
 
+  margin-bottom: 10px;
+`;
+const StyledBreak = styled.div`
+  display: block;
+  height: 2px;
+  width: 50%;
+  margin-bottom: 50px;
+  background: #fff;
+  margin: 0px auto 50px auto;
+`;
+
+const SubTitle = styled.p`
+  color: #fff;
+  padding: 0;
+  font-size: 16px;
+  margin-left: 5px;
+`;
+const Content = styled(Col)`
+  margin: auto;
+`;
 function Form() {
   const [email, setEmail] = useState<string>("");
   const [msg, setMsg] = useState<string>("");
@@ -71,37 +96,48 @@ function Form() {
 
   return (
     <InfographicStyle>
-      {sending && <SendEmail />}
-      <div className="infographic-block centered">
-        <div className="row">
-          <h2>Contact me</h2>
-          <div className="twelve">
-            <form onSubmit={submit}>
-              <Input
-                value={email}
-                onChange={(val: string) => {
-                  setError(null);
-                  setEmail(val);
-                }}
-                label="Enter email or phone number"
-              />
-              <Input
-                value={msg}
-                onChange={(val: string) => {
-                  setError(null);
-                  setMsg(val);
-                }}
-                label="Your message here"
-              />
+      <Row>
+        <Col xs={12} md={6}>
+          something
+        </Col>
+        <Content xs={12} md={6}>
+          {sending && <SendEmail />}
+          <Slide bottom={true}>
+            <Title>Contact us </Title>
+          </Slide>
+          <SubTitle>
+            Contact us now to get a free quote and begin growing your business
+          </SubTitle>
+          <StyledBreak />
+          <form onSubmit={submit}>
+            <Input
+              value={email}
+              onChange={(val: string) => {
+                setError(null);
+                setEmail(val);
+              }}
+              label="Enter email or phone number"
+            />
+            <Input
+              value={msg}
+              onChange={(val: string) => {
+                setError(null);
+                setMsg(val);
+              }}
+              label="Your message here"
+            />
 
-              {formError && <div className="error">{formError} </div>}
-              <motion.div whileTap={{ scale: 0.9 }}>
-                <Button fullWidth={true} type="submit" text="Submit" />
-              </motion.div>
-            </form>
-          </div>
-        </div>
-      </div>
+            {formError && <div className="error">{formError} </div>}
+
+            <Button
+              background="#ffa91a"
+              fullWidth={true}
+              type="submit"
+              text="Submit"
+            />
+          </form>
+        </Content>
+      </Row>
     </InfographicStyle>
   );
 }

@@ -41,7 +41,7 @@ const Links = styled.div`
 
 const SiteLink = styled(Link)`
   font-size: 16px;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
   color: #222222;
   text-decoration: none;
 
@@ -57,7 +57,7 @@ const Pipes = styled.div`
 
 const Company = styled.div`
   font-size: 16px;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
 `;
 
 function SiteFooter() {

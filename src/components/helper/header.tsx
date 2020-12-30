@@ -14,7 +14,7 @@ const SharedLink = styled(Link)`
   font-size: 16px;
   padding: 8px;
   text-decoration: none;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
 
   a {
     transition: all 0.5s;

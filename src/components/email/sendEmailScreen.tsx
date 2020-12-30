@@ -1,7 +1,7 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
-import mail from "../../images/mail.svg";
+import mail from "../../images/design.png";
 const SendEmailStyle = styled.div`
   position: fixed;
   height: 100vh;
@@ -25,7 +25,7 @@ const SendEmailStyle = styled.div`
 
   p {
     margin-top: 25px;
-    font-family: Roboto-Bold;
+    font-family: Mabry-Bold;
   }
 `;
 

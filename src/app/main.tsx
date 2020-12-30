@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0px 0px 0px 15px;
     margin: auto;
     background: #0f121c;
-    font-family: Roboto;
+    font-family: Mabry,sans-serif;
     overflow-x: hidden;
     box-shadow: rgba(21, 25, 68, 0.13) 0px 2px 20px 0px, rgba(21, 25, 68, 0.06) 0px 3px 12px -8px, rgba(21, 25, 68, 0.03) 0px 1px 6px -2px;
   }
@@ -22,11 +22,15 @@ export const GlobalStyle = createGlobalStyle`
   }
   h2,
   h3 {
-    font-family: Roboto-Bold;
+    font-family: Mabry-Bold,sans-serif;;
+  }
+
+  P{
+    font-family: Mabry-Light,sans-serif;;
   }
 
   h1{
-    font-family: Roboto-Bold;
+    font-family: Mabry-Bold,sans-serif;;
     font-size: 9rem;
   }
 

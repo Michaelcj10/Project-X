@@ -50,8 +50,7 @@ const DesignLeftImgSm = styled.img`
   max-width: 250px;
 
   @media (max-width: 768px) {
-    margin-right: -44px;
-    margin-top: -7px;
+    display: none;
   }
 `;
 
@@ -59,7 +58,7 @@ const SubTitle = styled.div`
   font-size: 30px;
   text-align: left;
   color: #fff;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
 `;
 
 const StyledBreak = styled.div`

@@ -21,7 +21,7 @@ const InputStyle = styled.div`
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
-    border-bottom: 1px solid #41465a;
+    border-bottom: 1px solid #fff;
     background: transparent;
   }
   input:focus {
@@ -44,7 +44,7 @@ const InputStyle = styled.div`
   input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #222;
+    color: #fff;
   }
 
   .bar {
@@ -60,7 +60,7 @@ const InputStyle = styled.div`
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #222;
+    background: #ffa91a;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -95,7 +95,7 @@ const InputStyle = styled.div`
 
   @-webkit-keyframes inputHighlighter {
     from {
-      background: #5264ae;
+      background: #ffa91a;
     }
     to {
       width: 0;
@@ -104,7 +104,7 @@ const InputStyle = styled.div`
   }
   @-moz-keyframes inputHighlighter {
     from {
-      background: #5264ae;
+      background: #ffa91a;
     }
     to {
       width: 0;
@@ -113,7 +113,7 @@ const InputStyle = styled.div`
   }
   @keyframes inputHighlighter {
     from {
-      background: #5264ae;
+      background: #ffa91a;
     }
     to {
       width: 0;

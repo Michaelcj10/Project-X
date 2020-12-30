@@ -9,7 +9,7 @@ const ButtonStyle = styled.button`
   min-width: 155px;
   transition: all 0.5s;
   border-radius: 65px 56px 71px 21px;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
   outline: none;
   font-size: 16px;
   color: #282c34;

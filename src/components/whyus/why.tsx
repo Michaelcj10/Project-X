@@ -29,11 +29,11 @@ const Paragraph = styled.p`
 const SubTitle = styled.div`
   font-size: 20px;
   color: #fff;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
 `;
 
 const Hightlight = styled.span`
-  color: #fff;
+  color: #19f9c8;
   font-size: 25px;
   margin-top: 25px;
 `;

@@ -5,6 +5,7 @@ import Landing from "../components/landing/landing";
 import AboutCompany from "../components/about/aboutCompany";
 import CompanyDetails from "../components/details/companyDetails";
 import WhyUseUs from "../components/whyus/why";
+import Form from "../components/contact/form";
 import Seo from "../components/seoDetails/seo";
 import { GlobalStyle } from "./main";
 
@@ -16,6 +17,7 @@ function Home() {
       <WhyUseUs />
       <Seo />
       <CompanyDetails />
+      <Form />
       <GlobalStyle />
     </div>
   );

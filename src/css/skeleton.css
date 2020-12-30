@@ -1,11 +1,15 @@
 @font-face {
-  font-family: Roboto;
-  src: url(./fonts/Roboto-Regular.ttf);
+  font-family: Mabry;
+  src: url(./fonts/Mabry-Medium.otf);
 }
 
 @font-face {
-  font-family: Roboto-Bold;
-  src: url(./fonts/Roboto-Bold.ttf);
+  font-family: Mabry-Bold;
+  src: url(./fonts/Mabry-Bold.otf);
+}
+@font-face {
+  font-family: Mabry-Light;
+  src: url(./fonts/Mabry-Light.otf);
 }
 
 .container {

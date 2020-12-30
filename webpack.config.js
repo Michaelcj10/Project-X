@@ -49,7 +49,10 @@ module.exports = {
           },
         ],
       },
-      { test: /\.(woff|woff2|eot|ttf)$/, loader: "url-loader?limit=100000" },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: "url-loader?limit=100000",
+      },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [

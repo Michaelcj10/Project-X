@@ -36,7 +36,7 @@ const SubTitle = styled.div`
   font-size: 30px;
   text-align: left;
   color: #fff;
-  font-family: Roboto-Bold;
+  font-family: Mabry-Bold;
 `;
 
 const StyledBreak = styled.div`
