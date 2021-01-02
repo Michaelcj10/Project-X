@@ -1,5 +1,5 @@
 /** @jsx createElement */
-import { createElement, Fragment } from "react";
+import { ChangeEvent, createElement, Fragment } from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import Button from "../atoms/buttons/button";
@@ -26,6 +26,17 @@ const InfographicStyle = styled.div`
     margin-top: 10px;
   }
 
+  label {
+    font-size: 14px;
+    font-weight: normal;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    color: #fff;
+    text-align: left;
+    margin-left: 5px;
+  }
+
   .error {
     margin-bottom: 25px;
     text-align: left;
@@ -36,7 +47,6 @@ const InfographicStyle = styled.div`
 const Title = styled.h2`
   font-size: 40px;
   color: #fff;
-
   margin-bottom: 10px;
 `;
 const StyledBreak = styled.div`
@@ -65,6 +75,19 @@ const TermsText = styled.p`
   text-align: left;
   padding: 0;
   font-size: 12px;
+`;
+const TextArea = styled.textarea`
+  background: #15161f;
+  color: #fff;
+  width: 100%;
+  resize: none;
+  border-radius: 0px;
+  font-size: 16px;
+  transition: all 0.3s;
+
+  &:focus {
+    border: 1px solid #ffa91a;
+  }
 `;
 const Social = styled.div`
   display: flex;
@@ -159,13 +182,13 @@ function Form() {
                   name="email"
                   label="Enter email or phone number"
                 />
-                <Input
+                <label>Enter your message</label>
+                <TextArea
                   value={msg}
-                  onChange={(val: string) => {
+                  onChange={(e: ChangeEvent<HTMLTextAreaElement>) => {
                     setError(null);
-                    setMsg(val);
+                    setMsg(e.target.value);
                   }}
-                  label="Your message here"
                   name="message"
                 />
 

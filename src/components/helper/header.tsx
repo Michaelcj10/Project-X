@@ -18,7 +18,7 @@ const HeaderStyle = styled.header`
     cursor: pointer;
     right: 30px;
     z-index: 4;
-    top: 20px;
+    top: 25px;
   }
 
   @media (max-width: 768px) {
@@ -249,13 +249,14 @@ const HeaderStyle = styled.header`
 `;
 
 const Logo = styled.img`
-  width: 175px;
+  width: 200px;
+  transition: all 0.2s;
   position: absolute;
   top: 15px;
   left: 15px;
   z-index: 4;
   @media (max-width: 765px) {
-    width: 100px;
+    width: 150px;
   }
 `;
 
