@@ -84,9 +84,16 @@ const TextArea = styled.textarea`
   border-radius: 0px;
   font-size: 16px;
   transition: all 0.3s;
+  border: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 
   &:focus {
     border: 1px solid #ffa91a;
+    border-right: none;
+    border-left: none;
+    border-top: none;
   }
 `;
 const Social = styled.div`

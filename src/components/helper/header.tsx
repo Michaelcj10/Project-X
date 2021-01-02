@@ -343,7 +343,9 @@ function Header() {
 
   return (
     <HeaderStyle>
-      <Logo src={logo} alt="logo" />
+      <Link to="/">
+        <Logo src={logo} alt="logo" />
+      </Link>
       <HeaderLinks>
         <NavLink>
           <SharedLink to="/">Site design</SharedLink>
