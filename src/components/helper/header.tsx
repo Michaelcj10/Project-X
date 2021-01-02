@@ -176,7 +176,7 @@ const HeaderStyle = styled.header`
   }
 
   .open-menu {
-    animation: menu-open 0.25s ease-out forwards;
+    animation: menu-open 0.2s ease-out forwards;
 
     @keyframes menu-open {
       0% {
@@ -199,7 +199,7 @@ const HeaderStyle = styled.header`
     }
   }
   .close-menu {
-    animation: menu-close 0.35s ease-in forwards;
+    animation: menu-close 0.25s ease-in forwards;
 
     @keyframes menu-close {
       0% {
