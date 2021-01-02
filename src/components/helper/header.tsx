@@ -362,9 +362,21 @@ function Header() {
           setPristine(false);
         }}
       >
-        <div className={`stick stick-1 ${open ? "open" : "close"}`} />
-        <div className={`stick stick-2 ${open ? "open" : "close"}`} />
-        <div className={`stick stick-3 ${open ? "open" : "close"}`} />
+        <div
+          className={`stick stick-1 ${
+            isPristine ? "" : open ? "open" : "close"
+          }`}
+        />
+        <div
+          className={`stick stick-2 ${
+            isPristine ? "" : open ? "open" : "close"
+          }`}
+        />
+        <div
+          className={`stick stick-3 ${
+            isPristine ? "" : open ? "open" : "close"
+          }`}
+        />
       </div>
 
       <Menu className={open ? "open-menu" : isPristine ? "" : "close-menu"}>
