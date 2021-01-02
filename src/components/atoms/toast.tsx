@@ -14,7 +14,7 @@ const ToastStyle = styled.div`
   left: 0px;
   right: 0px;
   margin: auto;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
