@@ -74,6 +74,12 @@ const Skills = styled.div`
     margin: 0 7px 7px 0;
     padding: 7px;
   }
+  li {
+    transition: all 0.5s;
+  }
+  li:hover {
+    color: #fff;
+  }
 `;
 
 function Card(props: Props) {

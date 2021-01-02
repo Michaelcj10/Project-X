@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   html{
     width: 100%;
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
   h2,
   h3 {

@@ -1,5 +1,5 @@
 /** @jsx createElement */
-import { createElement } from "react";
+import { createElement, Fragment } from "react";
 import "../css/skeleton.css";
 import Landing from "../components/landing/landing";
 import AboutCompany from "../components/about/aboutCompany";
@@ -10,10 +10,12 @@ import Form from "../components/contact/form";
 import Seo from "../components/seoDetails/seo";
 import OurServices from "../components/services/ourServices";
 import { GlobalStyle } from "./main";
+import Header from "../components/helper/header";
 
 function Home() {
   return (
-    <div>
+    <Fragment>
+      <Header />
       <CookieBanner />
       <Landing />
       <AboutCompany />
@@ -23,7 +25,7 @@ function Home() {
       <CompanyDetails />
       <Form />
       <GlobalStyle />
-    </div>
+    </Fragment>
   );
 }
 

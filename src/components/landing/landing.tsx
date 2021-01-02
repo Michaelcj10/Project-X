@@ -2,9 +2,7 @@
 import { createElement } from "react";
 import Button from "../atoms/buttons/button";
 import styled, { keyframes } from "styled-components";
-import Header from "../helper/header";
 import TextBreak from "../atoms/break/textBreak";
-import logo from "../../images/logo.png";
 import bg from "../../images/bg-min.png";
 import Slide from "react-reveal/Slide";
 
@@ -49,17 +47,6 @@ const Hero = styled.div`
   }
 `;
 
-const Logo = styled.img`
-  width: 175px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 1;
-  @media (max-width: 768px) {
-    width: 100px;
-  }
-`;
-
 const Heading = keyframes`
   0% { width: 10%; }
   100% { width: 50%};
@@ -79,8 +66,6 @@ const TitleBreak = styled.div`
 function Landing() {
   return (
     <LandingStyle>
-      <Header />
-      <Logo src={logo} alt="logo" />
       <Hero>
         <div className="centered">
           <Slide bottom={true}>

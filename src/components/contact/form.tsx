@@ -6,6 +6,7 @@ import Button from "../atoms/buttons/button";
 import { useState } from "react";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
+import Jump from "react-reveal/Jump";
 import { makeGet } from "../../api/fetchApi";
 import Toast from "../../components/atoms/toast";
 import fb from "../../images/fb.svg";
@@ -168,7 +169,11 @@ function Form() {
                   name="message"
                 />
 
-                {formError && <div className="error">{formError} </div>}
+                {formError && (
+                  <Jump>
+                    <div className="error">{formError} </div>
+                  </Jump>
+                )}
 
                 <Button
                   background="#ffa91a"

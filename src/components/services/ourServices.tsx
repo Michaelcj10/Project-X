@@ -54,7 +54,7 @@ function OurServices() {
       </Row>
       <Slide bottom={true}>
         <ItemRow>
-          <Col xs={12} md={4}>
+          <Col xs={12} lg={4}>
             <Card
               skills={[
                 "UI / UX",
@@ -71,7 +71,7 @@ function OurServices() {
               text="Website design and development from design to deployment"
             />
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} lg={4}>
             <Card
               skills={["Swagger", "MongoDB", "Node", "JavaScript", "Mongoose"]}
               ribbon="API"
@@ -80,7 +80,7 @@ function OurServices() {
               text="API design and development including full documentation"
             />
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} lg={4}>
             <Card
               skills={["Photoshop", "Zeplin", "UI / UX", "SVG"]}
               ribbon="Design"
