@@ -1,4 +1,5 @@
-import * as React from "react";
+/** @jsx createElement */
+import { createElement } from "react";
 import * as ReactDOM from "react-dom";
 import App from "./app/main";
 import { BrowserRouter } from "react-router-dom";
