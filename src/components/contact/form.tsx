@@ -123,6 +123,7 @@ function Form() {
     setError("");
     setEmail("");
     setMsg("");
+    setMarketingChecked(false);
   };
 
   const isValidEmail = () => {
