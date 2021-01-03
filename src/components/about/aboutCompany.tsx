@@ -1,7 +1,7 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
-import stock from "../../images/puca-stock-1.png";
+import stock from "../../images/puca-stock-1.jpg";
 import Button from "../atoms/buttons/button";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";

@@ -1,9 +1,9 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
-import placeholder from "../../images/hand.png";
-import design from "../../images/design-5.png";
-import plant from "../../images/plant.png";
+import placeholder from "../../images/hand.jpg";
+import design from "../../images/design-5.jpg";
+import plant from "../../images/plant.jpg";
 import { Row, Col } from "react-grid";
 import { Fragment } from "react";
 import Slide from "react-reveal/Slide";

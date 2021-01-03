@@ -3,7 +3,7 @@ import { createElement } from "react";
 import Button from "../atoms/buttons/button";
 import styled, { keyframes } from "styled-components";
 import TextBreak from "../atoms/break/textBreak";
-import bg from "../../images/bg-min.png";
+import bg from "../../images/bg-min.jpeg";
 import Slide from "react-reveal/Slide";
 
 const LandingStyle = styled.div`

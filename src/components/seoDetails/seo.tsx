@@ -1,7 +1,7 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
-import pc from "../../images/design-4.png";
+import pc from "../../images/design-4.jpg";
 import Button from "../atoms/buttons/button";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
