@@ -3,6 +3,7 @@ import { ChangeEvent, createElement, Fragment } from "react";
 import styled from "styled-components";
 import Input from "../atoms/inputs/input";
 import Button from "../atoms/buttons/button";
+import CheckBox from "../atoms/buttons/checkBox";
 import { useState } from "react";
 import { Row, Col } from "react-grid";
 import Slide from "react-reveal/Slide";
@@ -55,6 +56,10 @@ const StyledBreak = styled.div`
   width: 50%;
   background: #fff;
   margin: 0px auto 50px auto;
+`;
+
+const Marketing = styled.div`
+  margin: 25px 0px;
 `;
 
 const SubTitle = styled.p`
@@ -112,6 +117,7 @@ function Form() {
   const [msg, setMsg] = useState<string>("");
   const [showToast, setToast] = useState<boolean>(false);
   const [formError, setError] = useState<string | null>(null);
+  const [marketingChecked, setMarketingChecked] = useState<boolean>(false);
 
   const resetForm = () => {
     setError("");
@@ -138,6 +144,7 @@ function Form() {
         email: email,
         message: msg,
         name: "test",
+        optin: marketingChecked,
       })
         .then(() => {
           setToast(true);
@@ -204,6 +211,15 @@ function Form() {
                     <div className="error">{formError} </div>
                   </Jump>
                 )}
+                <Marketing>
+                  <CheckBox
+                    checked={marketingChecked}
+                    text="Send me special offers and discount codes"
+                    onClick={() => {
+                      setMarketingChecked(!marketingChecked);
+                    }}
+                  />
+                </Marketing>
 
                 <Button
                   background="#ffa91a"

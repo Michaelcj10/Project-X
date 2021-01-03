@@ -9,7 +9,12 @@ const encode = (data) => {
 };
 
 export const makeGet = async (form: ContactFormRequest) => {
-  const state = { name: form.name, email: form.email, message: form.message };
+  const state = {
+    name: form.name,
+    email: form.email,
+    message: form.message,
+    optin: form.optin,
+  };
   let fetchData = {
     method: "POST",
     headers: {
