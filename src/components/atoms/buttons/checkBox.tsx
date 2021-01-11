@@ -57,7 +57,7 @@ const CheckStyle = styled.div`
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #15161f;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

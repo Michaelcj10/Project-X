@@ -267,6 +267,11 @@ const MenuItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 `;
 const Circle = styled.div`
   width: 10px;
@@ -348,13 +353,13 @@ function Header() {
       </Link>
       <HeaderLinks>
         <NavLink>
-          <SharedLink to="/">Site design</SharedLink>
+          <SharedLink to="/get-website">Get website</SharedLink>
         </NavLink>
         <NavLink>
-          <SharedLink to="/blog">API design</SharedLink>
+          <SharedLink to="/get-api">Get API</SharedLink>
         </NavLink>
         <NavLink>
-          <SharedLink to="/blog">Logo design</SharedLink>
+          <SharedLink to="/get-logo">Get Logo</SharedLink>
         </NavLink>
       </HeaderLinks>
       <div
@@ -385,7 +390,8 @@ function Header() {
       <Menu className={open ? "open-menu" : isPristine ? "" : "close-menu"}>
         <div>
           <MenuItem className={open ? "fade-in" : isPristine ? "" : "fade-out"}>
-            <Circle style={{ background: "#ffa91a" }} /> I need a site
+            <Circle style={{ background: "#ffa91a" }} />
+            <Link to="/get-website">Get website</Link>
           </MenuItem>
           <MenuItem className={open ? "fade-in" : isPristine ? "" : "fade-out"}>
             <Circle style={{ background: "#19f9c8" }} /> I need an API

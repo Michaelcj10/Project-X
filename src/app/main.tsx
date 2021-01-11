@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 const Home = lazy(() => import("./home"));
-const Blog = lazy(() => import("./blog"));
+const GetWebsite = lazy(() => import("./getWebsite"));
 
 function App() {
   return (
@@ -61,7 +61,7 @@ function App() {
       <Suspense fallback={null}>
         <Switch>
           <Route exact={true} path="/" component={Home} />
-          <Route path="/blog" component={Blog} />
+          <Route path="/get-website" component={GetWebsite} />
         </Switch>
       </Suspense>
     </Fragment>
