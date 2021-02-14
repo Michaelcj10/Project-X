@@ -1,6 +1,8 @@
 /** @jsx createElement */
 import { createElement } from "react";
 import styled from "styled-components";
+import Button from "./buttons/button";
+import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
@@ -8,6 +10,7 @@ interface Props {
   text: string;
   ribbon: string;
   skills: string[];
+  btnLink: string;
 }
 
 const CardContainer = styled.div`
@@ -22,6 +25,14 @@ const CardContainer = styled.div`
   text-align: center;
   margin-top: 25px;
   min-height: 300px;
+
+  button {
+    height: 35px;
+    line-height: 19px;
+    margin-top: 15px;
+    color: white;
+    border: 1px solid white;
+  }
 
   @media (max-width: 768px) {
     padding: 50px 25px;
@@ -59,6 +70,7 @@ const Skills = styled.div`
   text-align: left;
   padding: 15px;
   margin-top: 30px;
+  min-height: 140px;
 
   ul {
     list-style-type: none;
@@ -83,7 +95,7 @@ const Skills = styled.div`
 `;
 
 function Card(props: Props) {
-  const { img, title, text, ribbon, skills } = props;
+  const { img, title, text, ribbon, skills, btnLink } = props;
 
   return (
     <CardContainer>
@@ -99,6 +111,9 @@ function Card(props: Props) {
           })}
         </ul>
       </Skills>
+      <Link to={btnLink}>
+        <Button background="transparent" type="button" text="Learn more" />
+      </Link>
     </CardContainer>
   );
 }

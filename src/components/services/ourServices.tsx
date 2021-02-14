@@ -69,6 +69,7 @@ function OurServices() {
               title="Web design"
               img={web}
               text="Website design and development from design to deployment"
+              btnLink="/get-website"
             />
           </Col>
           <Col xs={12} lg={4}>
@@ -78,6 +79,7 @@ function OurServices() {
               title="API development"
               img={api}
               text="API design and development including full documentation"
+              btnLink="/get-website"
             />
           </Col>
           <Col xs={12} lg={4}>
@@ -87,6 +89,7 @@ function OurServices() {
               title="Logo design"
               img={logo}
               text="Custom logo design to start bringing your brand to life. No templates used"
+              btnLink="/get-website"
             />
           </Col>
         </ItemRow>

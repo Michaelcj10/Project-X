@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import "../css/skeleton.css";
 import { createGlobalStyle } from "styled-components";
 import { Switch, Route } from "react-router-dom";
+import FullLoader from "../components/loader/fullLoader";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -58,7 +59,7 @@ const GetWebsite = lazy(() => import("./getWebsite"));
 function App() {
   return (
     <Fragment>
-      <Suspense fallback={null}>
+      <Suspense fallback={<FullLoader />}>
         <Switch>
           <Route exact={true} path="/" component={Home} />
           <Route path="/get-website" component={GetWebsite} />

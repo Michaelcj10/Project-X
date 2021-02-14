@@ -10,7 +10,7 @@ const SEOCompanyStyle = styled.div`
   position: relative;
   text-align: left;
   padding: 150px 0px 150px 10%;
-  background: #202133;
+  background: #030523;
 
   @media (max-width: 768px) {
     padding: 50px 25px;
