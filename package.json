@@ -6,7 +6,7 @@
     "bootstrap": "^4.4.1",
     "image-webpack-loader": "^6.0.0",
     "jest": "^25.1.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-grid": "^4.0.4",
